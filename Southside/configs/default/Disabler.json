@@ -1,0 +1,17 @@
+{
+  "Mode": 0,
+  "Grim Post": true,
+  "Grim No Slow": true,
+  "Grim BadA": true,
+  "BadPacketsF": true,
+  "Hyt C09": true,
+  "Grim Rotation": true,
+  "Grim Blink": true,
+  "FastBreak": true,
+  "Bind": {
+    "keyBinds": [
+      0
+    ]
+  },
+  "Enabled": true
+}

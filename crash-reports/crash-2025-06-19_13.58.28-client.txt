@@ -1,0 +1,109 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 2025-06-19 13:58
+Description: Ticking entity
+
+java.lang.NullPointerException: Cannot invoke "dev.diona.southside.module.Module.isEnabled()" because the return value of "dev.diona.southside.managers.ModuleManager.getModuleByClass(java.lang.Class)" is null
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:876)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2042)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:335)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:215)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2032)
+	at net.minecraft.world.World.updateEntity(World.java:1995)
+	at net.minecraft.world.World.updateEntities(World.java:1835)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1861)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1170)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:530)
+	at net.minecraft.client.main.Main.main(Main.java:111)
+	at Start.main(Start.java:13)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:876)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2042)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:335)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:215)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2032)
+	at net.minecraft.world.World.updateEntity(World.java:1995)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityPlayerSP)
+	Entity ID: 10
+	Entity Name: Player0
+	Entity's Exact location: -1039.50, 4.00, 503.50
+	Entity's Block location: World: (-1040,4,503), Chunk: (at 0,0,7 in -65,31; contains blocks -1040,0,496 to -1025,255,511), Region: (-3,0; contains chunks -96,0 to -65,31, blocks -1536,0,0 to -1025,255,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: Cannot invoke "net.minecraft.entity.Entity.toString()" because the return value of "net.minecraft.entity.Entity.getRidingEntity()" is null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1835)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player0'/10, l='MpServer', x=-1039.50, y=4.00, z=503.50]]
+	Chunk stats: MultiplayerChunkCache: 286, 286
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-1032,4,497), Chunk: (at 8,0,1 in -65,31; contains blocks -1040,0,496 to -1025,255,511), Region: (-3,0; contains chunks -96,0 to -65,31, blocks -1536,0,0 to -1025,255,511)
+	Level time: 12 game time, 12 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 2 total; [EntityPlayerSP['Player0'/10, l='MpServer', x=-1039.50, y=4.00, z=503.50], EntitySlime['Slime'/15, l='MpServer', x=-1072.50, y=4.00, z=530.50]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:523)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2691)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:543)
+	at net.minecraft.client.main.Main.main(Main.java:111)
+	at Start.main(Start.java:13)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.15, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Microsoft
+	Memory: 81545968 bytes (77 MB) / 341835776 bytes (326 MB) up to 4284481536 bytes (4086 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: mcp
+	LWJGL: 3.3.3+5
+	OpenGL: NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2 GL version 4.6.0 NVIDIA 560.94, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 单行道喜欢用的特殊音效材质包.zip
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8 x Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+	OptiFine Version: OptiFine_1.12.2_HD_U_G6_pre1
+	OptiFine Build: ~~NULL~~
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 560.94
+	OpenGlRenderer: NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 8

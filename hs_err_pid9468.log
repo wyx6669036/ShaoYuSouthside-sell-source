@@ -1,0 +1,2621 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffae99fd661, pid=9468, tid=8604
+#
+# JRE version: Java(TM) SE Runtime Environment (17.0.12+8) (build 17.0.12+8-LTS-286)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (17.0.12+8-LTS-286, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# Problematic frame:
+# C  [nvoglv64.dll+0x5ad661]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2025.1.2\lib\idea_rt.jar=59879 -Dfile.encoding=UTF-8 Start
+
+Host: Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz, 24 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.2788)
+Time: Sat Jun 28 13:54:21 2025  Windows 10 , 64 bit Build 19041 (10.0.19041.2788) elapsed time: 657.921529 seconds (0d 0h 10m 57s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001e8c517d200):  JavaThread "Client thread" [_thread_in_native, id=8604, stack(0x00000091da300000,0x00000091da400000)]
+
+Stack: [0x00000091da300000,0x00000091da400000],  sp=0x00000091da3fe0b0,  free space=1016k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [nvoglv64.dll+0x5ad661]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J 8267  org.lwjgl.nanovg.NanoVG.nnvgEndFrame(J)V (0 bytes) @ 0x000001e8d4e6bc69 [0x000001e8d4e6bc20+0x0000000000000049]
+J 16503 c2 dev.diona.southside.gui.hud.ArrayListHud.draw(Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;FFFZ)V (174 bytes) @ 0x000001e8d5728790 [0x000001e8d5728020+0x0000000000000770]
+J 13499 c2 cc.polyfrost.oneconfig.hud.Hud.drawAll(Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;Z)V (112 bytes) @ 0x000001e8d4d858b4 [0x000001e8d4d85380+0x0000000000000534]
+J 14227 c2 cc.polyfrost.oneconfig.internal.hud.HudCore.onRender(Lcc/polyfrost/oneconfig/events/event/HudRenderEvent;)V (69 bytes) @ 0x000001e8d5491ff8 [0x000001e8d5491be0+0x0000000000000418]
+J 16502 c2 cc.polyfrost.oneconfig.internal.hud.HudCore$$Lambda$1790+0x000001e8817e1b08.invoke(Ljava/lang/Object;)V (12 bytes) @ 0x000001e8d5727bec [0x000001e8d5727ba0+0x000000000000004c]
+J 8493 c2 me.kbrewster.eventbus.EventBus.post(Ljava/lang/Object;)V (69 bytes) @ 0x000001e8d4b87ff0 [0x000001e8d4b87de0+0x0000000000000210]
+J 16164 c1 net.minecraft.client.gui.GuiIngame.renderGameOverlay(F)V (1487 bytes) @ 0x000001e8ce19631c [0x000001e8ce18df80+0x000000000000839c]
+J 15229 c2 net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(FJ)V (1147 bytes) @ 0x000001e8d55f1898 [0x000001e8d55f0820+0x0000000000001078]
+J 15658 c1 net.minecraft.client.Minecraft.runGameLoop()V (1344 bytes) @ 0x000001e8ce5531b4 [0x000001e8ce550180+0x0000000000003034]
+j  net.minecraft.client.Minecraft.run()V+61
+j  net.minecraft.client.main.Main.main([Ljava/lang/String;)V+1051
+j  Start.main([Ljava/lang/String;)V+93
+v  ~StubRoutines::call_stub
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x0000000000000000
+
+
+Registers:
+RAX=0x00007ffaebcb7c30, RBX=0x000001e8f5e70000, RCX=0x0000000000000001, RDX=0x0000000000000000
+RSP=0x00000091da3fe0b0, RBP=0x0000000000000001, RSI=0x000001e8f5ec865c, RDI=0x0000000000000000
+R8 =0x0000000000000026, R9 =0x0000000000000000, R10=0x0000000000000006, R11=0x00007ffae9450000
+R12=0x0000000000000001, R13=0x0000000000000000, R14=0x0000000000000000, R15=0x0000000000000000
+RIP=0x00007ffae99fd661, EFLAGS=0x0000000000010283
+
+
+Register to memory mapping:
+
+RIP=0x00007ffae99fd661 nvoglv64.dll
+RAX=0x00007ffaebcb7c30 nvoglv64.dll
+RBX=0x000001e8f5e70000 points into unknown readable memory: 0x000001e8f1b8c010 | 10 c0 b8 f1 e8 01 00 00
+RCX=0x0000000000000001 is an unknown value
+RDX=0x0 is NULL
+RSP=0x00000091da3fe0b0 is pointing into the stack for thread: 0x000001e8c517d200
+RBP=0x0000000000000001 is an unknown value
+RSI=0x000001e8f5ec865c points into unknown readable memory: 00 00 01 00
+RDI=0x0 is NULL
+R8 =0x0000000000000026 is an unknown value
+R9 =0x0 is NULL
+R10=0x0000000000000006 is an unknown value
+R11=0x00007ffae9450000 nvoglv64.dll
+R12=0x0000000000000001 is an unknown value
+R13=0x0 is NULL
+R14=0x0 is NULL
+R15=0x0 is NULL
+
+
+Top of Stack: (sp=0x00000091da3fe0b0)
+0x00000091da3fe0b0:   0000000000000000 0000000000000000
+0x00000091da3fe0c0:   0000000000000000 00007ffae98477ba
+0x00000091da3fe0d0:   000001e8f5ec8300 00007ffae9d06a08
+0x00000091da3fe0e0:   000001e8ef82d720 000001e8ef82d764
+0x00000091da3fe0f0:   0000000000000000 00007ffae98b2857
+0x00000091da3fe100:   0000000000000000 00007ffae9b95649
+0x00000091da3fe110:   0000000000000000 0000000000000000
+0x00000091da3fe120:   0000000000000000 00007ffae9e77737
+0x00000091da3fe130:   0000000000000000 0000000300000001
+0x00000091da3fe140:   000001e800000000 000001e8f9ca1060
+0x00000091da3fe150:   0000000000000004 0000000000000006
+0x00000091da3fe160:   0000000000000000 0000000000000001
+0x00000091da3fe170:   0000000000000000 000001e8f5e70000
+0x00000091da3fe180:   000001e8f5e70000 00007ffae9b98226
+0x00000091da3fe190:   000001e8f5e70000 0000000000000004
+0x00000091da3fe1a0:   0000000000000000 0000000000000000 
+
+Instructions: (pc=0x00007ffae99fd661)
+0x00007ffae99fd561:   53 48 83 ec 20 65 48 8b 1c 25 48 12 00 00 83 f9
+0x00007ffae99fd571:   10 72 2d b9 01 05 00 00 e8 c2 fb 07 00 e8 ed a0
+0x00007ffae99fd581:   08 00 84 c0 0f 84 8f 00 00 00 48 8d 15 9e d6 1e
+0x00007ffae99fd591:   01 b9 01 05 00 00 48 83 c4 20 5b e9 af 98 08 00
+0x00007ffae99fd5a1:   8b c1 48 05 8d 4d 00 00 44 8b c1 4d 03 c0 48 03
+0x00007ffae99fd5b1:   c0 c7 04 c3 00 00 00 00 f3 42 0f 11 8c c3 c8 d8
+0x00007ffae99fd5c1:   04 00 f3 42 0f 11 94 c3 cc d8 04 00 42 c7 84 c3
+0x00007ffae99fd5d1:   d4 d8 04 00 00 00 80 3f 85 c9 75 16 83 bb d0 7a
+0x00007ffae99fd5e1:   05 00 01 75 34 48 8b cb 48 83 c4 20 5b e9 dd 6b
+0x00007ffae99fd5f1:   1b 00 83 f9 03 75 22 8b 83 98 cb 04 00 c1 e8 12
+0x00007ffae99fd601:   a8 01 74 15 48 8b cb ff 93 d8 50 07 00 8b 83 18
+0x00007ffae99fd611:   d5 04 00 09 83 d0 c1 04 00 48 83 c4 20 5b c3 40
+0x00007ffae99fd621:   53 48 83 ec 20 65 48 8b 1c 25 48 12 00 00 83 f9
+0x00007ffae99fd631:   10 72 2d b9 01 05 00 00 e8 02 fb 07 00 e8 2d a0
+0x00007ffae99fd641:   08 00 84 c0 0f 84 98 00 00 00 48 8d 15 de d5 1e
+0x00007ffae99fd651:   01 b9 01 05 00 00 48 83 c4 20 5b e9 ef 97 08 00
+0x00007ffae99fd661:   f3 0f 10 02 f3 0f 10 4a 04 8b c1 48 05 8d 4d 00
+0x00007ffae99fd671:   00 44 8b c1 4d 03 c0 48 03 c0 c7 04 c3 00 00 00
+0x00007ffae99fd681:   00 f3 42 0f 11 84 c3 c8 d8 04 00 f3 42 0f 11 8c
+0x00007ffae99fd691:   c3 cc d8 04 00 42 c7 84 c3 d4 d8 04 00 00 00 80
+0x00007ffae99fd6a1:   3f 85 c9 75 16 83 bb d0 7a 05 00 01 75 34 48 8b
+0x00007ffae99fd6b1:   cb 48 83 c4 20 5b e9 14 6b 1b 00 83 f9 03 75 22
+0x00007ffae99fd6c1:   8b 83 98 cb 04 00 c1 e8 12 a8 01 74 15 48 8b cb
+0x00007ffae99fd6d1:   ff 93 d8 50 07 00 8b 83 18 d5 04 00 09 83 d0 c1
+0x00007ffae99fd6e1:   04 00 48 83 c4 20 5b c3 cc cc cc cc cc cc cc 40
+0x00007ffae99fd6f1:   53 48 83 ec 20 65 48 8b 1c 25 48 12 00 00 45 0f
+0x00007ffae99fd701:   b7 d0 44 8b c9 83 f9 10 72 2d b9 01 05 00 00 e8
+0x00007ffae99fd711:   2b fa 07 00 e8 56 9f 08 00 84 c0 0f 84 a3 00 00
+0x00007ffae99fd721:   00 48 8d 15 07 d5 1e 01 b9 01 05 00 00 48 83 c4
+0x00007ffae99fd731:   20 5b e9 18 97 08 00 0f b7 ca e8 10 5f e4 ff 41
+0x00007ffae99fd741:   8b ca 0f 28 c8 e8 05 5f e4 ff 4d 8b c1 49 8d 81
+0x00007ffae99fd751:   8d 4d 00 00 4d 03 c0 48 03 c0 f3 42 0f 11 8c c3 
+
+
+Stack slot to memory mapping:
+stack at sp + 0 slots: 0x0 is NULL
+stack at sp + 1 slots: 0x0 is NULL
+stack at sp + 2 slots: 0x0 is NULL
+stack at sp + 3 slots: 0x00007ffae98477ba nvoglv64.dll
+stack at sp + 4 slots: 0x000001e8f5ec8300 points into unknown readable memory: 0x000001e8f29f7040 | 40 70 9f f2 e8 01 00 00
+stack at sp + 5 slots: 0x00007ffae9d06a08 nvoglv64.dll
+stack at sp + 6 slots: 0x000001e8ef82d720 points into unknown readable memory: 0x0000000000000000 | 00 00 00 00 00 00 00 00
+stack at sp + 7 slots: 0x000001e8ef82d764 points into unknown readable memory: 02 00 00 00
+
+
+Compiled method (n/a)  658111 8267     n 0       org.lwjgl.nanovg.NanoVG::nnvgEndFrame (native)
+ total in heap  [0x000001e8d4e6ba90,0x000001e8d4e6be40] = 944
+ relocation     [0x000001e8d4e6bbe8,0x000001e8d4e6bc18] = 48
+ main code      [0x000001e8d4e6bc20,0x000001e8d4e6be38] = 536
+ oops           [0x000001e8d4e6be38,0x000001e8d4e6be40] = 8
+
+[Constant Pool (empty)]
+
+[MachCode]
+[Entry Point]
+  # {method} {0x000001e8edf7a0d0} 'nnvgEndFrame' '(J)V' in 'org/lwjgl/nanovg/NanoVG'
+  # parm0:    rdx:rdx   = long
+  #           [sp+0x70]  (sp of caller)
+  0x000001e8d4e6bc20: 448b 5208 | 49bb 0000 | 0080 e801 | 0000 4d03 | d349 3bc2 | 0f84 0600 
+
+  0x000001e8d4e6bc38: ;   {runtime_call ic_miss_stub}
+  0x000001e8d4e6bc38: 0000 e941 | 0e4a ff90 
+[Verified Entry Point]
+  0x000001e8d4e6bc40: 8984 2400 | 90ff ff55 | 488b ec48 | 83ec 604c 
+
+  0x000001e8d4e6bc50: ;   {oop(a 'java/lang/Class'{0x0000000708918770} = 'org/lwjgl/nanovg/NanoVG')}
+  0x000001e8d4e6bc50: 8bc2 49be | 7087 9108 | 0700 0000 | 4c89 7424 | 504c 8d74 | 2450 498b | d6c5 f877 
+
+  0x000001e8d4e6bc6c: ;   {internal_word}
+  0x000001e8d4e6bc6c: 49ba 69bc | e6d4 e801 | 0000 4d89 | 9798 0200 | 0049 89a7 | 9002 0000 
+
+  0x000001e8d4e6bc84: ;   {external_word}
+  0x000001e8d4e6bc84: 49ba c890 | c0ec fa7f | 0000 4180 | 3a00 0f84 | 4c00 0000 
+
+  0x000001e8d4e6bc98: ;   {metadata({method} {0x000001e8edf7a0d0} 'nnvgEndFrame' '(J)V' in 'org/lwjgl/nanovg/NanoVG')}
+  0x000001e8d4e6bc98: 5241 5048 | bac8 a0f7 | ede8 0100 | 0049 8bcf | 4883 ec20 | 40f6 c40f | 0f84 1a00 | 0000 4883 
+  0x000001e8d4e6bcb8: ;   {runtime_call}
+  0x000001e8d4e6bcb8: ec08 49ba | b001 7eec | fa7f 0000 | 41ff d248 | 83c4 08e9 | 0d00 0000 
+
+  0x000001e8d4e6bcd0: ;   {runtime_call}
+  0x000001e8d4e6bcd0: 49ba b001 | 7eec fa7f | 0000 41ff | d248 83c4 | 2041 585a | 498d 8fb0 | 0200 0041 | c787 4003 
+  0x000001e8d4e6bcf0: 0000 0400 
+
+  0x000001e8d4e6bcf4: ;   {runtime_call}
+  0x000001e8d4e6bcf4: 0000 49ba | 9056 5007 | fb7f 0000 | 41ff d2c5 | f877 41c7 | 8740 0300 | 0005 0000 | 00f0 8344 
+  0x000001e8d4e6bd14: 24c0 0049 | 3baf 4803 | 0000 0f87 | 1100 0000 | 4181 bf30 | 0300 0000 | 0000 000f | 8424 0000 
+  0x000001e8d4e6bd34: 00c5 f877 | 498b cf4c | 8be4 4883 | ec20 4883 
+
+  0x000001e8d4e6bd44: ;   {runtime_call}
+  0x000001e8d4e6bd44: e4f0 49ba | a0b0 88ec | fa7f 0000 | 41ff d249 | 8be4 4d33 | e441 c787 | 4003 0000 | 0800 0000 
+  0x000001e8d4e6bd64: 4181 bfb0 | 0300 0002 | 0000 000f | 8499 0000 
+
+  0x000001e8d4e6bd74: ;   {external_word}
+  0x000001e8d4e6bd74: 0049 bac8 | 90c0 ecfa | 7f00 0041 | 803a 000f | 8446 0000 
+
+  0x000001e8d4e6bd88: ;   {metadata({method} {0x000001e8edf7a0d0} 'nnvgEndFrame' '(J)V' in 'org/lwjgl/nanovg/NanoVG')}
+  0x000001e8d4e6bd88: 0048 bac8 | a0f7 ede8 | 0100 0049 | 8bcf 4883 | ec20 40f6 | c40f 0f84 | 1a00 0000 | 4883 ec08 
+  0x000001e8d4e6bda8: ;   {runtime_call}
+  0x000001e8d4e6bda8: 49ba b001 | 7eec fa7f | 0000 41ff | d248 83c4 | 08e9 0d00 
+
+  0x000001e8d4e6bdbc: ;   {runtime_call}
+  0x000001e8d4e6bdbc: 0000 49ba | b001 7eec | fa7f 0000 | 41ff d248 | 83c4 2049 | c787 9002 | 0000 0000 | 0000 49c7 
+  0x000001e8d4e6bddc: 8798 0200 | 0000 0000 | 00c5 f877 | 498b 8fd8 | 0000 00c7 | 8100 0100 | 0000 0000 | 00c9 4981 
+  0x000001e8d4e6bdfc: 7f08 0000 | 0000 0f85 | 0100 0000 
+
+  0x000001e8d4e6be08: ;   {runtime_call StubRoutines (1)}
+  0x000001e8d4e6be08: c3e9 f250 | 45ff c5f8 | 774c 8be4 | 4883 ec20 | 4883 e4f0 
+
+  0x000001e8d4e6be1c: ;   {runtime_call}
+  0x000001e8d4e6be1c: 49ba c032 | 7eec fa7f | 0000 41ff | d249 8be4 | 4d33 e4e9 | 41ff ffff | f4f4 f4f4 
+[/MachCode]
+
+
+Compiled method (c2)  658161 16503       4       dev.diona.southside.gui.hud.ArrayListHud::draw (174 bytes)
+ total in heap  [0x000001e8d5727d90,0x000001e8d572a970] = 11232
+ relocation     [0x000001e8d5727ee8,0x000001e8d5728008] = 288
+ main code      [0x000001e8d5728020,0x000001e8d57292c0] = 4768
+ stub code      [0x000001e8d57292c0,0x000001e8d5729350] = 144
+ oops           [0x000001e8d5729350,0x000001e8d5729378] = 40
+ metadata       [0x000001e8d5729378,0x000001e8d57294e8] = 368
+ scopes data    [0x000001e8d57294e8,0x000001e8d572a460] = 3960
+ scopes pcs     [0x000001e8d572a460,0x000001e8d572a780] = 800
+ dependencies   [0x000001e8d572a780,0x000001e8d572a7d0] = 80
+ handler table  [0x000001e8d572a7d0,0x000001e8d572a908] = 312
+ nul chk table  [0x000001e8d572a908,0x000001e8d572a970] = 104
+
+[Constant Pool (empty)]
+
+[MachCode]
+[Entry Point]
+  # {method} {0x000001e8ee2c2b68} 'draw' '(Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;FFFZ)V' in 'dev/diona/southside/gui/hud/ArrayListHud'
+  # this:     rdx:rdx   = 'dev/diona/southside/gui/hud/ArrayListHud'
+  # parm0:    r8:r8     = 'cc/polyfrost/oneconfig/libs/universal/UMatrixStack'
+  # parm1:    xmm0      = float
+  # parm2:    xmm1      = float
+  # parm3:    xmm2      = float
+  # parm4:    r9        = boolean
+  #           [sp+0xb0]  (sp of caller)
+  0x000001e8d5728020: 448b 5208 | 49bb 0000 | 0080 e801 | 0000 4d03 | d349 3bc2 
+
+  0x000001e8d5728034: ;   {runtime_call ic_miss_stub}
+  0x000001e8d5728034: 0f85 464a | befe 6690 | 0f1f 4000 
+[Verified Entry Point]
+  0x000001e8d5728040: 8984 2400 | 90ff ff55 | 4881 eca0 | 0000 0044 | 894c 242c | c5fa 1154 | 2428 c5fa | 114c 2468 
+  0x000001e8d5728060: c5fa 1144 | 2464 4889 | 5424 7044 | 8b5a 6045 | 85db 0f84 | b00c 0000 
+
+  0x000001e8d5728078: ;   {optimized virtual_call}
+  0x000001e8d5728078: 6666 90e8 
+
+  0x000001e8d572807c: ; ImmutableOopMap {[112]=Oop }
+                      ;*invokevirtual syncModules {reexecute=0 rethrow=0 return_oop=0}
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@12 (line 104)
+  0x000001e8d572807c: 20e2 a6ff | c5fa 1044 | 2428 4c8b | 5424 70c4 | c17a 1142 | 4049 8b87 | 0801 0000 | 4c8b d049 
+  0x000001e8d572809c: 83c2 104d | 3b97 1801 | 0000 0f83 | 6b09 0000 | 4d89 9708 | 0100 0041 | 0f18 82c0 | 0000 0048 
+  0x000001e8d57280bc: c700 0100 
+
+  0x000001e8d57280c0: ;   {metadata('java/util/concurrent/atomic/AtomicBoolean')}
+  0x000001e8d57280c0: 0000 c740 | 0820 690c | 0144 8960 | 0c48 8944 | 2478 498b | 8708 0100 | 004c 8bd0 | 4983 c210 
+  0x000001e8d57280e0: 4d3b 9718 | 0100 000f | 836f 0900 | 004d 8997 | 0801 0000 | 410f 1882 | c000 0000 | 48c7 0001 
+  0x000001e8d5728100: ;   {metadata('java/util/concurrent/atomic/AtomicReference')}
+  0x000001e8d5728100: 0000 00c7 | 4008 e8cb | 0301 4489 | 600c 4889 | 8424 8800 | 0000 498b | b708 0100 | 004c 8bd6 
+  0x000001e8d5728120: 4983 c210 | 4d3b 9718 | 0100 000f | 8304 0900 | 004d 8997 | 0801 0000 | 410f 1882 | c000 0000 
+  0x000001e8d5728140: 48c7 0601 
+
+  0x000001e8d5728144: ;   {metadata('java/lang/Float')}
+  0x000001e8d5728144: 0000 00c7 | 4608 881a | 0400 4489 | 660c 4180 | 7f38 000f | 8580 0700 | 004c 8bde | 49c1 eb03 
+  0x000001e8d5728164: 4c8b 9424 | 8800 0000 | 4589 5a0c | 8b7c 242c | 83e7 014c | 8bd6 4c8b | 9c24 8800 | 0000 4d33 
+  0x000001e8d5728184: d349 c1ea | 154d 85d2 | 741a 49c1 | eb09 48b9 | 0050 28da | e801 0000 | 4903 cb80 | 3904 0f85 
+  0x000001e8d57281a4: c607 0000 | f083 4424 | c000 498b | 8708 0100 | 004c 8bd0 | 4983 c210 | 4d3b 9718 | 0100 000f 
+  0x000001e8d57281c4: 83b0 0800 | 004d 8997 | 0801 0000 | 410f 1882 | c000 0000 | 48c7 0001 
+
+  0x000001e8d57281dc: ;   {metadata('java/util/concurrent/atomic/AtomicReference')}
+  0x000001e8d57281dc: 0000 00c7 | 4008 e8cb | 0301 4489 | 600c 488b | d849 8bb7 | 0801 0000 | 4c8b d649 | 83c2 104d 
+  0x000001e8d57281fc: 3b97 1801 | 0000 0f83 | b407 0000 | 4d89 9708 | 0100 0041 | 0f18 82c0 | 0000 0048 | c706 0100 
+  0x000001e8d572821c: ;   {metadata('java/lang/Float')}
+  0x000001e8d572821c: 0000 c746 | 0888 1a04 | 0044 8966 | 0c41 807f | 3800 0f85 | 7206 0000 | 4c8b de49 | c1eb 0344 
+  0x000001e8d572823c: 895b 0c4c | 8bd3 4c8b | de4d 33da | 49c1 eb15 | 4d85 db74 | 1b49 c1ea | 0949 b800 | 5028 dae8 
+  0x000001e8d572825c: 0100 004d | 03c2 4180 | 3804 0f85 | b006 0000 | f083 4424 
+
+  0x000001e8d5728270: ;   {oop(a 'cc/polyfrost/oneconfig/internal/renderer/NanoVGHelperImpl'{0x0000000708919458})}
+  0x000001e8d5728270: c000 49ba | 5894 9108 | 0700 0000 | 4d8b 5210 
+
+  0x000001e8d5728280: ;   {oop(a 'cc/polyfrost/oneconfig/internal/renderer/NanoVGHelperImpl'{0x0000000708919458})}
+  0x000001e8d5728280: 49bb 5894 | 9108 0700 | 0000 41c6 | 430c 0149 | 83fa ff0f | 84a3 0a00 
+
+  0x000001e8d5728298: ;   {oop(a 'java/lang/Class'{0x000000070788cc18} = 'cc/polyfrost/oneconfig/platform/Platform$PlatformHolder')}
+  0x000001e8d5728298: 0049 ba18 | cc88 0707 | 0000 0045 | 8b5a 7047 | 8b5c dc18 
+
+  0x000001e8d57282ac: ; implicit exception: dispatches to 0x000001e8d5729004
+  0x000001e8d57282ac: 478b 54dc 
+
+  0x000001e8d57282b0: ;   {metadata('cc/polyfrost/oneconfig/platform/impl/GLPlatformImpl')}
+  0x000001e8d57282b0: 0841 81fa | 10b0 7301 | 0f85 6208 
+
+  0x000001e8d57282bc: ;   {oop(a 'java/lang/Class'{0x0000000702a048a0} = 'net/minecraft/client/Minecraft')}
+  0x000001e8d57282bc: 0000 48bd | a048 a002 | 0700 0000 | 448b 9580 | 0000 0047 | 8b94 d440 | 0100 0047 | 0fb6 44d4 
+  0x000001e8d57282dc: 2d45 85c0 | 0f84 c20a 
+
+  0x000001e8d57282e4: ;   {oop(a 'java/lang/Class'{0x0000000705a685d8} = 'net/minecraft/client/renderer/GlStateManager')}
+  0x000001e8d57282e4: 0000 49ba | d885 a605 | 0700 0000 | 458b 92c0 | 0000 0047 | 8b5c d40c | 4585 db0f | 8ffb 0a00 
+  0x000001e8d5728304: ;   {oop(a 'net/minecraft/client/renderer/GlStateManager$AlphaState'{0x0000000705a691d8})}
+  0x000001e8d5728304: 0049 bad8 | 91a6 0507 | 0000 0045 | 8b52 1443 | 8b54 d40c | 4889 9c24 | 8000 0000 | 897c 246c 
+  0x000001e8d5728324: c5fa 1144 | 2460 4788 | 64d4 10c5 | fa11 4424 | 204c 8b54 | 2470 4c89 | 5424 284c | 8b54 2478 
+  0x000001e8d5728344: 4c89 5424 | 3048 895c | 2438 4c8b | 9424 8800 | 0000 4c89 
+
+  0x000001e8d5728358: ;   {static_call}
+  0x000001e8d5728358: 5424 40e8 
+
+  0x000001e8d572835c: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [56]=Oop [64]=Oop [112]=Oop [120]=Oop [128]=Oop [136]=Oop }
+                      ;*invokestatic glDisable {reexecute=0 rethrow=0 return_oop=0}
+                      ; - org.lwjgl.opengl.GL11::glDisable@1 (line 737)
+                      ; - org.lwjglx.opengl.GL11::glDisable@1 (line 742)
+                      ; - net.minecraft.client.renderer.GlStateManager$BooleanState::setState@23 (line 1268)
+                      ; - net.minecraft.client.renderer.GlStateManager$BooleanState::setDisabled@2 (line 1248)
+                      ; - net.minecraft.client.renderer.GlStateManager::disableAlpha@24 (line 77)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@75 (line 141)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d572835c: e080 74ff | baff ff0f 
+
+  0x000001e8d5728364: ;   {static_call}
+  0x000001e8d5728364: 0066 90e8 
+
+  0x000001e8d5728368: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [56]=Oop [64]=Oop [112]=Oop [120]=Oop [128]=Oop [136]=Oop }
+                      ;*invokestatic glPushAttrib {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@80 (line 142)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728368: d440 74ff | 448b 9580 
+
+  0x000001e8d5728370: ;   {oop(a 'cc/polyfrost/oneconfig/internal/renderer/NanoVGHelperImpl'{0x0000000708919458})}
+  0x000001e8d5728370: 0000 0049 | bb58 9491 | 0807 0000 | 004d 8b4b | 1047 8b44 | d438 473b | a4d4 3401 | 0000 0f84 
+  0x000001e8d5728390: 2b07 0000 | 478b 5cd4 
+
+  0x000001e8d5728398: ;   {oop(a 'net/minecraft/client/resources/Locale'{0x0000000705ecc4d0})}
+  0x000001e8d5728398: 3c48 b9d0 | c4ec 0507 | 0000 000f | b649 0c85 | c90f 8519 | 0900 0043 | 8bbc d4ec | 0000 0041 
+  0x000001e8d57283b8: 0fb6 9cfc | d600 0000 | 85db 0f85 | 8c0a 0000 | 418b 7cfc | 5485 ff0f | 84d3 0a00 | 00c4 c173 
+  0x000001e8d57283d8: 2acb c4c1 | 7b2a c0b9 | 0100 0000 | 83ff 017f | 3145 8bd3 | 41ff c2c5 | f92e c945 | 0f46 d3c4 
+  0x000001e8d57283f8: c172 2aca | 458b d841 | ffc3 c5f9 | 2ec0 450f | 46d8 c4c1 | 7a2a c341 | ba01 0000 | 00e9 aa02 
+  0x000001e8d5728418: 0000 bbe8 | 0300 0033 | ed41 bd01 | 0000 0045 | 8bd5 c4c1 | f96e d141 | 8bf2 ffc6 | 418b c03d 
+  0x000001e8d5728438: 0000 0080 | 7507 33d2 | 83fe ff74 | 0399 f7fe | 3d40 0100 | 000f 8c21 | 0700 0041 | 8bc3 3d00 
+  0x000001e8d5728458: 0000 8075 | 0733 d283 | feff 7403 | 99f7 fe3d | f000 0000 | 0f8c 8200 | 0000 448b | d745 2bd5 
+  0x000001e8d5728478: 413b fd44 | 0f4c d541 | 81fa e803 | 0000 440f | 47d3 4503 | d541 3bf2 | 7c5a 4d8b | 9750 0300 
+  0x000001e8d5728498: ; ImmutableOopMap {[112]=Oop [120]=Oop [128]=Oop [136]=Oop }
+                      ;*goto {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@98 (line 29)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@91 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+                      ;   {poll}
+  0x000001e8d5728498: 0041 8502 | 3bf7 7c3f | c5e3 2ade | c5fb 5ec3 | c57b 2cc8 | 4181 f900 | 0000 8075 | 1048 83ec 
+  0x000001e8d57284b8: 08c5 fb11 
+
+  0x000001e8d57284bc: ;   {runtime_call StubRoutines (1)}
+  0x000001e8d57284bc: 0424 e8bb | 8cb9 fe41 | 5945 8bd1 | 41ff c2c4 | c163 2ad9 | c5f9 2ec3 | 450f 46d1 | c4c1 7a2a 
+  0x000001e8d57284dc: c2eb 5344 | 8bee c4c1 | f97e d1e9 | 3bff ffff | 448b d6e9 | 3bff ffff | c4c1 632a | dac5 fb5e 
+  0x000001e8d57284fc: c3c5 7b2c | c841 81f9 | 0000 0080 | 7510 4883 | ec08 c5fb 
+
+  0x000001e8d5728510: ;   {runtime_call StubRoutines (1)}
+  0x000001e8d5728510: 1104 24e8 | 668c b9fe | 4159 458b | d141 ffc2 | c4c1 632a | d9c5 f92e | c345 0f46 | d1c4 c17a 
+  0x000001e8d5728530: 2ac2 be01 | 0000 0044 | 8bce 458b | f141 ffc6 | 418b c03d | 0000 0080 | 7508 33d2 | 4183 feff 
+  0x000001e8d5728550: 7404 9941 | f7fe 3d40 | 0100 000f | 8c97 0600 | 0041 8bc3 | 3d00 0000 | 8075 0833 | d241 83fe 
+  0x000001e8d5728570: ff74 0499 | 41f7 fe3d | f000 0000 | 7c7e 448b | d744 2bd6 | 3bfe 440f | 4cd5 4181 | fae8 0300 
+  0x000001e8d5728590: 0044 0f47 | d344 03d6 | 453b f27c | 574d 8b97 
+
+  0x000001e8d57285a0: ; ImmutableOopMap {[112]=Oop [120]=Oop [128]=Oop [136]=Oop }
+                      ;*goto {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@98 (line 29)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledHeight@7 (line 19)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@95 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d57285a0: 5003 0000 
+
+  0x000001e8d57285a4: ;   {poll}
+  0x000001e8d57285a4: 4185 0244 | 3bf7 7c40 | c4c1 632a | dec5 f35e | cbc5 7b2c | c941 81f9 | 0000 0080 | 7510 4883 
+  0x000001e8d57285c4: ec08 c5fb 
+
+  0x000001e8d57285c8: ;   {runtime_call StubRoutines (1)}
+  0x000001e8d57285c8: 110c 24e8 | ae8b b9fe | 4159 458b | d141 ffc2 | c4c1 632a | d9c5 f92e | cb45 0f46 | d1c4 c172 
+  0x000001e8d57285e8: 2aca eb4e | 418b f6e9 | 43ff ffff | 458b cee9 | 3eff ffff | c4c1 632a | d9c5 f35e | cbc5 7b2c 
+  0x000001e8d5728608: c941 81f9 | 0000 0080 | 7510 4883 | ec08 c5fb 
+
+  0x000001e8d5728618: ;   {runtime_call StubRoutines (1)}
+  0x000001e8d5728618: 110c 24e8 | 5e8b b9fe | 4159 458b | d141 ffc2 | c4c1 632a | d9c5 f92e | cb45 0f46 | d1c4 c172 
+  0x000001e8d5728638: 2aca 448b | d141 8bf2 | ffc6 418b | c03d 0000 | 0080 7507 | 33d2 83fe | ff74 0399 | f7fe 3d40 
+  0x000001e8d5728658: 0100 000f | 8cf3 0500 | 0041 8bc3 | 3d00 0000 | 8075 0733 | d283 feff | 7403 99f7 | fe3d f000 
+  0x000001e8d5728678: 0000 7c43 | 448b cf44 | 2bc9 3bf9 | 440f 4ccd | 4181 f9e8 | 0300 0044 | 0f47 cb44 | 03c9 413b 
+  0x000001e8d5728698: f17c 1c4d | 8b97 5003 
+
+  0x000001e8d57286a0: ; ImmutableOopMap {[112]=Oop [120]=Oop [128]=Oop [136]=Oop }
+                      ;*goto {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@98 (line 29)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaleFactor@7 (line 8)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@99 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+                      ;   {poll}
+  0x000001e8d57286a0: 0000 4185 | 023b f77c | 0a44 8bd6 | c4c1 f97e | d1eb 118b | ceeb 8344 | 8bd6 e97e | ffff ffc4 
+  0x000001e8d57286c0: c1f9 7ed1 | c4c1 6a2a | d233 ed4d | 85c9 0f84 | 2008 0000 | 498b d1c5 | fa10 5c24 | 60c5 fa11 
+  0x000001e8d57286e0: 5c24 204c | 8b54 2470 | 4c89 5424 | 284c 8b54 | 2478 4c89 | 5424 304c | 8b94 2480 | 0000 004c 
+  0x000001e8d5728700: 8954 2438 | 4c8b 9424 | 8800 0000 | 4c89 5424 
+
+  0x000001e8d5728710: ;   {static_call}
+  0x000001e8d5728710: 4066 90e8 
+
+  0x000001e8d5728714: ; ImmutableOopMap {[40]=Oop [48]=Oop [56]=Oop [64]=Oop [112]=Oop [120]=Oop [128]=Oop [136]=Oop }
+                      ;*invokestatic nnvgBeginFrame {reexecute=0 rethrow=0 return_oop=0}
+                      ; - org.lwjgl.nanovg.NanoVG::nvgBeginFrame@16 (line 301)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@102 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728714: 2839 74ff 
+
+  0x000001e8d5728718: ;   {oop(a 'cc/polyfrost/oneconfig/internal/renderer/NanoVGHelperImpl'{0x0000000708919458})}
+  0x000001e8d5728718: 49ba 5894 | 9108 0700 | 0000 4d8b 
+
+  0x000001e8d5728724: ;   {oop(a 'cc/polyfrost/oneconfig/internal/renderer/ScissorHelperImpl'{0x0000000708919470})}
+  0x000001e8d5728724: 5210 49b8 | 7094 9108 | 0700 0000 | 488b 5424 | 28c5 fa10 | 4424 20c5 | fa10 4c24 | 6444 8b4c 
+  0x000001e8d5728744: 246c c5fa | 1054 2468 
+
+  0x000001e8d572874c: ;   {oop(a 'cc/polyfrost/oneconfig/internal/renderer/NanoVGHelperImpl'{0x0000000708919458})}
+  0x000001e8d572874c: 48bf 5894 | 9108 0700 | 0000 488b | 7424 3048 | 8b4c 2438 | 4c8b 5c24 | 404c 891c | 244c 8954 
+  0x000001e8d572876c: ;   {optimized virtual_call}
+  0x000001e8d572876c: 2408 90e8 
+
+  0x000001e8d5728770: ; ImmutableOopMap {[40]=Oop [48]=Oop [56]=Oop [64]=Oop [112]=Oop [120]=Oop [128]=Oop [136]=Oop }
+                      ;*invokevirtual lambda$draw$2 {reexecute=0 rethrow=0 return_oop=0}
+                      ; - dev.diona.southside.gui.hud.ArrayListHud$$Lambda$1835/0x000001e8818f6940::accept@41
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@129 (line 150)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728770: 2c32 9fff 
+
+  0x000001e8d5728774: ;   {oop(a 'cc/polyfrost/oneconfig/internal/renderer/NanoVGHelperImpl'{0x0000000708919458})}
+  0x000001e8d5728774: 49ba 5894 | 9108 0700 | 0000 498b | 5210 4885 | d20f 849d 
+
+  0x000001e8d5728788: ;   {static_call}
+  0x000001e8d5728788: 0700 00e8 
+
+  0x000001e8d572878c: ; ImmutableOopMap {[40]=Oop [48]=Oop [56]=Oop [64]=Oop [112]=Oop [120]=Oop }
+                      ;*invokestatic nnvgEndFrame {reexecute=0 rethrow=0 return_oop=0}
+                      ; - org.lwjgl.nanovg.NanoVG::nvgEndFrame@12 (line 335)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@138 (line 152)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d572878c: b034 74ff 
+
+  0x000001e8d5728790: ;   {static_call}
+  0x000001e8d5728790: 6666 90e8 
+
+  0x000001e8d5728794: ; ImmutableOopMap {[40]=Oop [48]=Oop [56]=Oop [64]=Oop [112]=Oop [120]=Oop }
+                      ;*invokestatic glPopAttrib {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@141 (line 153)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728794: a8d3 79ff 
+
+  0x000001e8d5728798: ;   {oop(a 'java/lang/Class'{0x0000000705a685d8} = 'net/minecraft/client/renderer/GlStateManager')}
+  0x000001e8d5728798: 49ba d885 | a605 0700 | 0000 458b | 9ac0 0000 | 0047 8b5c | dc0c 4585 | db0f 8f95 
+
+  0x000001e8d57287b4: ;   {oop(a 'net/minecraft/client/renderer/GlStateManager$AlphaState'{0x0000000705a691d8})}
+  0x000001e8d57287b4: 0700 0049 | bad8 91a6 | 0507 0000 | 0045 8b5a | 1443 8b54 | dc0c 43c6 | 44dc 1001 
+
+  0x000001e8d57287d0: ;   {static_call}
+  0x000001e8d57287d0: 6666 90e8 
+
+  0x000001e8d57287d4: ; ImmutableOopMap {[40]=Oop [48]=Oop [56]=Oop [64]=Oop [112]=Oop [120]=Oop }
+                      ;*invokestatic glEnable {reexecute=0 rethrow=0 return_oop=0}
+                      ; - org.lwjgl.opengl.GL11::glEnable@1 (line 724)
+                      ; - org.lwjglx.opengl.GL11::glEnable@1 (line 808)
+                      ; - net.minecraft.client.renderer.GlStateManager$BooleanState::setState@13 (line 1264)
+                      ; - net.minecraft.client.renderer.GlStateManager$BooleanState::setEnabled@2 (line 1253)
+                      ; - net.minecraft.client.renderer.GlStateManager::enableAlpha@24 (line 89)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@144 (line 154)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d57287d4: 685b 74ff 
+
+  0x000001e8d57287d8: ;   {oop(a 'java/lang/Class'{0x0000000708918be0} = 'cc/polyfrost/oneconfig/internal/renderer/NanoVGHelperImpl')}
+  0x000001e8d57287d8: 49ba e08b | 9108 0700 | 0000 458b | 5270 4585 | d20f 8571 | 0700 004c | 8b54 2430 | 458b 520c 
+  0x000001e8d57287f8: 4585 d20f | 8473 0700 
+
+  0x000001e8d5728800: ;   {oop(a 'net/minecraft/client/Minecraft'{0x0000000702a04930})}
+  0x000001e8d5728800: 0049 ba30 | 49a0 0207 | 0000 0045 | 8b92 d000 | 0000 4585 | d274 1247 | 8b44 d408 
+
+  0x000001e8d572881c: ;   {metadata('cc/polyfrost/oneconfig/internal/gui/HudGui')}
+  0x000001e8d572881c: 4181 f878 | 718f 010f | 84e3 0200 | 004c 8b54 | 2440 458b | 4a0c 478b 
+
+  0x000001e8d5728834: ;   {metadata('java/lang/Float')}
+  0x000001e8d5728834: 5ccc 0841 | 81fb 881a | 0400 0f85 | 4807 0000 | 4c8b 5424 | 3845 8b52 | 0c4f 8d1c | ccc4 c17a 
+  0x000001e8d5728854: 1043 0cc5 | fa5e 4c24 | 204c 8b44 | 2428 c4c1 | 7a11 4844 
+
+  0x000001e8d5728868: ; implicit exception: dispatches to 0x000001e8d572925c
+  0x000001e8d5728868: 478b 5cd4 
+
+  0x000001e8d572886c: ;   {metadata('java/lang/Float')}
+  0x000001e8d572886c: 0841 81fb | 881a 0400 | 0f85 2607 | 0000 49c1 | e203 c4c1 | 7a10 4a0c | c5f2 5e44 | 2420 c4c1 
+  0x000001e8d572888c: 7a11 4048 | 4881 c4a0 | 0000 005d 
+
+  0x000001e8d5728898: ;   {poll_return}
+  0x000001e8d5728898: 493b a748 | 0300 000f | 8701 0a00 | 00c3 448b | 530c 4585 | d20f 8481 | f9ff ff4d | 8b5f 2049 
+  0x000001e8d57288b8: 8bca 48c1 | e103 4d85 | db0f 84c5 | 0300 004d | 8b57 304b | 894c 1af8 | 4983 c3f8 | 4d89 5f20 
+  0x000001e8d57288d8: e957 f9ff | ff4c 8b94 | 2488 0000 | 0045 8b52 | 0c45 85d2 | 0f84 6bf8 | ffff 4d8b | 5f20 498b 
+  0x000001e8d57288f8: ca48 c1e1 | 034d 85db | 0f84 a503 | 0000 4d8b | 5730 4b89 | 4c1a f849 | 83c3 f84d | 895f 20e9 
+  0x000001e8d5728918: 41f8 ffff | 4d8b 5750 | 4d8b 5f40 | f083 4424 | c000 4180 | 3800 0f84 | 38f9 ffff | 4588 204d 
+  0x000001e8d5728938: 85db 7520 | c5f9 7ec6 | 498b c849 | 8bd7 49ba | c0fb 3cec | fa7f 0000 | 41ff d2c5 | f96e c6e9 
+  0x000001e8d5728958: 10f9 ffff | 4f89 441a | f849 83c3 | f84d 895f | 40e9 fef8 | ffff 4d8b | 5750 4d8b | 5f40 f083 
+  0x000001e8d5728978: 4424 c000 | 8039 000f | 8423 f8ff | ff44 8821 | 4d85 db75 | 1dc5 f97e | c649 8bd7 | 49ba c0fb 
+  0x000001e8d5728998: 3cec fa7f | 0000 41ff | d2c5 f96e | c6e9 fef7 | ffff 4b89 | 4c1a f849 | 83c3 f84d | 895f 40e9 
+  0x000001e8d57289b8: ecf7 ffff | 4889 5c24 | 4889 7c24 | 4048 ffb4 | 2488 0000 | 0048 8f44 | 2438 48ff | 7424 7848 
+  0x000001e8d57289d8: 8f44 2430 | c5fa 1144 | 2428 48ff | 7424 7048 | 8f44 2420 
+
+  0x000001e8d57289ec: ;   {metadata('java/lang/Float')}
+  0x000001e8d57289ec: 48ba 881a | 0480 e801 | 0000 8b6c 
+
+  0x000001e8d57289f8: ;   {runtime_call _new_instance_Java}
+  0x000001e8d57289f8: 242c 90e8 
+
+  0x000001e8d57289fc: ; ImmutableOopMap {[32]=Oop [48]=Oop [56]=Oop [72]=Oop [112]=Oop [120]=Oop [136]=Oop }
+                      ;*new {reexecute=0 rethrow=0 return_oop=1}
+                      ; - java.lang.Float::valueOf@0 (line 458)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@59 (line 110)
+  0x000001e8d57289fc: 0082 c9fe | c5fa 1044 | 2428 8b7c | 2440 488b | 5c24 4848 | 8bf0 e912 | f8ff ffc5 
+
+  0x000001e8d5728a18: ;   {metadata('java/util/concurrent/atomic/AtomicBoolean')}
+  0x000001e8d5728a18: f97e c548 | ba20 690c | 81e8 0100 
+
+  0x000001e8d5728a24: ;   {runtime_call _new_instance_Java}
+  0x000001e8d5728a24: 0066 90e8 
+
+  0x000001e8d5728a28: ; ImmutableOopMap {[112]=Oop }
+                      ;*new {reexecute=0 rethrow=0 return_oop=1}
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@31 (line 108)
+  0x000001e8d5728a28: d481 c9fe | c5f9 6ec5 | e998 f6ff | ffc5 f97e 
+
+  0x000001e8d5728a38: ;   {metadata('java/lang/Float')}
+  0x000001e8d5728a38: c548 ba88 | 1a04 80e8 | 0100 0048 | 8944 2448 
+
+  0x000001e8d5728a48: ;   {runtime_call _new_instance_Java}
+  0x000001e8d5728a48: 6666 90e8 
+
+  0x000001e8d5728a4c: ; ImmutableOopMap {[72]=Oop [112]=Oop [120]=Oop [136]=Oop }
+                      ;*new {reexecute=0 rethrow=0 return_oop=1}
+                      ; - java.lang.Float::valueOf@0 (line 458)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@46 (line 109)
+  0x000001e8d5728a4c: b081 c9fe | c5f9 6ec5 | 488b f0e9 | f6f6 ffff | c5f9 7ec5 
+
+  0x000001e8d5728a60: ;   {metadata('java/util/concurrent/atomic/AtomicReference')}
+  0x000001e8d5728a60: 48ba e8cb | 0381 e801 
+
+  0x000001e8d5728a68: ;   {runtime_call _new_instance_Java}
+  0x000001e8d5728a68: 0000 90e8 
+
+  0x000001e8d5728a6c: ; ImmutableOopMap {[112]=Oop [120]=Oop }
+                      ;*new {reexecute=0 rethrow=0 return_oop=1}
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@41 (line 109)
+  0x000001e8d5728a6c: 9081 c9fe | c5f9 6ec5 | e995 f6ff | ff89 7c24 | 2448 ffb4 | 2488 0000 | 0048 8f44 | 2438 48ff 
+  0x000001e8d5728a8c: 7424 7848 | 8f44 2430 | c5fa 1144 | 2420 488b 
+
+  0x000001e8d5728a9c: ;   {metadata('java/util/concurrent/atomic/AtomicReference')}
+  0x000001e8d5728a9c: 6c24 7048 | bae8 cb03 | 81e8 0100 
+
+  0x000001e8d5728aa8: ;   {runtime_call _new_instance_Java}
+  0x000001e8d5728aa8: 0066 90e8 
+
+  0x000001e8d5728aac: ; ImmutableOopMap {rbp=Oop [48]=Oop [56]=Oop [112]=Oop [120]=Oop [136]=Oop }
+                      ;*new {reexecute=0 rethrow=0 return_oop=1}
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@54 (line 110)
+  0x000001e8d5728aac: 5081 c9fe | c5fa 1044 | 2420 8b7c | 2424 e92b | f7ff ffba | f6ff ffff | 488b 6c24 | 284c 8b54 
+  0x000001e8d5728acc: 2430 4c89 | 5424 284c | 8b54 2440 | 4c89 5424 | 304c 894c | 2440 c5fa | 104c 2464 | c5fa 114c 
+  0x000001e8d5728aec: 2448 c5fa | 1044 2468 | c5fa 1144 | 244c 448b | 5424 6c44 | 8954 2450 
+
+  0x000001e8d5728b04: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728b04: 6666 90e8 
+
+  0x000001e8d5728b08: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [56]=Oop }
+                      ;*invokevirtual isCurrentLocaleUnicode {reexecute=0 rethrow=0 return_oop=0}
+                      ; - net.minecraft.client.Minecraft::isUnicode@4 (line 851)
+                      ; - net.minecraft.client.gui.ScaledResolution::<init>@26 (line 19)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@91 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728b08: f497 befe | ba45 ffff | ff48 8b6c | 2428 4489 
+
+  0x000001e8d5728b18: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728b18: 5424 24e8 
+
+  0x000001e8d5728b1c: ; ImmutableOopMap {rbp=Oop [36]=NarrowOop [56]=Oop [64]=Oop }
+                      ;*ifeq {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) dev.diona.southside.gui.hud.ArrayListHud::draw@118 (line 150)
+  0x000001e8d5728b1c: e097 befe | bade ffff | ff48 8b6c | 2470 48ff | 7424 7848 | 8f44 2428 | 48ff b424 | 8800 0000 
+  0x000001e8d5728b3c: 488f 4424 | 3044 895c | 2424 c5fa | 1144 2440 | c5fa 104c | 2464 c5fa | 114c 2444 | c5fa 1044 
+  0x000001e8d5728b5c: 2468 c5fa | 1144 2448 | 897c 244c | 4889 5c24 
+
+  0x000001e8d5728b6c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728b6c: 6066 90e8 
+
+  0x000001e8d5728b70: ; ImmutableOopMap {rbp=Oop [36]=NarrowOop [40]=Oop [48]=Oop [96]=Oop }
+                      ;*invokeinterface enableStencil {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@60 (line 137)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728b70: 8c97 befe | ba45 ffff | ff48 8b6c | 2470 c5fa | 104c 2460 | 4c8b 4c24 | 784c 894c | 2428 4c8b 
+  0x000001e8d5728b90: 8c24 8800 | 0000 4c89 | 4c24 304c | 8b8c 2480 | 0000 00c5 | fb11 5424 | 4089 7c24 | 2489 4424 
+  0x000001e8d5728bb0: 4844 8944 | 244c 4489 | 5c24 5044 | 8954 2454 | c5f8 28c1 | c5fa 1144 | 2458 c5fa | 104c 2464 
+  0x000001e8d5728bd0: c5fa 114c | 245c c5fa | 1044 2468 | c5fa 1144 | 2460 448b | 5c24 6c44 | 895c 2464 | 4c89 4c24 
+  0x000001e8d5728bf0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728bf0: 7866 90e8 
+
+  0x000001e8d5728bf4: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [120]=Oop }
+                      ;*if_icmplt {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@68 (line 27)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@91 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728bf4: 0897 befe | ba45 ffff | ff48 8b6c | 2470 c5fa | 105c 2460 | c5fb 1154 | 2440 c5fa | 1144 2424 
+  0x000001e8d5728c14: 897c 2448 | 8944 244c | 4489 4424 | 5044 895c | 2454 4489 | 4c24 58c5 | f828 c3c5 | fa11 4424 
+  0x000001e8d5728c34: 5cc5 fa10 | 4c24 64c5 | fa11 4c24 | 60c5 fa10 | 4424 68c5 | fa11 4424 
+
+  0x000001e8d5728c4c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728c4c: 6466 90e8 
+
+  0x000001e8d5728c50: ; ImmutableOopMap {rbp=Oop [120]=Oop [128]=Oop [136]=Oop }
+                      ;*if_icmplt {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@68 (line 27)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledHeight@7 (line 19)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@95 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728c50: ac96 befe | ba45 ffff | ff48 8b6c | 2470 c5fb | 1154 2440 | c5fa 1144 | 2424 c5fa | 114c 2448 
+  0x000001e8d5728c70: 897c 244c | 8944 2450 | 4489 4424 | 5444 895c | 2458 4489 
+
+  0x000001e8d5728c84: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728c84: 5424 5ce8 
+
+  0x000001e8d5728c88: ; ImmutableOopMap {rbp=Oop [120]=Oop [128]=Oop [136]=Oop }
+                      ;*if_icmplt {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@68 (line 27)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaleFactor@7 (line 8)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@99 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728c88: 7496 befe | c4c1 797e | c549 8bd7 | 49ba e0fb | 3cec fa7f | 0000 41ff | d2c4 c179 | 6ec5 e989 
+  0x000001e8d5728ca8: f5ff ffc5 | f97e c349 | 8bd7 49ba | e0fb 3cec | fa7f 0000 | 41ff d2c5 | f96e c3e9 | 95f4 ffff 
+  0x000001e8d5728cc8: ba45 ffff | ff48 8b6c | 2428 488b | 5c24 3048 | 895c 2428 | 488b 5c24 | 4048 895c | 2430 4c89 
+  0x000001e8d5728ce8: 4c24 4044 | 8954 2448 | 894c 244c | 4489 4424 | 5044 895c | 2454 c5fa | 104c 2464 | c5fa 114c 
+  0x000001e8d5728d08: 245c c5fa | 1044 2468 | c5fa 1144 | 2460 448b | 5c24 6c44 | 895c 2464 
+
+  0x000001e8d5728d20: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728d20: 6666 90e8 
+
+  0x000001e8d5728d24: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [56]=Oop [72]=NarrowOop }
+                      ;*ifne {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.Minecraft::isUnicode@7 (line 851)
+                      ; - net.minecraft.client.gui.ScaledResolution::<init>@26 (line 19)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@91 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728d24: d895 befe | ba45 ffff | ff48 8b6c | 2470 4489 
+
+  0x000001e8d5728d34: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728d34: 5c24 30e8 
+
+  0x000001e8d5728d38: ; ImmutableOopMap {rbp=Oop [48]=NarrowOop }
+                      ;*ifnonnull {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) dev.diona.southside.gui.hud.ArrayListHud::draw@4 (line 101)
+  0x000001e8d5728d38: c495 befe | 49c7 c3ff | ffff ff4d | 3bd3 bdff | ffff ff7c | 0840 0f95 | c540 0fb6 | edba 45ff 
+  0x000001e8d5728d58: ffff 48ff | 7424 7048 | 8f44 2420 | 48ff 7424 | 7848 8f44 | 2430 48ff | b424 8800 | 0000 488f 
+  0x000001e8d5728d78: 4424 38c5 | fa11 4424 | 2cc5 fa10 | 4c24 64c5 | fa11 4c24 | 48c5 fa10 | 4424 68c5 | fa11 4424 
+  0x000001e8d5728d98: 4c89 7c24 | 5048 895c 
+
+  0x000001e8d5728da0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728da0: 2468 90e8 
+
+  0x000001e8d5728da4: ; ImmutableOopMap {[32]=Oop [48]=Oop [56]=Oop [104]=Oop }
+                      ;*ifne {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@13 (line 128)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728da4: 5895 befe | ba45 ffff | ff48 8b6c | 2470 48ff | 7424 7848 | 8f44 2428 | 48ff b424 | 8800 0000 
+  0x000001e8d5728dc4: 488f 4424 | 3044 8954 | 2424 4489 | 4424 40c5 | fa11 4424 | 44c5 fa10 | 4c24 64c5 | fa11 4c24 
+  0x000001e8d5728de4: 48c5 fa10 | 4424 68c5 | fa11 4424 | 4c89 7c24 | 5048 895c 
+
+  0x000001e8d5728df8: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728df8: 2468 90e8 
+
+  0x000001e8d5728dfc: ; ImmutableOopMap {rbp=Oop [36]=NarrowOop [40]=Oop [48]=Oop [104]=Oop }
+                      ;*ifne {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) cc.polyfrost.oneconfig.platform.impl.GLPlatformImpl::enableStencil@11 (line 91)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@60 (line 137)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728dfc: 0095 befe | ba45 ffff | ff48 8b6c | 2470 48ff | 7424 7848 | 8f44 2428 | 48ff b424 | 8800 0000 
+  0x000001e8d5728e1c: 488f 4424 | 3044 895c | 2424 c5fa | 1144 2440 | c5fa 104c | 2464 c5fa | 114c 2444 | c5fa 1044 
+  0x000001e8d5728e3c: 2468 c5fa | 1144 2448 | 897c 244c | 4889 5c24 
+
+  0x000001e8d5728e4c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728e4c: 6066 90e8 
+
+  0x000001e8d5728e50: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [96]=Oop }
+                      ;*ifle {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.optifine.util.LockCounter::isLocked@4 (line 28)
+                      ; - net.minecraft.client.renderer.GlStateManager::disableAlpha@3 (line 71)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@75 (line 141)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728e50: ac94 befe | ba45 ffff | ff48 8b6c | 2428 488b | 4c24 3048 | 894c 2428 | 488b 4c24 | 4048 894c 
+  0x000001e8d5728e70: 2430 4c89 | 4c24 4044 | 8954 2424 | 895c 2448 | 4489 4424 | 4c44 895c | 2450 c5fa | 1044 2468 
+  0x000001e8d5728e90: c5fa 1144 | 245c 448b | 5c24 6c44 | 895c 2460 
+
+  0x000001e8d5728ea0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728ea0: 6666 90e8 
+
+  0x000001e8d5728ea4: ; ImmutableOopMap {rbp=Oop [36]=NarrowOop [40]=Oop [48]=Oop [56]=Oop }
+                      ;*ifeq {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.Minecraft::isUnicode@17 (line 851)
+                      ; - net.minecraft.client.gui.ScaledResolution::<init>@26 (line 19)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@91 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728ea4: 5894 befe | ba45 ffff | ff48 8b6c | 2428 4c8b | 5424 304c | 8954 2428 | 4c8b 5424 | 404c 8954 
+  0x000001e8d5728ec4: 2430 4c89 | 4c24 4089 | 7c24 4844 | 8944 244c | 4489 5c24 | 50c5 fa10 | 4424 68c5 | fa11 4424 
+  0x000001e8d5728ee4: 5c44 8b5c | 246c 4489 
+
+  0x000001e8d5728eec: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728eec: 5c24 60e8 
+
+  0x000001e8d5728ef0: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [56]=Oop }
+                      ;*ifne {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@39 (line 22)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@91 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728ef0: 0c94 befe | 4c3b cdbd | ffff ffff | 7c08 400f | 95c5 400f | b6ed ba45 | ffff ffc5 | fa11 4424 
+  0x000001e8d5728f10: 2cc5 fa11 | 4c24 50c5 | fa11 5424 | 544c 894c 
+
+  0x000001e8d5728f20: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728f20: 2458 90e8 
+
+  0x000001e8d5728f24: ; ImmutableOopMap {[112]=Oop [120]=Oop [128]=Oop [136]=Oop }
+                      ;*ifne {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) org.lwjgl.system.Checks::check@3 (line 187)
+                      ; - org.lwjgl.nanovg.NanoVG::nvgBeginFrame@7 (line 299)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@102 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728f24: d893 befe | 483b d5bd | ffff ffff | 7c08 400f | 95c5 400f | b6ed 4889 | 5424 50ba | 45ff ffff 
+  0x000001e8d5728f44: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728f44: 6666 90e8 
+
+  0x000001e8d5728f48: ; ImmutableOopMap {[48]=Oop [112]=Oop [128]=Oop [136]=Oop }
+                      ;*ifne {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) org.lwjgl.system.Checks::check@3 (line 187)
+                      ; - org.lwjgl.nanovg.NanoVG::nvgEndFrame@7 (line 333)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@138 (line 152)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728f48: b493 befe | ba45 ffff | ff48 8b6c | 2428 4489 
+
+  0x000001e8d5728f58: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728f58: 5c24 24e8 
+
+  0x000001e8d5728f5c: ; ImmutableOopMap {rbp=Oop [56]=Oop [64]=Oop [120]=Oop }
+                      ;*ifle {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.optifine.util.LockCounter::isLocked@4 (line 28)
+                      ; - net.minecraft.client.renderer.GlStateManager::enableAlpha@3 (line 83)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@144 (line 154)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728f5c: a093 befe | ba45 ffff | ff48 8b6c | 2428 4489 
+
+  0x000001e8d5728f6c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728f6c: 5424 24e8 
+
+  0x000001e8d5728f70: ; ImmutableOopMap {rbp=Oop [36]=NarrowOop [56]=Oop [64]=Oop [120]=Oop }
+                      ;*ifnull {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@150 (line 156)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5728f70: 8c93 befe | 4585 d240 | 0f95 c540 | 0fb6 edba | 45ff ffff 
+
+  0x000001e8d5728f84: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728f84: 6666 90e8 
+
+  0x000001e8d5728f88: ; ImmutableOopMap {[56]=Oop [64]=Oop [112]=Oop }
+                      ;*ifeq {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) dev.diona.southside.gui.hud.ArrayListHud::draw@102 (line 149)
+  0x000001e8d5728f88: 7493 befe | bade ffff | ff48 8b6c | 2428 4489 
+
+  0x000001e8d5728f98: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728f98: 4c24 24e8 
+
+  0x000001e8d5728f9c: ; ImmutableOopMap {rbp=Oop [36]=NarrowOop [56]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@143 (line 151)
+  0x000001e8d5728f9c: 6093 befe | bade ffff | ff8b 6c24 | 2044 8954 
+
+  0x000001e8d5728fac: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728fac: 2428 90e8 
+
+  0x000001e8d5728fb0: ; ImmutableOopMap {[40]=NarrowOop [112]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@161 (line 152)
+  0x000001e8d5728fb0: 4c93 befe | baf6 ffff | ff48 8b6c | 2470 48ff | 7424 7848 | 8f44 2428 | 48ff b424 | 8800 0000 
+  0x000001e8d5728fd0: 488f 4424 | 30c5 fa11 | 4424 24c5 | fa10 4c24 | 64c5 fa11 | 4c24 40c5 | fa10 4424 | 68c5 fa11 
+  0x000001e8d5728ff0: 4424 4489 | 7c24 4848 | 895c 2460 
+
+  0x000001e8d5728ffc: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5728ffc: 6666 90e8 
+
+  0x000001e8d5729000: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [96]=Oop }
+                      ;*getfield glPlatform {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) cc.polyfrost.oneconfig.platform.Platform::getGLPlatform@3 (line 57)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@57 (line 137)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5729000: fc92 befe | baf6 ffff | ff48 8b6c | 2470 48ff | 7424 7848 | 8f44 2428 | 48ff b424 | 8800 0000 
+  0x000001e8d5729020: 488f 4424 | 30c5 fa11 | 4424 24c5 | fa10 4c24 | 64c5 fa11 | 4c24 40c5 | fa10 4424 | 68c5 fa11 
+  0x000001e8d5729040: 4424 4489 | 7c24 4848 | 895c 2460 
+
+  0x000001e8d572904c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d572904c: 6666 90e8 
+
+  0x000001e8d5729050: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [96]=Oop }
+                      ;*invokeinterface enableStencil {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@60 (line 137)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5729050: ac92 befe | baf6 ffff | ff48 8b6c | 2470 48ff | 7424 7848 | 8f44 2428 | 48ff b424 | 8800 0000 
+  0x000001e8d5729070: 488f 4424 | 30c5 fa11 | 4424 24c5 | fa10 4c24 | 64c5 fa11 | 4c24 40c5 | fa10 4424 | 68c5 fa11 
+  0x000001e8d5729090: 4424 4489 | 7c24 4848 | 895c 2460 
+
+  0x000001e8d572909c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d572909c: 6666 90e8 
+
+  0x000001e8d57290a0: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [96]=Oop }
+                      ;*invokevirtual getFramebuffer {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.platform.impl.GLPlatformImpl::enableStencil@3 (line 86)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@60 (line 137)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d57290a0: 5c92 befe | baf6 ffff | ff48 8b6c | 2470 48ff | 7424 7848 | 8f44 2428 | 48ff b424 | 8800 0000 
+  0x000001e8d57290c0: 488f 4424 | 30c5 fa11 | 4424 24c5 | fa10 4c24 | 64c5 fa11 | 4c24 40c5 | fa10 4424 | 68c5 fa11 
+  0x000001e8d57290e0: 4424 4489 | 7c24 4848 | 895c 2460 
+
+  0x000001e8d57290ec: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d57290ec: 6666 90e8 
+
+  0x000001e8d57290f0: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [96]=Oop }
+                      ;*invokevirtual isStencilEnabled {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.platform.impl.GLPlatformImpl::enableStencil@8 (line 91)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@60 (line 137)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d57290f0: 0c92 befe | baf6 ffff | ff48 8b6c | 2470 48ff | 7424 7848 | 8f44 2428 | 48ff b424 | 8800 0000 
+  0x000001e8d5729110: 488f 4424 | 30c5 fa11 | 4424 24c5 | fa10 4c24 | 64c5 fa11 | 4c24 40c5 | fa10 4424 | 68c5 fa11 
+  0x000001e8d5729130: 4424 4489 | 7c24 4848 | 895c 2460 
+
+  0x000001e8d572913c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d572913c: 6666 90e8 
+
+  0x000001e8d5729140: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [96]=Oop }
+                      ;*invokevirtual isLocked {reexecute=0 rethrow=0 return_oop=0}
+                      ; - net.minecraft.client.renderer.GlStateManager::disableAlpha@3 (line 71)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@75 (line 141)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5729140: bc91 befe | baf6 ffff | ff48 8b6c | 2470 48ff | 7424 7848 | 8f44 2428 | 48ff b424 | 8800 0000 
+  0x000001e8d5729160: 488f 4424 | 30c5 fa11 | 4424 24c5 | fa10 4c24 | 64c5 fa11 | 4c24 40c5 | fa10 4424 | 68c5 fa11 
+  0x000001e8d5729180: 4424 4489 | 7c24 4848 | 895c 2460 
+
+  0x000001e8d572918c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d572918c: 6666 90e8 
+
+  0x000001e8d5729190: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [96]=Oop }
+                      ;*invokevirtual setDisabled {reexecute=0 rethrow=0 return_oop=0}
+                      ; - net.minecraft.client.renderer.GlStateManager::disableAlpha@24 (line 77)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@75 (line 141)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5729190: 6c91 befe | baf6 ffff | ff48 8b6c | 2428 4c8b | 5424 304c | 8954 2428 | 4c8b 5424 | 404c 8954 
+  0x000001e8d57291b0: 2430 4c89 | 4c24 40c5 | fa10 4c24 | 64c5 fa11 | 4c24 48c5 | fa10 4424 | 68c5 fa11 | 4424 4c44 
+  0x000001e8d57291d0: 8b54 246c | 4489 5424 
+
+  0x000001e8d57291d8: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d57291d8: 5066 90e8 
+
+  0x000001e8d57291dc: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [56]=Oop }
+                      ;*getfield displayWidth {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@6 (line 16)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@91 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d57291dc: 2091 befe | baf6 ffff | ff48 8b6c | 2428 4c8b | 5424 304c | 8954 2428 | 4c8b 5424 | 404c 8954 
+  0x000001e8d57291fc: 2430 4c89 | 4c24 40c5 | fa10 4c24 | 64c5 fa11 | 4c24 48c5 | fa10 4424 | 68c5 fa11 | 4424 4c44 
+  0x000001e8d572921c: 8b5c 246c | 4489 5c24 
+
+  0x000001e8d5729224: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5729224: 5066 90e8 
+
+  0x000001e8d5729228: ; ImmutableOopMap {rbp=Oop [40]=Oop [48]=Oop [56]=Oop }
+                      ;*getfield forceUnicodeFont {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.Minecraft::isUnicode@14 (line 851)
+                      ; - net.minecraft.client.gui.ScaledResolution::<init>@26 (line 19)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@91 (line 145)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5729228: d490 befe | baf6 ffff | ff48 8b6c 
+
+  0x000001e8d5729234: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5729234: 2428 90e8 
+
+  0x000001e8d5729238: ; ImmutableOopMap {rbp=Oop [56]=Oop [64]=Oop [120]=Oop }
+                      ;*invokevirtual isLocked {reexecute=0 rethrow=0 return_oop=0}
+                      ; - net.minecraft.client.renderer.GlStateManager::enableAlpha@3 (line 83)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@144 (line 154)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5729238: c490 befe | baf6 ffff | ff48 8b6c 
+
+  0x000001e8d5729244: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5729244: 2428 90e8 
+
+  0x000001e8d5729248: ; ImmutableOopMap {rbp=Oop [56]=Oop [64]=Oop [120]=Oop }
+                      ;*invokevirtual setEnabled {reexecute=0 rethrow=0 return_oop=0}
+                      ; - net.minecraft.client.renderer.GlStateManager::enableAlpha@24 (line 89)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@144 (line 154)
+                      ; - cc.polyfrost.oneconfig.internal.renderer.NanoVGHelperImpl::setupAndDraw@4 (line 115)
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@92 (line 111)
+  0x000001e8d5729248: b490 befe | baf4 ffff | ff48 8b6c 
+
+  0x000001e8d5729254: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5729254: 2428 90e8 
+
+  0x000001e8d5729258: ; ImmutableOopMap {rbp=Oop [56]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@143 (line 151)
+  0x000001e8d5729258: a490 befe | baf4 ffff | ff8b 6c24 
+
+  0x000001e8d5729264: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d5729264: 2066 90e8 
+
+  0x000001e8d5729268: ; ImmutableOopMap {[40]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - dev.diona.southside.gui.hud.ArrayListHud::draw@161 (line 152)
+  0x000001e8d5729268: 9490 befe | 488b d0eb | 2848 8bd0 | eb23 488b | d0eb 1e48 | 8bd0 eb19 | 488b d0eb | 14eb 0feb 
+  0x000001e8d5729288: 0deb 0beb | 09eb 07eb | 0548 8bd0 | eb03 488b | d048 81c4 | a000 0000 
+
+  0x000001e8d57292a0: ;   {runtime_call _rethrow_Java}
+  0x000001e8d57292a0: 5de9 5aa7 
+
+  0x000001e8d57292a4: ;   {internal_word}
+  0x000001e8d57292a4: c9fe 49ba | 9888 72d5 | e801 0000 | 4d89 9760 
+
+  0x000001e8d57292b4: ;   {runtime_call SafepointBlob}
+  0x000001e8d57292b4: 0300 00e9 | 44a1 befe | f4f4 f4f4 
+[Stub Code]
+  0x000001e8d57292c0: ;   {no_reloc}
+  0x000001e8d57292c0: 48bb 0000 | 0000 0000 
+
+  0x000001e8d57292c8: ;   {runtime_call}
+  0x000001e8d57292c8: 0000 e9fb 
+
+  0x000001e8d57292cc: ;   {static_stub}
+  0x000001e8d57292cc: ffff ff48 | bb00 0000 | 0000 0000 
+
+  0x000001e8d57292d8: ;   {runtime_call}
+  0x000001e8d57292d8: 00e9 fbff 
+
+  0x000001e8d57292dc: ;   {static_stub}
+  0x000001e8d57292dc: ffff 48bb | 0000 0000 | 0000 0000 
+
+  0x000001e8d57292e8: ;   {runtime_call}
+  0x000001e8d57292e8: e9fb ffff 
+
+  0x000001e8d57292ec: ;   {static_stub}
+  0x000001e8d57292ec: ff48 bb00 | 0000 0000 
+
+  0x000001e8d57292f4: ;   {runtime_call}
+  0x000001e8d57292f4: 0000 00e9 | fbff ffff 
+
+  0x000001e8d57292fc: ;   {static_stub}
+  0x000001e8d57292fc: 48bb 0000 | 0000 0000 
+
+  0x000001e8d5729304: ;   {runtime_call}
+  0x000001e8d5729304: 0000 e9fb 
+
+  0x000001e8d5729308: ;   {static_stub}
+  0x000001e8d5729308: ffff ff48 | bb00 0000 | 0000 0000 
+
+  0x000001e8d5729314: ;   {runtime_call}
+  0x000001e8d5729314: 00e9 fbff 
+
+  0x000001e8d5729318: ;   {static_stub}
+  0x000001e8d5729318: ffff 48bb | 0000 0000 | 0000 0000 
+
+  0x000001e8d5729324: ;   {runtime_call}
+  0x000001e8d5729324: e9fb ffff 
+
+  0x000001e8d5729328: ;   {static_stub}
+  0x000001e8d5729328: ff48 bb00 | 0000 0000 
+
+  0x000001e8d5729330: ;   {runtime_call}
+  0x000001e8d5729330: 0000 00e9 | fbff ffff 
+[Exception Handler]
+  0x000001e8d5729338: ;   {runtime_call ExceptionBlob}
+  0x000001e8d5729338: e943 c1c8 | fee8 0000 | 0000 4883 
+
+  0x000001e8d5729344: ;   {runtime_call DeoptimizationBlob}
+  0x000001e8d5729344: 2c24 05e9 | 5493 befe | f4f4 f4f4 
+[/MachCode]
+
+
+Compiled method (c2)  658238 13499       4       cc.polyfrost.oneconfig.hud.Hud::drawAll (112 bytes)
+ total in heap  [0x000001e8d4d85110,0x000001e8d4d86ad8] = 6600
+ relocation     [0x000001e8d4d85268,0x000001e8d4d85380] = 280
+ main code      [0x000001e8d4d85380,0x000001e8d4d85d80] = 2560
+ stub code      [0x000001e8d4d85d80,0x000001e8d4d85df0] = 112
+ oops           [0x000001e8d4d85df0,0x000001e8d4d85e00] = 16
+ metadata       [0x000001e8d4d85e00,0x000001e8d4d85f38] = 312
+ scopes data    [0x000001e8d4d85f38,0x000001e8d4d864f0] = 1464
+ scopes pcs     [0x000001e8d4d864f0,0x000001e8d4d868d0] = 992
+ dependencies   [0x000001e8d4d868d0,0x000001e8d4d86928] = 88
+ handler table  [0x000001e8d4d86928,0x000001e8d4d86a00] = 216
+ nul chk table  [0x000001e8d4d86a00,0x000001e8d4d86ad8] = 216
+
+[Constant Pool (empty)]
+
+[MachCode]
+[Entry Point]
+  # {method} {0x000001e8ee211118} 'drawAll' '(Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;Z)V' in 'cc/polyfrost/oneconfig/hud/Hud'
+  # this:     rdx:rdx   = 'cc/polyfrost/oneconfig/hud/Hud'
+  # parm0:    r8:r8     = 'cc/polyfrost/oneconfig/libs/universal/UMatrixStack'
+  # parm1:    r9        = boolean
+  #           [sp+0x50]  (sp of caller)
+  0x000001e8d4d85380: 448b 5208 | 49bb 0000 | 0080 e801 | 0000 4d03 | d349 3bc2 
+
+  0x000001e8d4d85394: ;   {runtime_call ic_miss_stub}
+  0x000001e8d4d85394: 0f85 e676 | 58ff 6690 | 0f1f 4000 
+[Verified Entry Point]
+  0x000001e8d4d853a0: 8984 2400 | 90ff ff55 | 4883 ec40 | 4c89 4424 | 084c 8bd2 | 4585 c90f | 85c7 0500 | 0044 8b42 
+  0x000001e8d4d853c0: 3c47 8b4c | c414 478b 
+
+  0x000001e8d4d853c8: ;   {metadata('java/lang/Boolean')}
+  0x000001e8d4d853c8: 5ccc 0841 | 81fb d02d | 0300 0f85 | 0c07 0000 | 4f8d 1ccc | 450f b643 | 0c45 85c0 | 0f84 1206 
+  0x000001e8d4d853e8: 0000 448b | 5a34 478b | 5cdc 1447 | 8b44 dc08 
+
+  0x000001e8d4d853f8: ;   {metadata('java/lang/Boolean')}
+  0x000001e8d4d853f8: 4181 f8d0 | 2d03 000f | 85ff 0600 | 0049 c1e3 | 0345 0fb6 | 5b0c 4585 | db0f 8405 | 0600 0044 
+  0x000001e8d4d85418: 8b42 3847 | 8b5c c414 
+
+  0x000001e8d4d85420: ; implicit exception: dispatches to 0x000001e8d4d85c3c
+  0x000001e8d4d85420: 478b 4cdc 
+
+  0x000001e8d4d85424: ;   {metadata('java/lang/Boolean')}
+  0x000001e8d4d85424: 0841 81f9 | d02d 0300 | 0f85 f206 | 0000 49c1 | e303 450f | b65b 0c45 | 85db 0f85 | 5805 0000 
+  0x000001e8d4d85444: ;   {oop(a 'java/lang/Class'{0x000000070788cc18} = 'cc/polyfrost/oneconfig/platform/Platform$PlatformHolder')}
+  0x000001e8d4d85444: 49bb 18cc | 8807 0700 | 0000 458b | 5b70 478b | 44dc 1c47 | 8b5c c408 
+
+  0x000001e8d4d8545c: ;   {metadata('cc/polyfrost/oneconfig/platform/impl/GuiPlatformImpl')}
+  0x000001e8d4d8545c: 4181 fb70 | b273 010f | 85ab 0400 
+
+  0x000001e8d4d85468: ;   {oop(a 'java/lang/Class'{0x0000000702a048a0} = 'net/minecraft/client/Minecraft')}
+  0x000001e8d4d85468: 0049 bba0 | 48a0 0207 | 0000 0045 | 8b9b 8000 | 0000 478b | 84dc ec00 | 0000 470f | b69c c4d1 
+  0x000001e8d4d85488: 0000 0045 | 85db 0f85 | 2405 0000 | 448b 5a24 
+
+  0x000001e8d4d85498: ; implicit exception: dispatches to 0x000001e8d4d85c7c
+  0x000001e8d4d85498: 438b 4cdc | 1445 8b44 
+
+  0x000001e8d4d854a0: ;   {metadata('cc/polyfrost/oneconfig/hud/Position')}
+  0x000001e8d4d854a0: cc08 4181 | f850 fb78 | 010f 8591 | 0600 0044 | 8b42 2847 | 8b5c c414 | 498d 2ccc 
+
+  0x000001e8d4d854bc: ; implicit exception: dispatches to 0x000001e8d4d85ca4
+  0x000001e8d4d854bc: 478b 44dc 
+
+  0x000001e8d4d854c0: ;   {metadata('com/google/gson/internal/LazilyParsedNumber')}
+  0x000001e8d4d854c0: 0841 81f8 | e02b 1901 | 0f85 8e06 | 0000 4889 | 1424 4f8d | 14dc 458b | 5a0c 498b | d348 c1e2 
+  0x000001e8d4d854e0: ;   {static_call}
+  0x000001e8d4d854e0: 0366 90e8 
+
+  0x000001e8d4d854e4: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=Oop }
+                      ;*invokestatic readJavaFormatString {reexecute=0 rethrow=0 return_oop=1}
+                      ; - jdk.internal.math.FloatingDecimal::parseFloat@1 (line 122)
+                      ; - java.lang.Float::parseFloat@1 (line 476)
+                      ; - com.google.gson.internal.LazilyParsedNumber::floatValue@4 (line 62)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@38 (line 197)
+  0x000001e8d4d854e4: f8cf 1a00 
+
+  0x000001e8d4d854e8: ; implicit exception: dispatches to 0x000001e8d4d85cb4
+  0x000001e8d4d854e8: 448b 5808 
+
+  0x000001e8d4d854ec: ;   {metadata('jdk/internal/math/FloatingDecimal$ASCIIToBinaryBuffer')}
+  0x000001e8d4d854ec: 4181 fbe0 | f90c 010f | 85ce 0300 | 0048 8bd0 
+
+  0x000001e8d4d854fc: ;   {optimized virtual_call}
+  0x000001e8d4d854fc: 6666 90e8 
+
+  0x000001e8d4d85500: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=Oop }
+                      ;*invokeinterface floatValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - jdk.internal.math.FloatingDecimal::parseFloat@4 (line 122)
+                      ; - java.lang.Float::parseFloat@1 (line 476)
+                      ; - com.google.gson.internal.LazilyParsedNumber::floatValue@4 (line 62)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@38 (line 197)
+  0x000001e8d4d85500: fc1b e3ff | 488b 1424 | 4533 c066 | 9048 b8ff | ffff ffff 
+
+  0x000001e8d4d85514: ;   {virtual_call}
+  0x000001e8d4d85514: ffff ffe8 
+
+  0x000001e8d4d85518: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=Oop }
+                      ;*invokevirtual getWidth {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@42 (line 197)
+  0x000001e8d4d85518: 4c8b 81ff | c5fa 1144 | 2410 4c8b | 1424 458b | 5a28 478b | 5cdc 1447 | 8b4c dc08 
+
+  0x000001e8d4d85534: ;   {metadata('com/google/gson/internal/LazilyParsedNumber')}
+  0x000001e8d4d85534: 4181 f9e0 | 2b19 010f | 852f 0600 | 004f 8d14 | dc45 8b52 | 0c49 8bd2 | 48c1 e203 
+
+  0x000001e8d4d85550: ;   {static_call}
+  0x000001e8d4d85550: 6666 90e8 
+
+  0x000001e8d4d85554: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=Oop }
+                      ;*invokestatic readJavaFormatString {reexecute=0 rethrow=0 return_oop=1}
+                      ; - jdk.internal.math.FloatingDecimal::parseFloat@1 (line 122)
+                      ; - java.lang.Float::parseFloat@1 (line 476)
+                      ; - com.google.gson.internal.LazilyParsedNumber::floatValue@4 (line 62)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@56 (line 197)
+  0x000001e8d4d85554: 88cf 1a00 
+
+  0x000001e8d4d85558: ; implicit exception: dispatches to 0x000001e8d4d85cd8
+  0x000001e8d4d85558: 448b 5008 
+
+  0x000001e8d4d8555c: ;   {metadata('jdk/internal/math/FloatingDecimal$ASCIIToBinaryBuffer')}
+  0x000001e8d4d8555c: 4181 fae0 | f90c 010f | 8575 0300 | 0048 8bd0 
+
+  0x000001e8d4d8556c: ;   {optimized virtual_call}
+  0x000001e8d4d8556c: 6666 90e8 
+
+  0x000001e8d4d85570: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=Oop }
+                      ;*invokeinterface floatValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - jdk.internal.math.FloatingDecimal::parseFloat@4 (line 122)
+                      ; - java.lang.Float::parseFloat@1 (line 476)
+                      ; - com.google.gson.internal.LazilyParsedNumber::floatValue@4 (line 62)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@56 (line 197)
+  0x000001e8d4d85570: 8c1b e3ff | 488b 1424 | 4533 c066 | 9048 b8ff | ffff ffff 
+
+  0x000001e8d4d85584: ;   {virtual_call}
+  0x000001e8d4d85584: ffff ffe8 
+
+  0x000001e8d4d85588: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=Oop }
+                      ;*invokevirtual getHeight {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@60 (line 197)
+  0x000001e8d4d85588: 14ad 63ff | c5fa 1145 | 18c5 fa10 | 4c24 10c5 | fa11 4d14 | 4c8b 1424 | 458b 5a24 
+
+  0x000001e8d4d855a4: ; implicit exception: dispatches to 0x000001e8d4d85ce4
+  0x000001e8d4d855a4: 478b 44dc | 1447 8b54 
+
+  0x000001e8d4d855ac: ;   {metadata('cc/polyfrost/oneconfig/hud/Position')}
+  0x000001e8d4d855ac: c408 4181 | fa50 fb78 | 010f 85c5 
+
+  0x000001e8d4d855b8: ;   {oop(a 'java/lang/Class'{0x0000000702a048a0} = 'net/minecraft/client/Minecraft')}
+  0x000001e8d4d855b8: 0500 0049 | baa0 48a0 | 0207 0000 | 0045 8b9a | 8000 0000 
+
+  0x000001e8d4d855cc: ; implicit exception: dispatches to 0x000001e8d4d85d00
+  0x000001e8d4d855cc: 478b 4cdc | 3847 3ba4 | dc34 0100 | 000f 842a | 0300 0043 | 8b5c dc3c | 4b8d 3cc4 
+
+  0x000001e8d4d855e8: ;   {oop(a 'net/minecraft/client/resources/Locale'{0x0000000705ecc4d0})}
+  0x000001e8d4d855e8: 49ba d0c4 | ec05 0700 | 0000 450f | b642 0c45 | 85c0 0f85 | d403 0000 | 438b 8cdc | ec00 0000 
+  0x000001e8d4d85608: ; implicit exception: dispatches to 0x000001e8d4d85d0c
+  0x000001e8d4d85608: 450f b694 | ccd6 0000 | 0045 85d2 | 0f85 2204 | 0000 418b | 4ccc 5485 | c90f 843d | 0400 00be 
+  0x000001e8d4d85628: 0100 0000 | bde8 0300 | 0083 f901 | 7f0b 41b8 | 0100 0000 | e992 0000 | 0041 ba01 | 0000 0045 
+  0x000001e8d4d85648: 8bc2 458b | d841 ffc3 | 418b c13d | 0000 0080 | 7508 33d2 | 4183 fbff | 7404 9941 | f7fb 3d40 
+  0x000001e8d4d85668: 0100 000f | 8cbf 0200 | 008b c33d | 0000 0080 | 7508 33d2 | 4183 fbff | 7404 9941 | f7fb 3df0 
+  0x000001e8d4d85688: 0000 007c | 4644 8bc1 | 452b c233 | c041 3bca | 440f 4cc0 | 4181 f8e8 | 0300 0044 | 0f47 c545 
+  0x000001e8d4d856a8: 03c2 453b | d87c 1c4d | 8b87 5003 
+
+  0x000001e8d4d856b4: ; ImmutableOopMap {rdi=Oop [0]=Oop [8]=Oop }
+                      ;*goto {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@98 (line 29)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.hud.Position::getX@1 (line 218)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@78 (line 198)
+                      ;   {poll}
+  0x000001e8d4d856b4: 0000 4185 | 0044 3bd9 | 7c05 458b | c3eb 1045 | 8bd3 e97c | ffff ff45 | 8bc3 e977 | ffff ff44 
+  0x000001e8d4d856d4: 8b6f 1cc4 | 817a 104c | ec14 c5fa | 1047 14c5 | fa59 d1c4 | c17b 2ac0 | c4c1 632a | d9c5 e35e 
+  0x000001e8d4d856f4: c0c5 7b2c | d041 81fa | 0000 0080 | 7510 4883 | ec08 c5fb 
+
+  0x000001e8d4d85708: ;   {runtime_call StubRoutines (1)}
+  0x000001e8d4d85708: 1104 24e8 | 6eba 53ff | 415a 458b | da41 ffc3 | c4c1 632a | dac5 f92e | c345 0f46 | dac4 c162 
+  0x000001e8d4d85728: 2adb c5e2 | 59c1 c5fa | 584f 0cc5 | f25c e283 | f901 7f0b | 41b8 0100 | 0000 e98b | 0000 0044 
+  0x000001e8d4d85748: 8bc6 458b | d841 ffc3 | 418b c13d | 0000 0080 | 7508 33d2 | 4183 fbff | 7404 9941 | f7fb 3d40 
+  0x000001e8d4d85768: 0100 000f | 8ce7 0100 | 008b c33d | 0000 0080 | 7508 33d2 | 4183 fbff | 7404 9941 | f7fb 3df0 
+  0x000001e8d4d85788: 0000 007c | 4544 8bd1 | 442b d633 | d23b ce44 | 0f4c d241 | 81fa e803 | 0000 440f | 47d5 4403 
+  0x000001e8d4d857a8: d645 3bda | 7c1c 4d8b | 8750 0300 
+
+  0x000001e8d4d857b4: ; ImmutableOopMap {rdi=Oop r13=NarrowOop [0]=Oop [8]=Oop }
+                      ;*goto {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@98 (line 29)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledHeight@7 (line 19)
+                      ; - cc.polyfrost.oneconfig.hud.Position::getY@1 (line 246)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@91 (line 198)
+                      ;   {poll}
+  0x000001e8d4d857b4: 0041 8500 | 443b d97c | 0545 8bc3 | eb10 418b | f3e9 7dff | ffff 458b | c3e9 78ff | ffff 4c8b 
+  0x000001e8d4d857d4: 1424 458b | 5a28 478b | 5cdc 14c4 | 817a 1044 | ec18 c5f3 | 2acb c5fa | 105f 18c5 | e259 d0c4 
+  0x000001e8d4d857f4: c163 2ad8 | c5f3 5ecb | c57b 2cc1 | 4181 f800 | 0000 8075 | 1048 83ec | 08c5 fb11 
+
+  0x000001e8d4d85810: ;   {runtime_call StubRoutines (1)}
+  0x000001e8d4d85810: 0c24 e867 | b953 ff41 | 58c4 c163 | 2ad8 458b | c841 ffc1 | c5f9 2ecb | 450f 46c8 | c4c1 722a 
+  0x000001e8d4d85830: c9c5 f259 | c8c5 f258 | 4f10 c5f2 | 5cca 478b 
+
+  0x000001e8d4d85840: ;   {metadata('com/google/gson/internal/LazilyParsedNumber')}
+  0x000001e8d4d85840: 54dc 0841 | 81fa e02b | 1901 0f85 | 4403 0000 | c5fa 114c | 2414 c5fa | 1164 2410 | 4f8d 14dc 
+  0x000001e8d4d85860: 458b 5a0c | 498b d348 
+
+  0x000001e8d4d85868: ;   {static_call}
+  0x000001e8d4d85868: c1e2 03e8 
+
+  0x000001e8d4d8586c: ; ImmutableOopMap {[0]=Oop [8]=Oop }
+                      ;*invokestatic readJavaFormatString {reexecute=0 rethrow=0 return_oop=1}
+                      ; - jdk.internal.math.FloatingDecimal::parseFloat@1 (line 122)
+                      ; - java.lang.Float::parseFloat@1 (line 476)
+                      ; - com.google.gson.internal.LazilyParsedNumber::floatValue@4 (line 62)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@104 (line 198)
+  0x000001e8d4d8586c: 70cc 1a00 
+
+  0x000001e8d4d85870: ; implicit exception: dispatches to 0x000001e8d4d85d54
+  0x000001e8d4d85870: 448b 5808 
+
+  0x000001e8d4d85874: ;   {metadata('jdk/internal/math/FloatingDecimal$ASCIIToBinaryBuffer')}
+  0x000001e8d4d85874: 4181 fbe0 | f90c 0175 | 7848 8bd0 
+
+  0x000001e8d4d85880: ;   {optimized virtual_call}
+  0x000001e8d4d85880: 6666 90e8 
+
+  0x000001e8d4d85884: ; ImmutableOopMap {[0]=Oop [8]=Oop }
+                      ;*invokeinterface floatValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - jdk.internal.math.FloatingDecimal::parseFloat@4 (line 122)
+                      ; - java.lang.Float::parseFloat@1 (line 476)
+                      ; - com.google.gson.internal.LazilyParsedNumber::floatValue@4 (line 62)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@104 (line 198)
+  0x000001e8d4d85884: 7818 e3ff | c5f8 28d0 | 488b 1424 | 4c8b 4424 | 08c5 fa10 | 4424 10c5 | fa10 4c24 | 1445 33c9 
+  0x000001e8d4d858a4: 9048 b8ff | ffff ffff 
+
+  0x000001e8d4d858ac: ;   {virtual_call}
+  0x000001e8d4d858ac: ffff ffe8 
+
+  0x000001e8d4d858b0: ; ImmutableOopMap {}
+                      ;*invokevirtual draw {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@108 (line 198)
+  0x000001e8d4d858b0: c4ad 63ff | 4883 c440 
+
+  0x000001e8d4d858b8: ;   {poll_return}
+  0x000001e8d4d858b8: 5d49 3ba7 | 4803 0000 | 0f87 9a04 
+
+  0x000001e8d4d858c4: ;   {metadata('jdk/internal/math/FloatingDecimal$PreparedASCIIToBinaryBuffer')}
+  0x000001e8d4d858c4: 0000 c341 | 81fb 0831 | 2900 0f85 | b001 0000 | c5fa 1040 | 0ce9 26fc 
+
+  0x000001e8d4d858dc: ;   {metadata('jdk/internal/math/FloatingDecimal$PreparedASCIIToBinaryBuffer')}
+  0x000001e8d4d858dc: ffff 4181 | fa08 3129 | 000f 85a9 | 0100 00c5 | fa10 400c | e97f fcff 
+
+  0x000001e8d4d858f4: ;   {metadata('jdk/internal/math/FloatingDecimal$PreparedASCIIToBinaryBuffer')}
+  0x000001e8d4d858f4: ff41 81fb | 0831 2900 | 0f85 a201 | 0000 c5fa | 1050 0ceb | 83ba f6ff 
+
+  0x000001e8d4d8590c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d8590c: ffff 90e8 
+
+  0x000001e8d4d85910: ; ImmutableOopMap {}
+                      ;*invokevirtual isCurrentLocaleUnicode {reexecute=0 rethrow=0 return_oop=0}
+                      ; - net.minecraft.client.Minecraft::isUnicode@4 (line 851)
+                      ; - net.minecraft.client.gui.ScaledResolution::<init>@26 (line 19)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.hud.Position::getX@1 (line 218)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@78 (line 198)
+  0x000001e8d4d85910: ecc9 58ff | bade ffff | ff49 8bea | 4c8b 5424 | 084c 8914 | 2444 8944 
+
+  0x000001e8d4d85928: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85928: 2408 90e8 
+
+  0x000001e8d4d8592c: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=NarrowOop }
+                      ;*invokeinterface isInDebug {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@91 (line 205)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d8592c: d0c9 58ff | ba45 ffff | ff48 897c | 2410 894c | 2418 8944 | 241c 4489 | 4c24 2089 | 5c24 2444 
+  0x000001e8d4d8594c: 8944 2428 
+
+  0x000001e8d4d85950: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85950: 6666 90e8 
+
+  0x000001e8d4d85954: ; ImmutableOopMap {[0]=Oop [8]=Oop [16]=Oop }
+                      ;*if_icmplt {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@68 (line 27)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.hud.Position::getX@1 (line 218)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@78 (line 198)
+  0x000001e8d4d85954: a8c9 58ff | ba45 ffff | ffc5 fa11 | 6424 1048 | 897c 2418 | 894c 2414 | 8944 2420 | 4489 4c24 
+  0x000001e8d4d85974: 2489 5c24 | 2844 8944 
+
+  0x000001e8d4d8597c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d8597c: 242c 90e8 
+
+  0x000001e8d4d85980: ; ImmutableOopMap {[0]=Oop [8]=Oop [24]=Oop }
+                      ;*if_icmplt {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@68 (line 27)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledHeight@7 (line 19)
+                      ; - cc.polyfrost.oneconfig.hud.Position::getY@1 (line 246)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@91 (line 198)
+  0x000001e8d4d85980: 7cc9 58ff | ba45 ffff | ff49 8bea | 4c89 0424 | 4489 4c24 
+
+  0x000001e8d4d85994: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85994: 0c66 90e8 
+
+  0x000001e8d4d85998: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*ifne {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) cc.polyfrost.oneconfig.hud.Hud::drawAll@1 (line 195)
+  0x000001e8d4d85998: 64c9 58ff | ba45 ffff | ff49 8bea | 4c8b 5424 | 084c 8914 | 2444 895c 
+
+  0x000001e8d4d859b0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d859b0: 2408 90e8 
+
+  0x000001e8d4d859b4: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*ifne {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) cc.polyfrost.oneconfig.hud.Hud::shouldShow@85 (line 205)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d859b4: 48c9 58ff | ba45 ffff | ff49 8bea | 4c8b 5424 | 084c 8914 | 2444 895c 
+
+  0x000001e8d4d859cc: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d859cc: 2408 90e8 
+
+  0x000001e8d4d859d0: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*ifne {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) cc.polyfrost.oneconfig.hud.Hud::shouldShow@96 (line 205)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d859d0: 2cc9 58ff | ba45 ffff | ff48 8b2c | 2448 897c | 2410 4489 | 5c24 1c44 | 8944 2420 | 4489 4c24 
+  0x000001e8d4d859f0: 2489 5c24 
+
+  0x000001e8d4d859f4: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d859f4: 2866 90e8 
+
+  0x000001e8d4d859f8: ; ImmutableOopMap {rbp=Oop [8]=Oop [16]=Oop [28]=NarrowOop }
+                      ;*ifne {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.Minecraft::isUnicode@7 (line 851)
+                      ; - net.minecraft.client.gui.ScaledResolution::<init>@26 (line 19)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.hud.Position::getX@1 (line 218)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@78 (line 198)
+  0x000001e8d4d859f8: 04c9 58ff | ba45 ffff | ff4c 8b5c | 2408 4c89 | 1c24 4c89 | 5424 0844 | 8944 2410 
+
+  0x000001e8d4d85a14: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85a14: 6666 90e8 
+
+  0x000001e8d4d85a18: ; ImmutableOopMap {[0]=Oop [8]=Oop }
+                      ;*ifne {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) cc.polyfrost.oneconfig.hud.Hud::shouldShow@13 (line 202)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85a18: e4c8 58ff | ba45 ffff | ff4c 8b44 | 2408 4c89 | 0424 4c89 | 5424 0844 | 895c 2410 
+
+  0x000001e8d4d85a34: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85a34: 6666 90e8 
+
+  0x000001e8d4d85a38: ; ImmutableOopMap {[0]=Oop [8]=Oop }
+                      ;*ifne {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) cc.polyfrost.oneconfig.hud.Hud::shouldShow@56 (line 204)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85a38: c4c8 58ff | ba45 ffff | ff48 8b2c | 2448 897c | 2410 4489 | 5c24 1844 | 8954 241c | 4489 4c24 
+  0x000001e8d4d85a58: 2089 5c24 
+
+  0x000001e8d4d85a5c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85a5c: 2466 90e8 
+
+  0x000001e8d4d85a60: ; ImmutableOopMap {rbp=Oop [8]=Oop [16]=Oop [24]=NarrowOop }
+                      ;*ifeq {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.Minecraft::isUnicode@17 (line 851)
+                      ; - net.minecraft.client.gui.ScaledResolution::<init>@26 (line 19)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.hud.Position::getX@1 (line 218)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@78 (line 198)
+  0x000001e8d4d85a60: 9cc8 58ff | ba45 ffff | ff48 8b2c | 2448 897c | 2410 894c | 241c 4489 | 4c24 2089 
+
+  0x000001e8d4d85a7c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85a7c: 5c24 24e8 
+
+  0x000001e8d4d85a80: ; ImmutableOopMap {rbp=Oop [8]=Oop [16]=Oop }
+                      ;*ifne {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@39 (line 22)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.hud.Position::getX@1 (line 218)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@78 (line 198)
+  0x000001e8d4d85a80: 7cc8 58ff | bac6 ffff | ff48 8944 
+
+  0x000001e8d4d85a8c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85a8c: 2418 90e8 
+
+  0x000001e8d4d85a90: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=Oop [24]=Oop }
+                      ;*invokeinterface floatValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - jdk.internal.math.FloatingDecimal::parseFloat@4 (line 122)
+                      ; - java.lang.Float::parseFloat@1 (line 476)
+                      ; - com.google.gson.internal.LazilyParsedNumber::floatValue@4 (line 62)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@38 (line 197)
+  0x000001e8d4d85a90: 6cc8 58ff | bac6 ffff | ff48 8944 
+
+  0x000001e8d4d85a9c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85a9c: 2420 90e8 
+
+  0x000001e8d4d85aa0: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=Oop [32]=Oop }
+                      ;*invokeinterface floatValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - jdk.internal.math.FloatingDecimal::parseFloat@4 (line 122)
+                      ; - java.lang.Float::parseFloat@1 (line 476)
+                      ; - com.google.gson.internal.LazilyParsedNumber::floatValue@4 (line 62)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@56 (line 197)
+  0x000001e8d4d85aa0: 5cc8 58ff | bac6 ffff | ff48 8b2c | 244c 8b54 | 2408 4c89 | 1424 4889 | 4424 f88b | 4424 1089 
+  0x000001e8d4d85ac0: 4424 0848 | 8b44 24f8 | 4889 4424 | f88b 4424 | 1489 4424 | 0c48 8b44 | 24f8 4889 
+
+  0x000001e8d4d85adc: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85adc: 4424 10e8 
+
+  0x000001e8d4d85ae0: ; ImmutableOopMap {rbp=Oop [0]=Oop [16]=Oop }
+                      ;*invokeinterface floatValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - jdk.internal.math.FloatingDecimal::parseFloat@4 (line 122)
+                      ; - java.lang.Float::parseFloat@1 (line 476)
+                      ; - com.google.gson.internal.LazilyParsedNumber::floatValue@4 (line 62)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@104 (line 198)
+  0x000001e8d4d85ae0: 1cc8 58ff | bade ffff | ff4c 8b5c | 2408 4c89 | 1c24 4c89 | 5424 0844 | 894c 2410 
+
+  0x000001e8d4d85afc: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85afc: 6666 90e8 
+
+  0x000001e8d4d85b00: ; ImmutableOopMap {[0]=Oop [8]=Oop [16]=NarrowOop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@7 (line 202)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85b00: fcc7 58ff | bade ffff | ff4c 8b44 | 2408 4c89 | 0424 4c89 | 5424 0844 | 895c 2410 
+
+  0x000001e8d4d85b1c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85b1c: 6666 90e8 
+
+  0x000001e8d4d85b20: ; ImmutableOopMap {[0]=Oop [8]=Oop [16]=NarrowOop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@50 (line 204)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85b20: dcc7 58ff | bade ffff | ff49 8bea | 4c8b 5424 | 084c 8914 | 2444 895c 
+
+  0x000001e8d4d85b38: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85b38: 2408 90e8 
+
+  0x000001e8d4d85b3c: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=NarrowOop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@79 (line 205)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85b3c: c0c7 58ff | bade ffff | ff49 8bea | 4c8b 5424 | 084c 8914 | 2489 4c24 
+
+  0x000001e8d4d85b54: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85b54: 0866 90e8 
+
+  0x000001e8d4d85b58: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=NarrowOop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@24 (line 197)
+  0x000001e8d4d85b58: a4c7 58ff | bade ffff | ff4c 8954 | 2410 4489 
+
+  0x000001e8d4d85b68: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85b68: 5c24 18e8 
+
+  0x000001e8d4d85b6c: ; ImmutableOopMap {rbp=Oop [8]=Oop [16]=Oop [24]=NarrowOop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@35 (line 197)
+  0x000001e8d4d85b6c: 90c7 58ff | bade ffff | ff44 895c 
+
+  0x000001e8d4d85b78: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85b78: 2414 90e8 
+
+  0x000001e8d4d85b7c: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=Oop [20]=NarrowOop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@53 (line 197)
+  0x000001e8d4d85b7c: 80c7 58ff | bade ffff | ff48 8b2c | 2444 8944 
+
+  0x000001e8d4d85b8c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85b8c: 2410 90e8 
+
+  0x000001e8d4d85b90: ; ImmutableOopMap {rbp=Oop [8]=Oop [16]=NarrowOop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@75 (line 198)
+  0x000001e8d4d85b90: 6cc7 58ff | bade ffff | ff48 8b2c | 244c 8b54 | 2408 4c89 | 1424 c5fa | 1164 2408 | c5fa 114c 
+  0x000001e8d4d85bb0: 240c 4489 
+
+  0x000001e8d4d85bb4: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85bb4: 5c24 10e8 
+
+  0x000001e8d4d85bb8: ; ImmutableOopMap {rbp=Oop [0]=Oop [16]=NarrowOop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@101 (line 198)
+  0x000001e8d4d85bb8: 44c7 58ff | 488b d0eb | 1d48 8bd0 | eb18 488b | d0eb 13eb | 0048 8bd0 | eb0c eb00 | 488b d0eb 
+  0x000001e8d4d85bd8: 05eb 0048 | 8bd0 4883 
+
+  0x000001e8d4d85be0: ;   {runtime_call _rethrow_Java}
+  0x000001e8d4d85be0: c440 5de9 | 18de 63ff | baf6 ffff 
+
+  0x000001e8d4d85bec: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85bec: ff66 90e8 
+
+  0x000001e8d4d85bf0: ; ImmutableOopMap {}
+                      ;*invokevirtual getValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@4 (line 202)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85bf0: 0cc7 58ff | baf4 ffff | ff4c 8b5c | 2408 4c89 | 1c24 4c89 
+
+  0x000001e8d4d85c04: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85c04: 5424 08e8 
+
+  0x000001e8d4d85c08: ; ImmutableOopMap {[0]=Oop [8]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@7 (line 202)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85c08: f4c6 58ff | baf6 ffff 
+
+  0x000001e8d4d85c10: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85c10: ff66 90e8 
+
+  0x000001e8d4d85c14: ; ImmutableOopMap {}
+                      ;*invokevirtual getValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@47 (line 204)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85c14: e8c6 58ff | baf4 ffff | ff4c 8b5c | 2408 4c89 | 1c24 4c89 
+
+  0x000001e8d4d85c28: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85c28: 5424 08e8 
+
+  0x000001e8d4d85c2c: ; ImmutableOopMap {[0]=Oop [8]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@50 (line 204)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85c2c: d0c6 58ff | baf6 ffff 
+
+  0x000001e8d4d85c34: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85c34: ff66 90e8 
+
+  0x000001e8d4d85c38: ; ImmutableOopMap {}
+                      ;*invokevirtual getValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@76 (line 205)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85c38: c4c6 58ff | baf4 ffff | ff49 8bea 
+
+  0x000001e8d4d85c44: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85c44: 6666 90e8 
+
+  0x000001e8d4d85c48: ; ImmutableOopMap {rbp=Oop [8]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@79 (line 205)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85c48: b4c6 58ff | baf6 ffff 
+
+  0x000001e8d4d85c50: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85c50: ff66 90e8 
+
+  0x000001e8d4d85c54: ; ImmutableOopMap {}
+                      ;*getfield guiPlatform {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) cc.polyfrost.oneconfig.platform.Platform::getGuiPlatform@3 (line 61)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@88 (line 205)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85c54: a8c6 58ff | baf6 ffff 
+
+  0x000001e8d4d85c5c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85c5c: ff66 90e8 
+
+  0x000001e8d4d85c60: ; ImmutableOopMap {}
+                      ;*invokeinterface isInDebug {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@91 (line 205)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85c60: 9cc6 58ff | baf6 ffff 
+
+  0x000001e8d4d85c68: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85c68: ff66 90e8 
+
+  0x000001e8d4d85c6c: ; ImmutableOopMap {}
+                      ;*getfield gameSettings {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) cc.polyfrost.oneconfig.libs.universal.UMinecraft::getSettings@3 (line 22)
+                      ; - cc.polyfrost.oneconfig.platform.impl.GuiPlatformImpl::isInDebug@0 (line 59)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@91 (line 205)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85c6c: 90c6 58ff | baf6 ffff 
+
+  0x000001e8d4d85c74: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85c74: ff66 90e8 
+
+  0x000001e8d4d85c78: ; ImmutableOopMap {}
+                      ;*getfield showDebugInfo {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) cc.polyfrost.oneconfig.platform.impl.GuiPlatformImpl::isInDebug@3 (line 59)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::shouldShow@91 (line 205)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@5 (line 195)
+  0x000001e8d4d85c78: 84c6 58ff | baf6 ffff 
+
+  0x000001e8d4d85c80: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85c80: ff66 90e8 
+
+  0x000001e8d4d85c84: ; ImmutableOopMap {}
+                      ;*invokevirtual getValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@21 (line 197)
+  0x000001e8d4d85c84: 78c6 58ff | baf4 ffff | ff49 8bea 
+
+  0x000001e8d4d85c90: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85c90: 6666 90e8 
+
+  0x000001e8d4d85c94: ; ImmutableOopMap {rbp=Oop [8]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@24 (line 197)
+  0x000001e8d4d85c94: 68c6 58ff | baf6 ffff 
+
+  0x000001e8d4d85c9c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85c9c: ff66 90e8 
+
+  0x000001e8d4d85ca0: ; ImmutableOopMap {}
+                      ;*invokevirtual getValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@32 (line 197)
+  0x000001e8d4d85ca0: 5cc6 58ff | baf4 ffff | ff4c 8954 
+
+  0x000001e8d4d85cac: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85cac: 2410 90e8 
+
+  0x000001e8d4d85cb0: ; ImmutableOopMap {rbp=Oop [8]=Oop [16]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@35 (line 197)
+  0x000001e8d4d85cb0: 4cc6 58ff | baf6 ffff 
+
+  0x000001e8d4d85cb8: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85cb8: ff66 90e8 
+
+  0x000001e8d4d85cbc: ; ImmutableOopMap {}
+                      ;*invokeinterface floatValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - jdk.internal.math.FloatingDecimal::parseFloat@4 (line 122)
+                      ; - java.lang.Float::parseFloat@1 (line 476)
+                      ; - com.google.gson.internal.LazilyParsedNumber::floatValue@4 (line 62)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@38 (line 197)
+  0x000001e8d4d85cbc: 40c6 58ff | baf6 ffff 
+
+  0x000001e8d4d85cc4: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85cc4: ff66 90e8 
+
+  0x000001e8d4d85cc8: ; ImmutableOopMap {}
+                      ;*invokevirtual getValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@50 (line 197)
+  0x000001e8d4d85cc8: 34c6 58ff | baf4 ffff 
+
+  0x000001e8d4d85cd0: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85cd0: ff66 90e8 
+
+  0x000001e8d4d85cd4: ; ImmutableOopMap {rbp=Oop [0]=Oop [8]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@53 (line 197)
+  0x000001e8d4d85cd4: 28c6 58ff | baf6 ffff 
+
+  0x000001e8d4d85cdc: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85cdc: ff66 90e8 
+
+  0x000001e8d4d85ce0: ; ImmutableOopMap {}
+                      ;*invokeinterface floatValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - jdk.internal.math.FloatingDecimal::parseFloat@4 (line 122)
+                      ; - java.lang.Float::parseFloat@1 (line 476)
+                      ; - com.google.gson.internal.LazilyParsedNumber::floatValue@4 (line 62)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@56 (line 197)
+  0x000001e8d4d85ce0: 1cc6 58ff | baf6 ffff 
+
+  0x000001e8d4d85ce8: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85ce8: ff66 90e8 
+
+  0x000001e8d4d85cec: ; ImmutableOopMap {}
+                      ;*invokevirtual getValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@72 (line 198)
+  0x000001e8d4d85cec: 10c6 58ff | baf4 ffff | ff48 8b2c 
+
+  0x000001e8d4d85cf8: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85cf8: 2466 90e8 
+
+  0x000001e8d4d85cfc: ; ImmutableOopMap {rbp=Oop [8]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@75 (line 198)
+  0x000001e8d4d85cfc: 00c6 58ff | baf6 ffff 
+
+  0x000001e8d4d85d04: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85d04: ff66 90e8 
+
+  0x000001e8d4d85d08: ; ImmutableOopMap {}
+                      ;*getfield displayWidth {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.gui.ScaledResolution::<init>@6 (line 16)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.hud.Position::getX@1 (line 218)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@78 (line 198)
+  0x000001e8d4d85d08: f4c5 58ff | baf6 ffff 
+
+  0x000001e8d4d85d10: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85d10: ff66 90e8 
+
+  0x000001e8d4d85d14: ; ImmutableOopMap {}
+                      ;*getfield forceUnicodeFont {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) net.minecraft.client.Minecraft::isUnicode@14 (line 851)
+                      ; - net.minecraft.client.gui.ScaledResolution::<init>@26 (line 19)
+                      ; - cc.polyfrost.oneconfig.libs.universal.UResolution::getScaledWidth@7 (line 14)
+                      ; - cc.polyfrost.oneconfig.hud.Position::getX@1 (line 218)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@78 (line 198)
+  0x000001e8d4d85d14: e8c5 58ff | baf6 ffff 
+
+  0x000001e8d4d85d1c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85d1c: ff66 90e8 
+
+  0x000001e8d4d85d20: ; ImmutableOopMap {}
+                      ;*getfield x {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) cc.polyfrost.oneconfig.hud.Position::getAnchorX@5 (line 349)
+                      ; - cc.polyfrost.oneconfig.hud.Position::getX@6 (line 209)
+                      ; - cc.polyfrost.oneconfig.hud.Position::getX@5 (line 218)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@78 (line 198)
+  0x000001e8d4d85d20: dcc5 58ff | baf6 ffff 
+
+  0x000001e8d4d85d28: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85d28: ff66 90e8 
+
+  0x000001e8d4d85d2c: ; ImmutableOopMap {}
+                      ;*invokevirtual getValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@98 (line 198)
+  0x000001e8d4d85d2c: d0c5 58ff | baf4 ffff | ff48 8b2c | 244c 8b54 | 2408 4c89 | 1424 c5fa | 1164 2408 | c5fa 114c 
+  0x000001e8d4d85d4c: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85d4c: 240c 90e8 
+
+  0x000001e8d4d85d50: ; ImmutableOopMap {rbp=Oop [0]=Oop }
+                      ;*checkcast {reexecute=0 rethrow=0 return_oop=0}
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@101 (line 198)
+  0x000001e8d4d85d50: acc5 58ff | baf6 ffff 
+
+  0x000001e8d4d85d58: ;   {runtime_call UncommonTrapBlob}
+  0x000001e8d4d85d58: ff66 90e8 
+
+  0x000001e8d4d85d5c: ; ImmutableOopMap {}
+                      ;*invokeinterface floatValue {reexecute=0 rethrow=0 return_oop=0}
+                      ; - jdk.internal.math.FloatingDecimal::parseFloat@4 (line 122)
+                      ; - java.lang.Float::parseFloat@1 (line 476)
+                      ; - com.google.gson.internal.LazilyParsedNumber::floatValue@4 (line 62)
+                      ; - cc.polyfrost.oneconfig.hud.Hud::drawAll@104 (line 198)
+  0x000001e8d4d85d5c: a0c5 58ff 
+
+  0x000001e8d4d85d60: ;   {internal_word}
+  0x000001e8d4d85d60: 49ba b958 | d8d4 e801 | 0000 4d89 | 9760 0300 
+
+  0x000001e8d4d85d70: ;   {runtime_call SafepointBlob}
+  0x000001e8d4d85d70: 00e9 8ad6 | 58ff f4f4 | f4f4 f4f4 | f4f4 f4f4 
+[Stub Code]
+  0x000001e8d4d85d80: ;   {no_reloc}
+  0x000001e8d4d85d80: 48bb 0000 | 0000 0000 
+
+  0x000001e8d4d85d88: ;   {runtime_call}
+  0x000001e8d4d85d88: 0000 e9fb 
+
+  0x000001e8d4d85d8c: ;   {static_stub}
+  0x000001e8d4d85d8c: ffff ff48 | bb00 0000 | 0000 0000 
+
+  0x000001e8d4d85d98: ;   {runtime_call}
+  0x000001e8d4d85d98: 00e9 fbff 
+
+  0x000001e8d4d85d9c: ;   {static_stub}
+  0x000001e8d4d85d9c: ffff 48bb | 0000 0000 | 0000 0000 
+
+  0x000001e8d4d85da8: ;   {runtime_call}
+  0x000001e8d4d85da8: e9fb ffff 
+
+  0x000001e8d4d85dac: ;   {static_stub}
+  0x000001e8d4d85dac: ff48 bb00 | 0000 0000 
+
+  0x000001e8d4d85db4: ;   {runtime_call}
+  0x000001e8d4d85db4: 0000 00e9 | fbff ffff 
+
+  0x000001e8d4d85dbc: ;   {static_stub}
+  0x000001e8d4d85dbc: 48bb 0000 | 0000 0000 
+
+  0x000001e8d4d85dc4: ;   {runtime_call}
+  0x000001e8d4d85dc4: 0000 e9fb 
+
+  0x000001e8d4d85dc8: ;   {static_stub}
+  0x000001e8d4d85dc8: ffff ff48 | bb00 0000 | 0000 0000 
+
+  0x000001e8d4d85dd4: ;   {runtime_call}
+  0x000001e8d4d85dd4: 00e9 fbff 
+
+  0x000001e8d4d85dd8: ;   {runtime_call ExceptionBlob}
+  0x000001e8d4d85dd8: ffff e9a1 | f662 ffe8 | 0000 0000 | 4883 2c24 
+
+  0x000001e8d4d85de8: ;   {runtime_call DeoptimizationBlob}
+  0x000001e8d4d85de8: 05e9 b2c8 | 58ff f4f4 
+[/MachCode]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000001e8efb4de00, length=70, elements={
+0x000001e8c517d200, 0x000001e8e8f0a090, 0x000001e8e8f0b260, 0x000001e8ea0b3fe0,
+0x000001e8ea0b4ab0, 0x000001e8ea0b7480, 0x000001e8ea0b8250, 0x000001e8e8f19fa0,
+0x000001e8ea0cd110, 0x000001e8e8f1e610, 0x000001e8e8ef0db0, 0x000001e8ea7b7380,
+0x000001e8ea7b7860, 0x000001e8eaba7960, 0x000001e8ef011800, 0x000001e8ef11ba50,
+0x000001e8eab82600, 0x000001e8f048df90, 0x000001e8f048fdf0, 0x000001e8f0492160,
+0x000001e8f0492b80, 0x000001e8f0493ab0, 0x000001e8f048eec0, 0x000001e8f9c81800,
+0x000001e8f9c83150, 0x000001e8f9c7d630, 0x000001e8f9c7c700, 0x000001e8f9c7ef80,
+0x000001e8f9c82220, 0x000001e8f9c7e560, 0x000001e8f9c7f9a0, 0x000001e8f9c7e050,
+0x000001e8f9c7cc10, 0x000001e8f9c803c0, 0x000001e8f9c81d10, 0x000001e8f0493090,
+0x000001e8f048d570, 0x000001e8f0493fc0, 0x000001e8f048d060, 0x000001e8eab858a0,
+0x000001e8eab85db0, 0x000001e8f9c7d120, 0x000001e8f9c7db40, 0x000001e8f04949e0,
+0x000001e8f28b7540, 0x000001e8f28b7a50, 0x000001e8f28b6610, 0x000001e8f28bb200,
+0x000001e8f28b4cc0, 0x000001e8f28b8980, 0x000001e8f28b3d90, 0x000001e8f28b42a0,
+0x000001e8f28b56e0, 0x000001e8f28b6100, 0x000001e8f28b8470, 0x000001e8f28b8e90,
+0x000001e8f28b47b0, 0x000001e8f28b93a0, 0x000001e8f28b98b0, 0x000001e8f28ba7e0,
+0x000001e8f28bb710, 0x000001e8f28b9dc0, 0x000001e8f28bacf0, 0x000001e8fb51d1a0,
+0x000001e8fb51a920, 0x000001e8fb51e5e0, 0x000001e8fb521370, 0x000001e8fb51e0d0,
+0x000001e8fb51ae30, 0x000001e8fb51dbc0
+}
+
+Java Threads: ( => current thread )
+=>0x000001e8c517d200 JavaThread "Client thread" [_thread_in_native, id=8604, stack(0x00000091da300000,0x00000091da400000)]
+  0x000001e8e8f0a090 JavaThread "Reference Handler" daemon [_thread_blocked, id=8224, stack(0x00000091daa00000,0x00000091dab00000)]
+  0x000001e8e8f0b260 JavaThread "Finalizer" daemon [_thread_blocked, id=14576, stack(0x00000091dab00000,0x00000091dac00000)]
+  0x000001e8ea0b3fe0 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=12644, stack(0x00000091dac00000,0x00000091dad00000)]
+  0x000001e8ea0b4ab0 JavaThread "Attach Listener" daemon [_thread_blocked, id=2212, stack(0x00000091dad00000,0x00000091dae00000)]
+  0x000001e8ea0b7480 JavaThread "Service Thread" daemon [_thread_blocked, id=15404, stack(0x00000091dae00000,0x00000091daf00000)]
+  0x000001e8ea0b8250 JavaThread "Monitor Deflation Thread" daemon [_thread_blocked, id=2528, stack(0x00000091daf00000,0x00000091db000000)]
+  0x000001e8e8f19fa0 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=8264, stack(0x00000091db000000,0x00000091db100000)]
+  0x000001e8ea0cd110 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=8972, stack(0x00000091db100000,0x00000091db200000)]
+  0x000001e8e8f1e610 JavaThread "Sweeper thread" daemon [_thread_blocked, id=340, stack(0x00000091db200000,0x00000091db300000)]
+  0x000001e8e8ef0db0 JavaThread "Common-Cleaner" daemon [_thread_blocked, id=17556, stack(0x00000091db300000,0x00000091db400000)]
+  0x000001e8ea7b7380 JavaThread "Monitor Ctrl-Break" daemon [_thread_in_native, id=8976, stack(0x00000091db800000,0x00000091db900000)]
+  0x000001e8ea7b7860 JavaThread "Notification Thread" daemon [_thread_blocked, id=13080, stack(0x00000091db900000,0x00000091dba00000)]
+  0x000001e8eaba7960 JavaThread "RMI TCP Accept-0" daemon [_thread_in_native, id=5032, stack(0x00000091dbc00000,0x00000091dbd00000)]
+  0x000001e8ef011800 JavaThread "RMI Scheduler(0)" daemon [_thread_blocked, id=16972, stack(0x00000091dbe00000,0x00000091dbf00000)]
+  0x000001e8ef11ba50 JavaThread "JMX server connection timeout 29" daemon [_thread_blocked, id=10884, stack(0x00000091dbf00000,0x00000091dc000000)]
+  0x000001e8eab82600 JavaThread "Snooper Timer" daemon [_thread_blocked, id=6112, stack(0x00000091dcf00000,0x00000091dd000000)]
+  0x000001e8f048df90 JavaThread "Timer hack thread" daemon [_thread_blocked, id=11780, stack(0x00000091dda00000,0x00000091ddb00000)]
+  0x000001e8f048fdf0 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=11356, stack(0x00000091ddb00000,0x00000091ddc00000)]
+  0x000001e8f0492160 JavaThread "AWT-Windows" daemon [_thread_in_native, id=17480, stack(0x00000091dde00000,0x00000091ddf00000)]
+  0x000001e8f0492b80 JavaThread "JNA Cleaner" daemon [_thread_blocked, id=18204, stack(0x00000091db500000,0x00000091db600000)]
+  0x000001e8f0493ab0 JavaThread "Thread-2" [_thread_blocked, id=8172, stack(0x00000091db700000,0x00000091db800000)]
+  0x000001e8f048eec0 JavaThread "Thread-3" [_thread_blocked, id=17472, stack(0x00000091ddd00000,0x00000091dde00000)]
+  0x000001e8f9c81800 JavaThread "Via Async Scheduler 0" [_thread_blocked, id=11916, stack(0x00000091dfd00000,0x00000091dfe00000)]
+  0x000001e8f9c83150 JavaThread "HttpClient-1-SelectorManager" daemon [_thread_in_native, id=9200, stack(0x00000091de600000,0x00000091de700000)]
+  0x000001e8f9c7d630 JavaThread "HttpClient-2-SelectorManager" daemon [_thread_in_native, id=15632, stack(0x00000091de700000,0x00000091de800000)]
+  0x000001e8f9c7c700 JavaThread "pool-9-thread-1" [_thread_blocked, id=17068, stack(0x00000091deb00000,0x00000091dec00000)]
+  0x000001e8f9c7ef80 JavaThread "Server Pinger #0" daemon [_thread_blocked, id=11852, stack(0x00000091def00000,0x00000091df000000)]
+  0x000001e8f9c82220 JavaThread "Thread-5" daemon [_thread_in_native, id=9488, stack(0x00000091df000000,0x00000091df100000)]
+  0x000001e8f9c7e560 JavaThread "Server Pinger #1" daemon [_thread_blocked, id=18388, stack(0x00000091df300000,0x00000091df400000)]
+  0x000001e8f9c7f9a0 JavaThread "Server Pinger #2" daemon [_thread_blocked, id=13688, stack(0x00000091df400000,0x00000091df500000)]
+  0x000001e8f9c7e050 JavaThread "Server Pinger #3" daemon [_thread_blocked, id=8348, stack(0x00000091df500000,0x00000091df600000)]
+  0x000001e8f9c7cc10 JavaThread "Server Pinger #4" daemon [_thread_blocked, id=7116, stack(0x00000091df600000,0x00000091df700000)]
+  0x000001e8f9c803c0 JavaThread "Netty Client IO #0" daemon [_thread_in_native, id=12752, stack(0x00000091dee00000,0x00000091def00000)]
+  0x000001e8f9c81d10 JavaThread "Netty Client IO #1" daemon [_thread_in_native, id=13160, stack(0x00000091df800000,0x00000091df900000)]
+  0x000001e8f0493090 JavaThread "Netty Client IO #2" daemon [_thread_in_native, id=14340, stack(0x00000091df900000,0x00000091dfa00000)]
+  0x000001e8f048d570 JavaThread "threadDeathWatcher-2-1" daemon [_thread_blocked, id=5676, stack(0x00000091dfb00000,0x00000091dfc00000)]
+  0x000001e8f0493fc0 JavaThread "Netty Client IO #3" daemon [_thread_in_native, id=10420, stack(0x00000091e0000000,0x00000091e0100000)]
+  0x000001e8f048d060 JavaThread "pool-8-thread-1" [_thread_blocked, id=7884, stack(0x00000091db400000,0x00000091db500000)]
+  0x000001e8eab858a0 JavaThread "Netty Client IO #4" daemon [_thread_in_native, id=11368, stack(0x00000091dd900000,0x00000091dda00000)]
+  0x000001e8eab85db0 JavaThread "pool-8-thread-2" [_thread_blocked, id=15288, stack(0x00000091de500000,0x00000091de600000)]
+  0x000001e8f9c7d120 JavaThread "Chunk Batcher 0" daemon [_thread_blocked, id=4900, stack(0x00000091dec00000,0x00000091ded00000)]
+  0x000001e8f9c7db40 JavaThread "Chunk Batcher 1" daemon [_thread_blocked, id=17988, stack(0x00000091df100000,0x00000091df200000)]
+  0x000001e8f04949e0 JavaThread "Chunk Batcher 2" daemon [_thread_blocked, id=17844, stack(0x00000091df200000,0x00000091df300000)]
+  0x000001e8f28b7540 JavaThread "Chunk Batcher 3" daemon [_thread_blocked, id=9528, stack(0x00000091dfe00000,0x00000091dff00000)]
+  0x000001e8f28b7a50 JavaThread "Chunk Batcher 4" daemon [_thread_blocked, id=13068, stack(0x00000091dff00000,0x00000091e0000000)]
+  0x000001e8f28b6610 JavaThread "Chunk Batcher 5" daemon [_thread_blocked, id=14952, stack(0x00000091e0100000,0x00000091e0200000)]
+  0x000001e8f28bb200 JavaThread "Chunk Batcher 6" daemon [_thread_blocked, id=3916, stack(0x00000091e0200000,0x00000091e0300000)]
+  0x000001e8f28b4cc0 JavaThread "Chunk Batcher 7" daemon [_thread_blocked, id=17444, stack(0x00000091e0300000,0x00000091e0400000)]
+  0x000001e8f28b8980 JavaThread "Chunk Batcher 8" daemon [_thread_blocked, id=16364, stack(0x00000091e0400000,0x00000091e0500000)]
+  0x000001e8f28b3d90 JavaThread "Chunk Batcher 9" daemon [_thread_blocked, id=16112, stack(0x00000091e0500000,0x00000091e0600000)]
+  0x000001e8f28b42a0 JavaThread "Chunk Batcher 10" daemon [_thread_blocked, id=17972, stack(0x00000091e0600000,0x00000091e0700000)]
+  0x000001e8f28b56e0 JavaThread "Chunk Batcher 11" daemon [_thread_blocked, id=17804, stack(0x00000091e0700000,0x00000091e0800000)]
+  0x000001e8f28b6100 JavaThread "Chunk Batcher 12" daemon [_thread_blocked, id=10716, stack(0x00000091e0800000,0x00000091e0900000)]
+  0x000001e8f28b8470 JavaThread "Chunk Batcher 13" daemon [_thread_blocked, id=17564, stack(0x00000091e0900000,0x00000091e0a00000)]
+  0x000001e8f28b8e90 JavaThread "Chunk Batcher 14" daemon [_thread_blocked, id=17860, stack(0x00000091e0a00000,0x00000091e0b00000)]
+  0x000001e8f28b47b0 JavaThread "Chunk Batcher 15" daemon [_thread_blocked, id=1576, stack(0x00000091e0b00000,0x00000091e0c00000)]
+  0x000001e8f28b93a0 JavaThread "Chunk Batcher 16" daemon [_thread_blocked, id=10844, stack(0x00000091e0c00000,0x00000091e0d00000)]
+  0x000001e8f28b98b0 JavaThread "Chunk Batcher 17" daemon [_thread_blocked, id=17552, stack(0x00000091e0d00000,0x00000091e0e00000)]
+  0x000001e8f28ba7e0 JavaThread "Chunk Batcher 18" daemon [_thread_blocked, id=16400, stack(0x00000091e0e00000,0x00000091e0f00000)]
+  0x000001e8f28bb710 JavaThread "Chunk Batcher 19" daemon [_thread_blocked, id=9144, stack(0x00000091e0f00000,0x00000091e1000000)]
+  0x000001e8f28b9dc0 JavaThread "Chunk Batcher 20" daemon [_thread_blocked, id=7792, stack(0x00000091e1000000,0x00000091e1100000)]
+  0x000001e8f28bacf0 JavaThread "Chunk Batcher 21" daemon [_thread_blocked, id=9316, stack(0x00000091e1100000,0x00000091e1200000)]
+  0x000001e8fb51d1a0 JavaThread "pool-8-thread-3" [_thread_blocked, id=17648, stack(0x00000091e1300000,0x00000091e1400000)]
+  0x000001e8fb51a920 JavaThread "pool-8-thread-4" [_thread_blocked, id=3048, stack(0x00000091e1400000,0x00000091e1500000)]
+  0x000001e8fb51e5e0 JavaThread "pool-8-thread-5" [_thread_blocked, id=14228, stack(0x00000091e1600000,0x00000091e1700000)]
+  0x000001e8fb521370 JavaThread "pool-14-thread-1" [_thread_blocked, id=9796, stack(0x00000091da200000,0x00000091da300000)]
+  0x000001e8fb51e0d0 JavaThread "pool-14-thread-2" [_thread_blocked, id=11112, stack(0x00000091da000000,0x00000091da100000)]
+  0x000001e8fb51ae30 JavaThread "RMI TCP Connection(8)-192.168.1.3" daemon [_thread_in_native, id=8872, stack(0x00000091da100000,0x00000091da200000)]
+  0x000001e8fb51dbc0 JavaThread "Thread-61" [_thread_blocked, id=9436, stack(0x00000091dbd00000,0x00000091dbe00000)]
+
+Other Threads:
+  0x000001e8e8f00620 VMThread "VM Thread" [stack: 0x00000091da900000,0x00000091daa00000] [id=18052]
+  0x000001e8c5211070 WatcherThread [stack: 0x00000091dba00000,0x00000091dbb00000] [id=12904]
+  0x000001e8c51edfe0 GCTaskThread "GC Thread#0" [stack: 0x00000091da400000,0x00000091da500000] [id=7768]
+  0x000001e8ef6c5700 GCTaskThread "GC Thread#1" [stack: 0x00000091dc000000,0x00000091dc100000] [id=17716]
+  0x000001e8ef5d0a20 GCTaskThread "GC Thread#2" [stack: 0x00000091dc100000,0x00000091dc200000] [id=17872]
+  0x000001e8ef5598e0 GCTaskThread "GC Thread#3" [stack: 0x00000091dc200000,0x00000091dc300000] [id=17856]
+  0x000001e8ef53b410 GCTaskThread "GC Thread#4" [stack: 0x00000091dc300000,0x00000091dc400000] [id=17596]
+  0x000001e8ef5ccb60 GCTaskThread "GC Thread#5" [stack: 0x00000091dc400000,0x00000091dc500000] [id=17936]
+  0x000001e8ef69a430 GCTaskThread "GC Thread#6" [stack: 0x00000091dc500000,0x00000091dc600000] [id=17852]
+  0x000001e8ef928010 GCTaskThread "GC Thread#7" [stack: 0x00000091dc600000,0x00000091dc700000] [id=1292]
+  0x000001e8ef4b1b30 GCTaskThread "GC Thread#8" [stack: 0x00000091dc700000,0x00000091dc800000] [id=14792]
+  0x000001e8efe6c2c0 GCTaskThread "GC Thread#9" [stack: 0x00000091dc800000,0x00000091dc900000] [id=2756]
+  0x000001e8f02bfc30 GCTaskThread "GC Thread#10" [stack: 0x00000091dc900000,0x00000091dca00000] [id=8920]
+  0x000001e8f02ddca0 GCTaskThread "GC Thread#11" [stack: 0x00000091dca00000,0x00000091dcb00000] [id=17908]
+  0x000001e8ef5a7b80 GCTaskThread "GC Thread#12" [stack: 0x00000091dcb00000,0x00000091dcc00000] [id=11300]
+  0x000001e8f0ade8f0 GCTaskThread "GC Thread#13" [stack: 0x00000091dcc00000,0x00000091dcd00000] [id=11324]
+  0x000001e8f0297870 GCTaskThread "GC Thread#14" [stack: 0x00000091dd100000,0x00000091dd200000] [id=11828]
+  0x000001e8f0297df0 GCTaskThread "GC Thread#15" [stack: 0x00000091dd200000,0x00000091dd300000] [id=3264]
+  0x000001e8f0297b30 GCTaskThread "GC Thread#16" [stack: 0x00000091dd300000,0x00000091dd400000] [id=6876]
+  0x000001e8f0298370 GCTaskThread "GC Thread#17" [stack: 0x00000091dd400000,0x00000091dd500000] [id=11864]
+  0x000001e8c51998b0 ConcurrentGCThread "G1 Main Marker" [stack: 0x00000091da500000,0x00000091da600000] [id=18348]
+  0x000001e8c51ff2e0 ConcurrentGCThread "G1 Conc#0" [stack: 0x00000091da600000,0x00000091da700000] [id=16316]
+  0x000001e8f02980b0 ConcurrentGCThread "G1 Conc#1" [stack: 0x00000091dd500000,0x00000091dd600000] [id=8696]
+  0x000001e8f0298630 ConcurrentGCThread "G1 Conc#2" [stack: 0x00000091dd600000,0x00000091dd700000] [id=17440]
+  0x000001e8f02988f0 ConcurrentGCThread "G1 Conc#3" [stack: 0x00000091dd700000,0x00000091dd800000] [id=17532]
+  0x000001e8f02972f0 ConcurrentGCThread "G1 Conc#4" [stack: 0x00000091dd800000,0x00000091dd900000] [id=17780]
+  0x000001e8e8e3dd70 ConcurrentGCThread "G1 Refine#0" [stack: 0x00000091da700000,0x00000091da800000] [id=17668]
+  0x000001e8f262b010 ConcurrentGCThread "G1 Refine#1" [stack: 0x00000091de800000,0x00000091de900000] [id=17928]
+  0x000001e8f97148b0 ConcurrentGCThread "G1 Refine#2" [stack: 0x00000091de900000,0x00000091dea00000] [id=17436]
+  0x000001e8ea5e2470 ConcurrentGCThread "G1 Refine#3" [stack: 0x00000091dea00000,0x00000091deb00000] [id=17504]
+  0x000001e8e8e3e640 ConcurrentGCThread "G1 Service" [stack: 0x00000091da800000,0x00000091da900000] [id=15460]
+
+Threads with active compile tasks:
+
+VM state: not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x0000000701600000, size: 4074 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+
+CDS archive(s) mapped at: [0x000001e880000000-0x000001e880bd0000-0x000001e880bd0000), size 12386304, SharedBaseAddress: 0x000001e880000000, ArchiveRelocationMode: 1.
+Compressed class space mapped at: 0x000001e881000000-0x000001e8c1000000, reserved size: 1073741824
+Narrow klass base: 0x000001e880000000, Narrow klass shift: 0, Narrow klass range: 0x100000000
+
+GC Precious Log:
+ CPUs: 24 total, 24 available
+ Memory: 16288M
+ Large Page Support: Disabled
+ NUMA Support: Disabled
+ Compressed Oops: Enabled (Zero based)
+ Heap Region Size: 2M
+ Heap Min Capacity: 8M
+ Heap Initial Capacity: 256M
+ Heap Max Capacity: 4074M
+ Pre-touch: Disabled
+ Parallel Workers: 18
+ Concurrent Workers: 5
+ Concurrent Refinement Workers: 18
+ Periodic GC: Disabled
+
+Heap:
+ garbage-first heap   total 260096K, used 223328K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 30 young (61440K), 1 survivors (2048K)
+ Metaspace       used 75482K, committed 76224K, reserved 1179648K
+  class space    used 9167K, committed 9536K, reserved 1048576K
+
+Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=humongous(continues), CS=collection set, F=free, OA=open archive, CA=closed archive, TAMS=top-at-mark-start (previous, next)
+|   0|0x0000000701600000, 0x0000000701800000, 0x0000000701800000|100%|HS|  |TAMS 0x0000000701800000, 0x0000000701600000| Complete 
+|   1|0x0000000701800000, 0x0000000701a00000, 0x0000000701a00000|100%| O|  |TAMS 0x0000000701a00000, 0x0000000701800000| Untracked 
+|   2|0x0000000701a00000, 0x0000000701c00000, 0x0000000701c00000|100%| O|  |TAMS 0x0000000701c00000, 0x0000000701a00000| Untracked 
+|   3|0x0000000701c00000, 0x0000000701e00000, 0x0000000701e00000|100%| O|  |TAMS 0x0000000701e00000, 0x0000000701c00000| Untracked 
+|   4|0x0000000701e00000, 0x0000000702000000, 0x0000000702000000|100%|HS|  |TAMS 0x0000000702000000, 0x0000000701e00000| Complete 
+|   5|0x0000000702000000, 0x0000000702200000, 0x0000000702200000|100%|HC|  |TAMS 0x0000000702200000, 0x0000000702000000| Complete 
+|   6|0x0000000702200000, 0x0000000702400000, 0x0000000702400000|100%|HC|  |TAMS 0x0000000702400000, 0x0000000702200000| Complete 
+|   7|0x0000000702400000, 0x0000000702600000, 0x0000000702600000|100%|HC|  |TAMS 0x0000000702600000, 0x0000000702400000| Complete 
+|   8|0x0000000702600000, 0x0000000702800000, 0x0000000702800000|100%|HC|  |TAMS 0x0000000702800000, 0x0000000702600000| Complete 
+|   9|0x0000000702800000, 0x0000000702a00000, 0x0000000702a00000|100%|HC|  |TAMS 0x0000000702a00000, 0x0000000702800000| Complete 
+|  10|0x0000000702a00000, 0x0000000702c00000, 0x0000000702c00000|100%| O|  |TAMS 0x0000000702c00000, 0x0000000702a00000| Untracked 
+|  11|0x0000000702c00000, 0x0000000702e00000, 0x0000000702e00000|100%| O|  |TAMS 0x0000000702e00000, 0x0000000702c00000| Untracked 
+|  12|0x0000000702e00000, 0x0000000703000000, 0x0000000703000000|100%| O|  |TAMS 0x0000000703000000, 0x0000000702e00000| Untracked 
+|  13|0x0000000703000000, 0x0000000703200000, 0x0000000703200000|100%| O|  |TAMS 0x0000000703200000, 0x0000000703000000| Untracked 
+|  14|0x0000000703200000, 0x0000000703400000, 0x0000000703400000|100%| O|  |TAMS 0x0000000703400000, 0x0000000703200000| Untracked 
+|  15|0x0000000703400000, 0x0000000703600000, 0x0000000703600000|100%| O|  |TAMS 0x0000000703600000, 0x0000000703400000| Untracked 
+|  16|0x0000000703600000, 0x0000000703800000, 0x0000000703800000|100%| O|  |TAMS 0x000000070370ce00, 0x0000000703600000| Untracked 
+|  17|0x0000000703800000, 0x0000000703a00000, 0x0000000703a00000|100%|HS|  |TAMS 0x0000000703a00000, 0x0000000703800000| Complete 
+|  18|0x0000000703a00000, 0x0000000703c00000, 0x0000000703c00000|100%|HC|  |TAMS 0x0000000703c00000, 0x0000000703a00000| Complete 
+|  19|0x0000000703c00000, 0x0000000703e00000, 0x0000000703e00000|100%|HC|  |TAMS 0x0000000703e00000, 0x0000000703c00000| Complete 
+|  20|0x0000000703e00000, 0x0000000704000000, 0x0000000704000000|100%| O|  |TAMS 0x0000000704000000, 0x0000000703e00000| Untracked 
+|  21|0x0000000704000000, 0x0000000704200000, 0x0000000704200000|100%| O|  |TAMS 0x0000000704200000, 0x0000000704000000| Untracked 
+|  22|0x0000000704200000, 0x0000000704400000, 0x0000000704400000|100%| O|  |TAMS 0x0000000704400000, 0x0000000704200000| Untracked 
+|  23|0x0000000704400000, 0x0000000704600000, 0x0000000704600000|100%|HS|  |TAMS 0x0000000704600000, 0x0000000704400000| Complete 
+|  24|0x0000000704600000, 0x0000000704800000, 0x0000000704800000|100%|HC|  |TAMS 0x0000000704800000, 0x0000000704600000| Complete 
+|  25|0x0000000704800000, 0x0000000704a00000, 0x0000000704a00000|100%|HC|  |TAMS 0x0000000704a00000, 0x0000000704800000| Complete 
+|  26|0x0000000704a00000, 0x0000000704c00000, 0x0000000704c00000|100%|HC|  |TAMS 0x0000000704c00000, 0x0000000704a00000| Complete 
+|  27|0x0000000704c00000, 0x0000000704e00000, 0x0000000704e00000|100%|HC|  |TAMS 0x0000000704e00000, 0x0000000704c00000| Complete 
+|  28|0x0000000704e00000, 0x0000000705000000, 0x0000000705000000|100%|HC|  |TAMS 0x0000000705000000, 0x0000000704e00000| Complete 
+|  29|0x0000000705000000, 0x0000000705200000, 0x0000000705200000|100%|HC|  |TAMS 0x0000000705200000, 0x0000000705000000| Complete 
+|  30|0x0000000705200000, 0x0000000705400000, 0x0000000705400000|100%|HC|  |TAMS 0x0000000705400000, 0x0000000705200000| Complete 
+|  31|0x0000000705400000, 0x0000000705600000, 0x0000000705600000|100%|HC|  |TAMS 0x0000000705600000, 0x0000000705400000| Complete 
+|  32|0x0000000705600000, 0x0000000705800000, 0x0000000705800000|100%| O|  |TAMS 0x0000000705800000, 0x0000000705600000| Untracked 
+|  33|0x0000000705800000, 0x0000000705a00000, 0x0000000705a00000|100%| O|  |TAMS 0x0000000705a00000, 0x0000000705800000| Untracked 
+|  34|0x0000000705a00000, 0x0000000705c00000, 0x0000000705c00000|100%| O|  |TAMS 0x0000000705c00000, 0x0000000705a00000| Untracked 
+|  35|0x0000000705c00000, 0x0000000705e00000, 0x0000000705e00000|100%| O|  |TAMS 0x0000000705e00000, 0x0000000705c00000| Untracked 
+|  36|0x0000000705e00000, 0x0000000706000000, 0x0000000706000000|100%| O|  |TAMS 0x0000000706000000, 0x0000000705e00000| Untracked 
+|  37|0x0000000706000000, 0x0000000706200000, 0x0000000706200000|100%| O|  |TAMS 0x0000000706200000, 0x0000000706000000| Untracked 
+|  38|0x0000000706200000, 0x0000000706400000, 0x0000000706400000|100%| O|  |TAMS 0x0000000706400000, 0x0000000706200000| Untracked 
+|  39|0x0000000706400000, 0x0000000706600000, 0x0000000706600000|100%| O|  |TAMS 0x0000000706400000, 0x0000000706400000| Untracked 
+|  40|0x0000000706600000, 0x0000000706800000, 0x0000000706800000|100%| O|  |TAMS 0x0000000706800000, 0x0000000706600000| Untracked 
+|  41|0x0000000706800000, 0x0000000706a00000, 0x0000000706a00000|100%| O|  |TAMS 0x0000000706a00000, 0x0000000706800000| Untracked 
+|  42|0x0000000706a00000, 0x0000000706c00000, 0x0000000706c00000|100%| O|  |TAMS 0x0000000706c00000, 0x0000000706a00000| Untracked 
+|  43|0x0000000706c00000, 0x0000000706e00000, 0x0000000706e00000|100%| O|  |TAMS 0x0000000706e00000, 0x0000000706c00000| Untracked 
+|  44|0x0000000706e00000, 0x0000000707000000, 0x0000000707000000|100%| O|  |TAMS 0x0000000707000000, 0x0000000706e00000| Untracked 
+|  45|0x0000000707000000, 0x0000000707200000, 0x0000000707200000|100%| O|  |TAMS 0x0000000707200000, 0x0000000707000000| Untracked 
+|  46|0x0000000707200000, 0x0000000707400000, 0x0000000707400000|100%| O|  |TAMS 0x0000000707400000, 0x0000000707200000| Untracked 
+|  47|0x0000000707400000, 0x0000000707600000, 0x0000000707600000|100%| O|  |TAMS 0x0000000707600000, 0x0000000707400000| Untracked 
+|  48|0x0000000707600000, 0x0000000707800000, 0x0000000707800000|100%| O|  |TAMS 0x0000000707800000, 0x0000000707600000| Untracked 
+|  49|0x0000000707800000, 0x0000000707a00000, 0x0000000707a00000|100%| O|  |TAMS 0x0000000707a00000, 0x0000000707800000| Untracked 
+|  50|0x0000000707a00000, 0x0000000707c00000, 0x0000000707c00000|100%| O|  |TAMS 0x0000000707c00000, 0x0000000707a00000| Untracked 
+|  51|0x0000000707c00000, 0x0000000707e00000, 0x0000000707e00000|100%| O|  |TAMS 0x0000000707e00000, 0x0000000707c00000| Untracked 
+|  52|0x0000000707e00000, 0x0000000708000000, 0x0000000708000000|100%| O|  |TAMS 0x0000000708000000, 0x0000000707e00000| Untracked 
+|  53|0x0000000708000000, 0x0000000708200000, 0x0000000708200000|100%| O|  |TAMS 0x0000000708200000, 0x0000000708000000| Untracked 
+|  54|0x0000000708200000, 0x0000000708400000, 0x0000000708400000|100%| O|  |TAMS 0x0000000708200000, 0x0000000708200000| Untracked 
+|  55|0x0000000708400000, 0x0000000708600000, 0x0000000708600000|100%| O|  |TAMS 0x0000000708600000, 0x0000000708400000| Untracked 
+|  56|0x0000000708600000, 0x0000000708800000, 0x0000000708800000|100%| O|  |TAMS 0x0000000708800000, 0x0000000708600000| Untracked 
+|  57|0x0000000708800000, 0x0000000708a00000, 0x0000000708a00000|100%| O|  |TAMS 0x0000000708a00000, 0x0000000708800000| Untracked 
+|  58|0x0000000708a00000, 0x0000000708c00000, 0x0000000708c00000|100%| O|  |TAMS 0x0000000708a00000, 0x0000000708a00000| Untracked 
+|  59|0x0000000708c00000, 0x0000000708e00000, 0x0000000708e00000|100%| O|  |TAMS 0x0000000708c00000, 0x0000000708c00000| Untracked 
+|  60|0x0000000708e00000, 0x0000000709000000, 0x0000000709000000|100%| O|  |TAMS 0x0000000708e00000, 0x0000000708e00000| Untracked 
+|  61|0x0000000709000000, 0x0000000709200000, 0x0000000709200000|100%| O|  |TAMS 0x0000000709000000, 0x0000000709000000| Untracked 
+|  62|0x0000000709200000, 0x0000000709400000, 0x0000000709400000|100%| O|  |TAMS 0x0000000709200000, 0x0000000709200000| Untracked 
+|  63|0x0000000709400000, 0x0000000709600000, 0x0000000709600000|100%| O|  |TAMS 0x0000000709400000, 0x0000000709400000| Untracked 
+|  64|0x0000000709600000, 0x0000000709800000, 0x0000000709800000|100%| O|  |TAMS 0x0000000709600000, 0x0000000709600000| Untracked 
+|  65|0x0000000709800000, 0x0000000709a00000, 0x0000000709a00000|100%| O|  |TAMS 0x0000000709800000, 0x0000000709800000| Untracked 
+|  66|0x0000000709a00000, 0x0000000709c00000, 0x0000000709c00000|100%| O|  |TAMS 0x0000000709a00000, 0x0000000709a00000| Untracked 
+|  67|0x0000000709c00000, 0x0000000709e00000, 0x0000000709e00000|100%| O|  |TAMS 0x0000000709c00000, 0x0000000709c00000| Untracked 
+|  68|0x0000000709e00000, 0x000000070a000000, 0x000000070a000000|100%| O|  |TAMS 0x0000000709e00000, 0x0000000709e00000| Untracked 
+|  69|0x000000070a000000, 0x000000070a200000, 0x000000070a200000|100%| O|  |TAMS 0x000000070a000000, 0x000000070a000000| Untracked 
+|  70|0x000000070a200000, 0x000000070a400000, 0x000000070a400000|100%| O|  |TAMS 0x000000070a200000, 0x000000070a200000| Untracked 
+|  71|0x000000070a400000, 0x000000070a600000, 0x000000070a600000|100%| O|  |TAMS 0x000000070a400000, 0x000000070a400000| Untracked 
+|  72|0x000000070a600000, 0x000000070a800000, 0x000000070a800000|100%| O|  |TAMS 0x000000070a600000, 0x000000070a600000| Untracked 
+|  73|0x000000070a800000, 0x000000070aa00000, 0x000000070aa00000|100%| O|  |TAMS 0x000000070a800000, 0x000000070a800000| Untracked 
+|  74|0x000000070aa00000, 0x000000070ac00000, 0x000000070ac00000|100%| O|  |TAMS 0x000000070ac00000, 0x000000070aa00000| Untracked 
+|  75|0x000000070ac00000, 0x000000070ae00000, 0x000000070ae00000|100%| O|  |TAMS 0x000000070ac00000, 0x000000070ac00000| Untracked 
+|  76|0x000000070ae00000, 0x000000070b000000, 0x000000070b000000|100%| O|  |TAMS 0x000000070ae00000, 0x000000070ae00000| Untracked 
+|  77|0x000000070b000000, 0x000000070b200000, 0x000000070b200000|100%| O|  |TAMS 0x000000070b000000, 0x000000070b000000| Untracked 
+|  78|0x000000070b200000, 0x000000070b400000, 0x000000070b400000|100%| O|  |TAMS 0x000000070b200000, 0x000000070b200000| Untracked 
+|  79|0x000000070b400000, 0x000000070b600000, 0x000000070b600000|100%| O|  |TAMS 0x000000070b400000, 0x000000070b400000| Untracked 
+|  80|0x000000070b600000, 0x000000070b800000, 0x000000070b800000|100%| O|  |TAMS 0x000000070b600000, 0x000000070b600000| Untracked 
+|  81|0x000000070b800000, 0x000000070b985c00, 0x000000070ba00000| 76%| O|  |TAMS 0x000000070b800000, 0x000000070b800000| Untracked 
+|  82|0x000000070ba00000, 0x000000070ba00000, 0x000000070bc00000|  0%| F|  |TAMS 0x000000070ba00000, 0x000000070ba00000| Untracked 
+|  83|0x000000070bc00000, 0x000000070bc00000, 0x000000070be00000|  0%| F|  |TAMS 0x000000070bc00000, 0x000000070bc00000| Untracked 
+|  84|0x000000070be00000, 0x000000070be00000, 0x000000070c000000|  0%| F|  |TAMS 0x000000070be00000, 0x000000070be00000| Untracked 
+|  85|0x000000070c000000, 0x000000070c000000, 0x000000070c200000|  0%| F|  |TAMS 0x000000070c000000, 0x000000070c000000| Untracked 
+|  86|0x000000070c200000, 0x000000070c200000, 0x000000070c400000|  0%| F|  |TAMS 0x000000070c200000, 0x000000070c200000| Untracked 
+|  87|0x000000070c400000, 0x000000070c400000, 0x000000070c600000|  0%| F|  |TAMS 0x000000070c400000, 0x000000070c400000| Untracked 
+|  88|0x000000070c600000, 0x000000070c600000, 0x000000070c800000|  0%| F|  |TAMS 0x000000070c600000, 0x000000070c600000| Untracked 
+|  89|0x000000070c800000, 0x000000070c800000, 0x000000070ca00000|  0%| F|  |TAMS 0x000000070c800000, 0x000000070c800000| Untracked 
+|  90|0x000000070ca00000, 0x000000070ca00000, 0x000000070cc00000|  0%| F|  |TAMS 0x000000070ca00000, 0x000000070ca00000| Untracked 
+|  91|0x000000070cc00000, 0x000000070cc00000, 0x000000070ce00000|  0%| F|  |TAMS 0x000000070cc00000, 0x000000070cc00000| Untracked 
+|  92|0x000000070ce00000, 0x000000070ce00000, 0x000000070d000000|  0%| F|  |TAMS 0x000000070ce00000, 0x000000070ce00000| Untracked 
+|  93|0x000000070d000000, 0x000000070d000000, 0x000000070d200000|  0%| F|  |TAMS 0x000000070d000000, 0x000000070d000000| Untracked 
+|  94|0x000000070d200000, 0x000000070d200000, 0x000000070d400000|  0%| F|  |TAMS 0x000000070d200000, 0x000000070d200000| Untracked 
+|  95|0x000000070d400000, 0x000000070d4924a0, 0x000000070d600000| 28%| S|CS|TAMS 0x000000070d400000, 0x000000070d400000| Complete 
+|  96|0x000000070d600000, 0x000000070d600000, 0x000000070d800000|  0%| F|  |TAMS 0x000000070d600000, 0x000000070d600000| Untracked 
+|  97|0x000000070d800000, 0x000000070d800000, 0x000000070da00000|  0%| F|  |TAMS 0x000000070d800000, 0x000000070d800000| Untracked 
+|  98|0x000000070da00000, 0x000000070db4f498, 0x000000070dc00000| 65%| E|  |TAMS 0x000000070da00000, 0x000000070da00000| Complete 
+|  99|0x000000070dc00000, 0x000000070de00000, 0x000000070de00000|100%| E|CS|TAMS 0x000000070dc00000, 0x000000070dc00000| Complete 
+| 100|0x000000070de00000, 0x000000070e000000, 0x000000070e000000|100%| E|CS|TAMS 0x000000070de00000, 0x000000070de00000| Complete 
+| 101|0x000000070e000000, 0x000000070e200000, 0x000000070e200000|100%| E|CS|TAMS 0x000000070e000000, 0x000000070e000000| Complete 
+| 102|0x000000070e200000, 0x000000070e400000, 0x000000070e400000|100%| E|CS|TAMS 0x000000070e200000, 0x000000070e200000| Complete 
+| 103|0x000000070e400000, 0x000000070e600000, 0x000000070e600000|100%| E|CS|TAMS 0x000000070e400000, 0x000000070e400000| Complete 
+| 104|0x000000070e600000, 0x000000070e800000, 0x000000070e800000|100%| E|CS|TAMS 0x000000070e600000, 0x000000070e600000| Complete 
+| 105|0x000000070e800000, 0x000000070ea00000, 0x000000070ea00000|100%| E|  |TAMS 0x000000070e800000, 0x000000070e800000| Complete 
+| 106|0x000000070ea00000, 0x000000070ec00000, 0x000000070ec00000|100%| E|CS|TAMS 0x000000070ea00000, 0x000000070ea00000| Complete 
+| 107|0x000000070ec00000, 0x000000070ee00000, 0x000000070ee00000|100%| E|CS|TAMS 0x000000070ec00000, 0x000000070ec00000| Complete 
+| 108|0x000000070ee00000, 0x000000070f000000, 0x000000070f000000|100%| E|CS|TAMS 0x000000070ee00000, 0x000000070ee00000| Complete 
+| 109|0x000000070f000000, 0x000000070f200000, 0x000000070f200000|100%| E|CS|TAMS 0x000000070f000000, 0x000000070f000000| Complete 
+| 110|0x000000070f200000, 0x000000070f400000, 0x000000070f400000|100%| E|CS|TAMS 0x000000070f200000, 0x000000070f200000| Complete 
+| 111|0x000000070f400000, 0x000000070f600000, 0x000000070f600000|100%| E|CS|TAMS 0x000000070f400000, 0x000000070f400000| Complete 
+| 112|0x000000070f600000, 0x000000070f800000, 0x000000070f800000|100%| E|CS|TAMS 0x000000070f600000, 0x000000070f600000| Complete 
+| 113|0x000000070f800000, 0x000000070fa00000, 0x000000070fa00000|100%| E|CS|TAMS 0x000000070f800000, 0x000000070f800000| Complete 
+| 114|0x000000070fa00000, 0x000000070fc00000, 0x000000070fc00000|100%| E|CS|TAMS 0x000000070fa00000, 0x000000070fa00000| Complete 
+| 115|0x000000070fc00000, 0x000000070fe00000, 0x000000070fe00000|100%| E|CS|TAMS 0x000000070fc00000, 0x000000070fc00000| Complete 
+| 116|0x000000070fe00000, 0x0000000710000000, 0x0000000710000000|100%| E|CS|TAMS 0x000000070fe00000, 0x000000070fe00000| Complete 
+| 117|0x0000000710000000, 0x0000000710200000, 0x0000000710200000|100%| E|CS|TAMS 0x0000000710000000, 0x0000000710000000| Complete 
+| 118|0x0000000710200000, 0x0000000710400000, 0x0000000710400000|100%| E|CS|TAMS 0x0000000710200000, 0x0000000710200000| Complete 
+| 119|0x0000000710400000, 0x0000000710600000, 0x0000000710600000|100%| E|CS|TAMS 0x0000000710400000, 0x0000000710400000| Complete 
+| 120|0x0000000710600000, 0x0000000710800000, 0x0000000710800000|100%| E|CS|TAMS 0x0000000710600000, 0x0000000710600000| Complete 
+| 121|0x0000000710800000, 0x0000000710a00000, 0x0000000710a00000|100%| E|CS|TAMS 0x0000000710800000, 0x0000000710800000| Complete 
+| 122|0x0000000710a00000, 0x0000000710c00000, 0x0000000710c00000|100%| E|CS|TAMS 0x0000000710a00000, 0x0000000710a00000| Complete 
+| 123|0x0000000710c00000, 0x0000000710e00000, 0x0000000710e00000|100%| E|CS|TAMS 0x0000000710c00000, 0x0000000710c00000| Complete 
+| 124|0x0000000710e00000, 0x0000000711000000, 0x0000000711000000|100%| E|CS|TAMS 0x0000000710e00000, 0x0000000710e00000| Complete 
+| 125|0x0000000711000000, 0x0000000711200000, 0x0000000711200000|100%| E|CS|TAMS 0x0000000711000000, 0x0000000711000000| Complete 
+| 127|0x0000000711400000, 0x0000000711600000, 0x0000000711600000|100%| E|CS|TAMS 0x0000000711400000, 0x0000000711400000| Complete 
+
+Card table byte_map: [0x000001e8dda90000,0x000001e8de290000] _byte_map_base: 0x000001e8da285000
+
+Marking Bits (Prev, Next): (CMBitMap*) 0x000001e8c51ee4e0, (CMBitMap*) 0x000001e8c51ee4a0
+ Prev Bits: [0x000001e8e2a40000, 0x000001e8e69e8000)
+ Next Bits: [0x000001e8dea90000, 0x000001e8e2a38000)
+
+Polling page: 0x000001e8c3850000
+
+Metaspace:
+
+Usage:
+  Non-class:     64.76 MB used.
+      Class:      8.95 MB used.
+       Both:     73.71 MB used.
+
+Virtual space:
+  Non-class space:      128.00 MB reserved,      65.12 MB ( 51%) committed,  2 nodes.
+      Class space:        1.00 GB reserved,       9.31 MB ( <1%) committed,  1 nodes.
+             Both:        1.12 GB reserved,      74.44 MB (  6%) committed. 
+
+Chunk freelists:
+   Non-Class:  14.75 MB
+       Class:  6.59 MB
+        Both:  21.34 MB
+
+MaxMetaspaceSize: unlimited
+CompressedClassSpaceSize: 1.00 GB
+Initial GC threshold: 21.00 MB
+Current GC threshold: 109.94 MB
+CDS: on
+MetaspaceReclaimPolicy: balanced
+ - commit_granule_bytes: 65536.
+ - commit_granule_words: 8192.
+ - virtual_space_node_default_size: 8388608.
+ - enlarge_chunks_in_place: 1.
+ - new_chunks_are_fully_committed: 0.
+ - uncommit_free_chunks: 1.
+ - use_allocation_guard: 0.
+ - handle_deallocations: 1.
+
+
+Internal statistics:
+
+num_allocs_failed_limit: 6.
+num_arena_births: 1144.
+num_arena_deaths: 2.
+num_vsnodes_births: 3.
+num_vsnodes_deaths: 0.
+num_space_committed: 1188.
+num_space_uncommitted: 0.
+num_chunks_returned_to_freelist: 8.
+num_chunks_taken_from_freelist: 3777.
+num_chunk_merges: 6.
+num_chunk_splits: 2477.
+num_chunks_enlarged: 1684.
+num_inconsistent_stats: 0.
+
+CodeHeap 'non-profiled nmethods': size=119168Kb used=14513Kb max_used=14513Kb free=104654Kb
+ bounds [0x000001e8d4a10000, 0x000001e8d5840000, 0x000001e8dbe70000]
+CodeHeap 'profiled nmethods': size=119104Kb used=22875Kb max_used=24299Kb free=96228Kb
+ bounds [0x000001e8cce70000, 0x000001e8ce650000, 0x000001e8d42c0000]
+CodeHeap 'non-nmethods': size=7488Kb used=2228Kb max_used=3983Kb free=5259Kb
+ bounds [0x000001e8d42c0000, 0x000001e8d46c0000, 0x000001e8d4a10000]
+ total_blobs=14357 nmethods=12520 adapters=1748
+ compilation: enabled
+              stopped_count=0, restarted_count=0
+ full_count=0
+
+Compilation events (20 events):
+Event: 541.510 Thread 0x000001e8e8f19fa0 17100       4       com.google.gson.stream.JsonWriter::close (95 bytes)
+Event: 541.518 Thread 0x000001e8e8f19fa0 nmethod 17100 0x000001e8d5836b10 code [0x000001e8d5836cc0, 0x000001e8d5837758]
+Event: 541.519 Thread 0x000001e8e8f19fa0 17101       4       com.google.gson.JsonObject::entrySet (8 bytes)
+Event: 541.521 Thread 0x000001e8e8f19fa0 nmethod 17101 0x000001e8d5837d10 code [0x000001e8d5837ea0, 0x000001e8d5838078]
+Event: 541.534 Thread 0x000001e8e8f19fa0 17102       4       com.google.gson.JsonObject::<init> (17 bytes)
+Event: 541.537 Thread 0x000001e8e8f19fa0 nmethod 17102 0x000001e8d5838190 code [0x000001e8d5838320, 0x000001e8d58386b8]
+Event: 542.452 Thread 0x000001e8ea0cd110 17103       3       java.lang.ThreadLocal$ThreadLocalMap$Entry::<init> (11 bytes)
+Event: 542.452 Thread 0x000001e8ea0cd110 nmethod 17103 0x000001e8ce27f790 code [0x000001e8ce27f960, 0x000001e8ce27fd58]
+Event: 542.452 Thread 0x000001e8ea0cd110 17104       3       sun.nio.cs.UTF_8$Encoder::encodeArrayLoopSlow (377 bytes)
+Event: 542.454 Thread 0x000001e8ea0cd110 nmethod 17104 0x000001e8cdeccf90 code [0x000001e8cdecd420, 0x000001e8cdecfb88]
+Event: 555.783 Thread 0x000001e8e8f19fa0 17105   !   4       java.util.concurrent.ThreadPoolExecutor::getTask (177 bytes)
+Event: 555.807 Thread 0x000001e8e8f19fa0 nmethod 17105 0x000001e8d5838810 code [0x000001e8d5838ac0, 0x000001e8d5839e08]
+Event: 555.984 Thread 0x000001e8e8f19fa0 17106       4       java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask::run (57 bytes)
+Event: 555.992 Thread 0x000001e8e8f19fa0 nmethod 17106 0x000001e8d583ae10 code [0x000001e8d583b020, 0x000001e8d583b6a0]
+Event: 601.457 Thread 0x000001e8e8f19fa0 17107       4       sun.nio.fs.WindowsPath::getFileSystem (5 bytes)
+Event: 601.457 Thread 0x000001e8e8f19fa0 nmethod 17107 0x000001e8d583be90 code [0x000001e8d583c000, 0x000001e8d583c078]
+Event: 643.395 Thread 0x000001e8ea0cd110 17108       1       org.apache.logging.log4j.message.ReusableParameterizedMessage::getThrowable (5 bytes)
+Event: 643.395 Thread 0x000001e8ea0cd110 nmethod 17108 0x000001e8d583c190 code [0x000001e8d583c320, 0x000001e8d583c3f8]
+Event: 643.395 Thread 0x000001e8ea0cd110 17109       1       org.apache.logging.log4j.message.ReusableParameterizedMessage::getFormat (5 bytes)
+Event: 643.395 Thread 0x000001e8ea0cd110 nmethod 17109 0x000001e8d583c490 code [0x000001e8d583c620, 0x000001e8d583c6f8]
+
+GC Heap History (20 events):
+Event: 96.640 GC heap before
+{Heap before GC invocations=171 (full 0):
+ garbage-first heap   total 260096K, used 229041K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 31 young (63488K), 1 survivors (2048K)
+ Metaspace       used 75182K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 96.641 GC heap after
+{Heap after GC invocations=172 (full 0):
+ garbage-first heap   total 260096K, used 167648K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 1 young (2048K), 1 survivors (2048K)
+ Metaspace       used 75182K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 96.895 GC heap before
+{Heap before GC invocations=172 (full 0):
+ garbage-first heap   total 260096K, used 229088K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 31 young (63488K), 1 survivors (2048K)
+ Metaspace       used 75182K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 96.896 GC heap after
+{Heap after GC invocations=173 (full 0):
+ garbage-first heap   total 260096K, used 167641K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 1 young (2048K), 1 survivors (2048K)
+ Metaspace       used 75182K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 97.150 GC heap before
+{Heap before GC invocations=173 (full 0):
+ garbage-first heap   total 260096K, used 229081K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 31 young (63488K), 1 survivors (2048K)
+ Metaspace       used 75182K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 97.150 GC heap after
+{Heap after GC invocations=174 (full 0):
+ garbage-first heap   total 260096K, used 167637K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 1 young (2048K), 1 survivors (2048K)
+ Metaspace       used 75182K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 97.405 GC heap before
+{Heap before GC invocations=174 (full 0):
+ garbage-first heap   total 260096K, used 229077K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 31 young (63488K), 1 survivors (2048K)
+ Metaspace       used 75182K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 97.406 GC heap after
+{Heap after GC invocations=175 (full 0):
+ garbage-first heap   total 260096K, used 167667K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 1 young (2048K), 1 survivors (2048K)
+ Metaspace       used 75182K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 97.665 GC heap before
+{Heap before GC invocations=175 (full 0):
+ garbage-first heap   total 260096K, used 229107K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 31 young (63488K), 1 survivors (2048K)
+ Metaspace       used 75182K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 97.666 GC heap after
+{Heap after GC invocations=176 (full 0):
+ garbage-first heap   total 260096K, used 167681K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 1 young (2048K), 1 survivors (2048K)
+ Metaspace       used 75182K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 97.918 GC heap before
+{Heap before GC invocations=176 (full 0):
+ garbage-first heap   total 260096K, used 229121K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 31 young (63488K), 1 survivors (2048K)
+ Metaspace       used 75182K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 97.919 GC heap after
+{Heap after GC invocations=177 (full 0):
+ garbage-first heap   total 260096K, used 167693K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 1 young (2048K), 1 survivors (2048K)
+ Metaspace       used 75182K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 98.179 GC heap before
+{Heap before GC invocations=177 (full 0):
+ garbage-first heap   total 260096K, used 229133K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 31 young (63488K), 1 survivors (2048K)
+ Metaspace       used 75183K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 98.179 GC heap after
+{Heap after GC invocations=178 (full 0):
+ garbage-first heap   total 260096K, used 167712K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 1 young (2048K), 1 survivors (2048K)
+ Metaspace       used 75183K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 98.429 GC heap before
+{Heap before GC invocations=178 (full 0):
+ garbage-first heap   total 260096K, used 229152K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 31 young (63488K), 1 survivors (2048K)
+ Metaspace       used 75184K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 98.430 GC heap after
+{Heap after GC invocations=179 (full 0):
+ garbage-first heap   total 260096K, used 167726K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 1 young (2048K), 1 survivors (2048K)
+ Metaspace       used 75184K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 98.680 GC heap before
+{Heap before GC invocations=179 (full 0):
+ garbage-first heap   total 260096K, used 229166K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 31 young (63488K), 1 survivors (2048K)
+ Metaspace       used 75184K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 98.680 GC heap after
+{Heap after GC invocations=180 (full 0):
+ garbage-first heap   total 260096K, used 167765K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 1 young (2048K), 1 survivors (2048K)
+ Metaspace       used 75184K, committed 75904K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 230.693 GC heap before
+{Heap before GC invocations=180 (full 0):
+ garbage-first heap   total 260096K, used 227157K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 31 young (63488K), 1 survivors (2048K)
+ Metaspace       used 75281K, committed 75968K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+Event: 230.695 GC heap after
+{Heap after GC invocations=181 (full 0):
+ garbage-first heap   total 260096K, used 168032K [0x0000000701600000, 0x0000000800000000)
+  region size 2048K, 1 young (2048K), 1 survivors (2048K)
+ Metaspace       used 75281K, committed 75968K, reserved 1179648K
+  class space    used 9143K, committed 9472K, reserved 1048576K
+}
+
+Deoptimization events (20 events):
+Event: 300.491 Thread 0x000001e8ef011800 Uncommon trap: trap_request=0xffffff45 fr.pc=0x000001e8d5313d50 relative=0x0000000000001650
+Event: 300.491 Thread 0x000001e8ef011800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001e8d5313d50 method=java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.finishPoll(Ljava/util/concurrent/RunnableScheduledFuture;)Ljava/util/concurrent/RunnableScheduledFuture; @ 
+Event: 300.491 Thread 0x000001e8ef011800 DEOPT PACKING pc=0x000001e8d5313d50 sp=0x00000091dbeff160
+Event: 300.491 Thread 0x000001e8ef011800 DEOPT UNPACKING pc=0x000001e8d43123a3 sp=0x00000091dbefefd8 mode 2
+Event: 300.491 Thread 0x000001e8ef011800 Uncommon trap: trap_request=0xffffff45 fr.pc=0x000001e8d51edba0 relative=0x00000000000007a0
+Event: 300.491 Thread 0x000001e8ef011800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001e8d51edba0 method=java.util.concurrent.FutureTask.run()V @ 4 c2
+Event: 300.491 Thread 0x000001e8ef011800 DEOPT PACKING pc=0x000001e8d51edba0 sp=0x00000091dbeff130
+Event: 300.491 Thread 0x000001e8ef011800 DEOPT UNPACKING pc=0x000001e8d43123a3 sp=0x00000091dbeff0e0 mode 2
+Event: 300.492 Thread 0x000001e8f048da80 Uncommon trap: trap_request=0xffffff45 fr.pc=0x000001e8d557f5a0 relative=0x0000000000003700
+Event: 300.492 Thread 0x000001e8f048da80 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001e8d557f5a0 method=java.io.ObjectStreamField.isPrimitive()Z @ 14 c2
+Event: 300.492 Thread 0x000001e8f048da80 DEOPT PACKING pc=0x000001e8d557f5a0 sp=0x00000091ddcfe950
+Event: 300.492 Thread 0x000001e8f048da80 DEOPT UNPACKING pc=0x000001e8d43123a3 sp=0x00000091ddcfe6e0 mode 2
+Event: 300.493 Thread 0x000001e8f048da80 Uncommon trap: trap_request=0xffffff45 fr.pc=0x000001e8d562445c relative=0x00000000000011fc
+Event: 300.493 Thread 0x000001e8f048da80 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001e8d562445c method=java.io.ObjectStreamClass$FieldReflector.getObjFieldValues(Ljava/lang/Object;[Ljava/lang/Object;)V @ 39 c2
+Event: 300.493 Thread 0x000001e8f048da80 DEOPT PACKING pc=0x000001e8d562445c sp=0x00000091ddcfe750
+Event: 300.493 Thread 0x000001e8f048da80 DEOPT UNPACKING pc=0x000001e8d43123a3 sp=0x00000091ddcfe620 mode 2
+Event: 300.493 Thread 0x000001e8f048da80 Uncommon trap: trap_request=0xffffff45 fr.pc=0x000001e8d571f29c relative=0x00000000000061dc
+Event: 300.493 Thread 0x000001e8f048da80 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000001e8d571f29c method=sun.rmi.server.LoaderHandler.getClassAnnotation(Ljava/lang/Class;)Ljava/lang/String; @ 21 c2
+Event: 300.493 Thread 0x000001e8f048da80 DEOPT PACKING pc=0x000001e8d571f29c sp=0x00000091ddcfe530
+Event: 300.493 Thread 0x000001e8f048da80 DEOPT UNPACKING pc=0x000001e8d43123a3 sp=0x00000091ddcfe2e8 mode 2
+
+Classes unloaded (1 events):
+Event: 30.791 Thread 0x000001e8e8f00620 Unloading class 0x000001e881584800 'java/lang/invoke/LambdaForm$DMH+0x000001e881584800'
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (20 events):
+Event: 631.526 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dfecf48}> (0x000000070dfecf48) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.527 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dff4c58}> (0x000000070dff4c58) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.528 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dffca10}> (0x000000070dffca10) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.530 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc04e10}> (0x000000070dc04e10) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.531 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc0cbe8}> (0x000000070dc0cbe8) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.532 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc14800}> (0x000000070dc14800) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.534 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc1dae8}> (0x000000070dc1dae8) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.535 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc217e0}> (0x000000070dc217e0) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.536 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc23278}> (0x000000070dc23278) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.538 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc35230}> (0x000000070dc35230) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.539 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc3cdc0}> (0x000000070dc3cdc0) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.540 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc45498}> (0x000000070dc45498) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.542 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc4d7d0}> (0x000000070dc4d7d0) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.543 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc563d0}> (0x000000070dc563d0) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.544 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc5df28}> (0x000000070dc5df28) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.546 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc65ab8}> (0x000000070dc65ab8) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.547 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc6e350}> (0x000000070dc6e350) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 631.548 Thread 0x000001e8f9c7c700 Exception <a 'sun/nio/fs/WindowsException'{0x000000070dc76c28}> (0x000000070dc76c28) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 516]
+Event: 646.626 Thread 0x000001e8fb51d6b0 Exception <a 'java/net/ConnectException'{0x000000070dcbaa80}: Connection refused: connect> (0x000000070dcbaa80) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 535]
+Event: 646.626 Thread 0x000001e8fb51d6b0 Exception <a 'java/net/SocketException'{0x000000070dcbadb8}: Socket is not connected: shutdown> (0x000000070dcbadb8) 
+thrown [s\open\src\hotspot\share\prims\jni.cpp, line 535]
+
+VM Operations (20 events):
+Event: 360.626 Executing VM operation: Cleanup
+Event: 360.627 Executing VM operation: Cleanup done
+Event: 362.627 Executing VM operation: Cleanup
+Event: 362.627 Executing VM operation: Cleanup done
+Event: 397.643 Executing VM operation: Cleanup
+Event: 397.643 Executing VM operation: Cleanup done
+Event: 421.657 Executing VM operation: Cleanup
+Event: 421.657 Executing VM operation: Cleanup done
+Event: 445.668 Executing VM operation: Cleanup
+Event: 445.668 Executing VM operation: Cleanup done
+Event: 481.686 Executing VM operation: Cleanup
+Event: 481.686 Executing VM operation: Cleanup done
+Event: 542.718 Executing VM operation: Cleanup
+Event: 542.718 Executing VM operation: Cleanup done
+Event: 571.732 Executing VM operation: Cleanup
+Event: 571.732 Executing VM operation: Cleanup done
+Event: 600.743 Executing VM operation: Cleanup
+Event: 600.743 Executing VM operation: Cleanup done
+Event: 601.743 Executing VM operation: Cleanup
+Event: 601.743 Executing VM operation: Cleanup done
+
+Events (20 events):
+Event: 656.120 loading class sun/java2d/d3d/D3DRenderQueue$1
+Event: 656.138 loading class sun/java2d/d3d/D3DRenderQueue$1 done
+Event: 656.138 loading class sun/java2d/d3d/D3DGraphicsDevice$1Result
+Event: 656.162 loading class sun/java2d/d3d/D3DGraphicsDevice$1Result done
+Event: 656.162 loading class sun/java2d/d3d/D3DGraphicsDevice$1
+Event: 656.162 loading class sun/java2d/d3d/D3DGraphicsDevice$1 done
+Event: 656.309 loading class sun/java2d/d3d/D3DContext$D3DContextCaps
+Event: 656.321 loading class sun/java2d/pipe/hw/ContextCapabilities
+Event: 656.330 loading class sun/java2d/pipe/hw/ContextCapabilities done
+Event: 656.330 loading class sun/java2d/d3d/D3DContext$D3DContextCaps done
+Event: 656.330 loading class sun/java2d/d3d/D3DContext
+Event: 656.330 loading class sun/java2d/pipe/BufferedContext
+Event: 656.360 loading class sun/java2d/pipe/BufferedContext done
+Event: 656.360 loading class sun/java2d/d3d/D3DContext done
+Event: 656.360 loading class java/util/WeakHashMap$KeyIterator
+Event: 656.360 loading class java/util/WeakHashMap$HashIterator
+Event: 656.360 loading class java/util/WeakHashMap$HashIterator done
+Event: 656.360 loading class java/util/WeakHashMap$KeyIterator done
+Event: 657.548 Thread 0x000001e8fb51bd60 Thread exited: 0x000001e8fb51bd60
+Event: 657.548 Thread 0x000001e8fb51cc90 Thread exited: 0x000001e8fb51cc90
+
+
+Dynamic libraries:
+0x00007ff671c30000 - 0x00007ff671c40000 	C:\Program Files\Java\jdk-17\bin\java.exe
+0x00007ffb34770000 - 0x00007ffb34968000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffb33070000 - 0x00007ffb3312f000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffb321f0000 - 0x00007ffb324ca000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffb32510000 - 0x00007ffb32610000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffb2f450000 - 0x00007ffb2f469000 	C:\Program Files\Java\jdk-17\bin\jli.dll
+0x00007ffb2f1c0000 - 0x00007ffb2f1db000 	C:\Program Files\Java\jdk-17\bin\VCRUNTIME140.dll
+0x00007ffb33c20000 - 0x00007ffb33cce000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffb33d40000 - 0x00007ffb33dde000 	C:\Windows\System32\msvcrt.dll
+0x00007ffb33740000 - 0x00007ffb337dc000 	C:\Windows\System32\sechost.dll
+0x00007ffb345f0000 - 0x00007ffb34716000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffb33300000 - 0x00007ffb3349d000 	C:\Windows\System32\USER32.dll
+0x00007ffb324e0000 - 0x00007ffb32502000 	C:\Windows\System32\win32u.dll
+0x00007ffb1f020000 - 0x00007ffb1f2ba000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffb335e0000 - 0x00007ffb3360b000 	C:\Windows\System32\GDI32.dll
+0x00007ffb31f00000 - 0x00007ffb32010000 	C:\Windows\System32\gdi32full.dll
+0x00007ffb31e60000 - 0x00007ffb31efd000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffb31560000 - 0x00007ffb3156a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffb33de0000 - 0x00007ffb33e10000 	C:\Windows\System32\IMM32.DLL
+0x0000000061840000 - 0x000000006184d000 	C:\Program Files (x86)\360∞≤»´Œ¿ ø\360Safe\safemon\SafeWrapper.dll
+0x00007ffb2d620000 - 0x00007ffb2d725000 	C:\Program Files (x86)\360∞≤»´Œ¿ ø\360Safe\safemon\libzdtp64.dll
+0x00007ffb32610000 - 0x00007ffb32d54000 	C:\Windows\System32\SHELL32.dll
+0x00007ffb32fb0000 - 0x00007ffb33005000 	C:\Windows\System32\SHLWAPI.dll
+0x00007ffb2f440000 - 0x00007ffb2f44c000 	C:\Program Files\Java\jdk-17\bin\vcruntime140_1.dll
+0x00007ffb1b470000 - 0x00007ffb1b4fe000 	C:\Program Files\Java\jdk-17\bin\msvcp140.dll
+0x00007ffaec100000 - 0x00007ffaecce0000 	C:\Program Files\Java\jdk-17\bin\server\jvm.dll
+0x00007ffb33c10000 - 0x00007ffb33c18000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffb18ab0000 - 0x00007ffb18ab9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffb26520000 - 0x00007ffb26547000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffb34280000 - 0x00007ffb342eb000 	C:\Windows\System32\WS2_32.dll
+0x00007ffb32010000 - 0x00007ffb32022000 	C:\Windows\System32\kernel.appcore.dll
+0x00007ffb2f410000 - 0x00007ffb2f41a000 	C:\Program Files\Java\jdk-17\bin\jimage.dll
+0x00007ffb208d0000 - 0x00007ffb20ab4000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffb0f380000 - 0x00007ffb0f3b4000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffb31b60000 - 0x00007ffb31be2000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffb2f1b0000 - 0x00007ffb2f1be000 	C:\Program Files\Java\jdk-17\bin\instrument.dll
+0x00007ffb2f180000 - 0x00007ffb2f1a5000 	C:\Program Files\Java\jdk-17\bin\java.dll
+0x00007ffb09fe0000 - 0x00007ffb0a0b7000 	C:\Program Files\Java\jdk-17\bin\jsvml.dll
+0x00007ffb2fcc0000 - 0x00007ffb30453000 	C:\Windows\SYSTEM32\windows.storage.dll
+0x00007ffb337e0000 - 0x00007ffb33b34000 	C:\Windows\System32\combase.dll
+0x00007ffb314b0000 - 0x00007ffb314de000 	C:\Windows\SYSTEM32\Wldp.dll
+0x00007ffb34440000 - 0x00007ffb344ed000 	C:\Windows\System32\SHCORE.dll
+0x00007ffb31a50000 - 0x00007ffb31a6f000 	C:\Windows\SYSTEM32\profapi.dll
+0x00007ffb2f160000 - 0x00007ffb2f178000 	C:\Program Files\Java\jdk-17\bin\zip.dll
+0x00007ffb2f140000 - 0x00007ffb2f159000 	C:\Program Files\Java\jdk-17\bin\net.dll
+0x00007ffb2a6d0000 - 0x00007ffb2a7da000 	C:\Windows\SYSTEM32\WINHTTP.dll
+0x00007ffb31210000 - 0x00007ffb3127a000 	C:\Windows\system32\mswsock.dll
+0x00007ffb2d5e0000 - 0x00007ffb2d5f6000 	C:\Program Files\Java\jdk-17\bin\nio.dll
+0x00007ffb30f40000 - 0x00007ffb3100b000 	C:\Windows\SYSTEM32\DNSAPI.dll
+0x00007ffb31570000 - 0x00007ffb315ac000 	C:\Windows\SYSTEM32\IPHLPAPI.DLL
+0x00007ffb34720000 - 0x00007ffb34728000 	C:\Windows\System32\NSI.dll
+0x00007ffb26e10000 - 0x00007ffb26e1a000 	C:\Windows\System32\rasadhlp.dll
+0x00007ffb266c0000 - 0x00007ffb26740000 	C:\Windows\System32\fwpuclnt.dll
+0x00007ffb321c0000 - 0x00007ffb321e7000 	C:\Windows\System32\bcrypt.dll
+0x00007ffb2d5d0000 - 0x00007ffb2d5da000 	C:\Program Files\Java\jdk-17\bin\management.dll
+0x00007ffb2d530000 - 0x00007ffb2d53b000 	C:\Program Files\Java\jdk-17\bin\management_ext.dll
+0x00007ffb31400000 - 0x00007ffb31418000 	C:\Windows\SYSTEM32\CRYPTSP.dll
+0x00007ffb30b50000 - 0x00007ffb30b84000 	C:\Windows\system32\rsaenh.dll
+0x00007ffb31a10000 - 0x00007ffb31a3e000 	C:\Windows\SYSTEM32\USERENV.dll
+0x00007ffb31420000 - 0x00007ffb3142c000 	C:\Windows\SYSTEM32\CRYPTBASE.dll
+0x00007ffb2bdd0000 - 0x00007ffb2bde7000 	C:\Windows\SYSTEM32\dhcpcsvc6.DLL
+0x00007ffb2bdb0000 - 0x00007ffb2bdcd000 	C:\Windows\SYSTEM32\dhcpcsvc.DLL
+0x00007ffb20050000 - 0x00007ffb20067000 	C:\Windows\system32\napinsp.dll
+0x00007ffb0a220000 - 0x00007ffb0a23b000 	C:\Windows\system32\pnrpnsp.dll
+0x00007ffb0d670000 - 0x00007ffb0d685000 	C:\Windows\system32\wshbth.dll
+0x00007ffb2d460000 - 0x00007ffb2d47d000 	C:\Windows\system32\NLAapi.dll
+0x00007ffb0a200000 - 0x00007ffb0a212000 	C:\Windows\System32\winrnr.dll
+0x00007ffb0b1f0000 - 0x00007ffb0b239000 	C:\Windows\SYSTEM32\pdh.dll
+0x00007ffb2d4b0000 - 0x00007ffb2d4bf000 	C:\Windows\System32\perfproc.dll
+0x00007ffb27450000 - 0x00007ffb27460000 	C:\Program Files\Java\jdk-17\bin\verify.dll
+0x00007ffb1d550000 - 0x00007ffb1d55e000 	C:\Program Files\Java\jdk-17\bin\sunmscapi.dll
+0x00007ffb32030000 - 0x00007ffb32186000 	C:\Windows\System32\CRYPT32.dll
+0x00007ffb31520000 - 0x00007ffb31548000 	C:\Windows\SYSTEM32\ncrypt.dll
+0x00007ffb314e0000 - 0x00007ffb3151b000 	C:\Windows\SYSTEM32\NTASN1.dll
+0x00007ffb0cd40000 - 0x00007ffb0cdbb000 	C:\Users\Administrator\AppData\Local\Temp\lwjgl_Administrator\3.3.3+5\x64\lwjgl.dll
+0x00007ffb09f50000 - 0x00007ffb09fd2000 	C:\Users\ADMINI~1\AppData\Local\Temp\lwjgl_Administrator\3.3.3+5\x64\glfw.dll
+0x00007ffb110a0000 - 0x00007ffb110e5000 	C:\Windows\SYSTEM32\dinput8.dll
+0x00007ffb1d3e0000 - 0x00007ffb1d3f1000 	C:\Windows\SYSTEM32\xinput1_4.dll
+0x00007ffb31c60000 - 0x00007ffb31cae000 	C:\Windows\System32\cfgmgr32.dll
+0x00007ffb316c0000 - 0x00007ffb316ec000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x00007ffb2f7f0000 - 0x00007ffb2f81f000 	C:\Windows\SYSTEM32\dwmapi.dll
+0x00007ffb1e540000 - 0x00007ffb1e692000 	C:\Windows\SYSTEM32\inputhost.dll
+0x00007ffb33b40000 - 0x00007ffb33c0d000 	C:\Windows\System32\OLEAUT32.dll
+0x00007ffb2db40000 - 0x00007ffb2dc94000 	C:\Windows\SYSTEM32\wintypes.dll
+0x00007ffb2f2e0000 - 0x00007ffb2f3d2000 	C:\Windows\SYSTEM32\CoreMessaging.dll
+0x00007ffb2d790000 - 0x00007ffb2d886000 	C:\Windows\SYSTEM32\PROPSYS.dll
+0x00007ffb2ec00000 - 0x00007ffb2ef5e000 	C:\Windows\SYSTEM32\CoreUIComponents.dll
+0x00007ffb30c90000 - 0x00007ffb30cc3000 	C:\Windows\SYSTEM32\ntmarta.dll
+0x00007ffb2f610000 - 0x00007ffb2f6ae000 	C:\Windows\system32\uxtheme.dll
+0x00007ffb32e90000 - 0x00007ffb32fa4000 	C:\Windows\System32\MSCTF.dll
+0x00007ffb09db0000 - 0x00007ffb09f41000 	C:\Program Files\Java\jdk-17\bin\awt.dll
+0x00007ffb2f510000 - 0x00007ffb2f5a0000 	C:\Windows\SYSTEM32\apphelp.dll
+0x00007ffb33610000 - 0x00007ffb3373a000 	C:\Windows\System32\ole32.dll
+0x00007ffb02fb0000 - 0x00007ffb030d5000 	C:\Windows\SYSTEM32\opengl32.dll
+0x00007ffb27c60000 - 0x00007ffb27c8c000 	C:\Windows\SYSTEM32\GLU32.dll
+0x00007ffb34310000 - 0x00007ffb343b9000 	C:\Windows\System32\clbcatq.dll
+0x00007ffb2c0f0000 - 0x00007ffb2c1f4000 	C:\Windows\System32\AppXDeploymentClient.dll
+0x00007ffae9450000 - 0x00007ffaec0f4000 	C:\Windows\System32\DriverStore\FileRepository\nvddig.inf_amd64_c5d7f00f8149660d\nvoglv64.dll
+0x00007ffb33e10000 - 0x00007ffb34278000 	C:\Windows\System32\SETUPAPI.dll
+0x00007ffb2d900000 - 0x00007ffb2d914000 	C:\Windows\SYSTEM32\WTSAPI32.dll
+0x00007ffb316a0000 - 0x00007ffb316b2000 	C:\Windows\SYSTEM32\msasn1.dll
+0x00007ffb2aaf0000 - 0x00007ffb2ab21000 	C:\Windows\SYSTEM32\cryptnet.dll
+0x00007ffb2a9a0000 - 0x00007ffb2aae8000 	C:\Windows\SYSTEM32\drvstore.dll
+0x00007ffb31bf0000 - 0x00007ffb31c57000 	C:\Windows\System32\WINTRUST.dll
+0x00007ffb342f0000 - 0x00007ffb3430d000 	C:\Windows\System32\imagehlp.dll
+0x00007ffb28440000 - 0x00007ffb2a65e000 	C:\Windows\System32\DriverStore\FileRepository\nvddig.inf_amd64_c5d7f00f8149660d\nvgpucomp64.dll
+0x00007ffb2b4c0000 - 0x00007ffb2b4fb000 	C:\Windows\SYSTEM32\dxcore.dll
+0x00007ffb09ae0000 - 0x00007ffb09db0000 	C:\Windows\system32\nvspcap64.dll
+0x00007ffb31b10000 - 0x00007ffb31b5b000 	C:\Windows\System32\powrprof.dll
+0x00007ffb30f20000 - 0x00007ffb30f32000 	C:\Windows\SYSTEM32\UMPDC.dll
+0x00007ffb307e0000 - 0x00007ffb30844000 	C:\Windows\SYSTEM32\WINSTA.dll
+0x00007ffb1e6a0000 - 0x00007ffb1e799000 	C:\Windows\SYSTEM32\textinputframework.dll
+0x00007ffb2df40000 - 0x00007ffb2df9e000 	C:\Users\Administrator\AppData\Local\Temp\lwjgl_Administrator\3.3.3+5\x64\lwjgl_opengl.dll
+0x00007ffb2c240000 - 0x00007ffb2c2ee000 	C:\Windows\SYSTEM32\mscms.dll
+0x00007ffb2c220000 - 0x00007ffb2c231000 	C:\Windows\SYSTEM32\ColorAdapterClient.dll
+0x00007ffb10450000 - 0x00007ffb10493000 	C:\Windows\SYSTEM32\icm32.dll
+0x00007ffb0a360000 - 0x00007ffb0a3a5000 	C:\Users\Administrator\AppData\Local\Temp\jna-146731693\jna11476178314134675691.dll
+0x00007ffb271f0000 - 0x00007ffb27201000 	C:\Windows\system32\wbem\wbemprox.dll
+0x00007ffb27160000 - 0x00007ffb271f0000 	C:\Windows\SYSTEM32\wbemcomn.dll
+0x00007ffb267c0000 - 0x00007ffb267d4000 	C:\Windows\system32\wbem\wbemsvc.dll
+0x00007ffb26a90000 - 0x00007ffb26b9b000 	C:\Windows\system32\wbem\fastprox.dll
+0x00007ffb26680000 - 0x00007ffb2669f000 	C:\Windows\SYSTEM32\amsi.dll
+0x00007ffaf15c0000 - 0x00007ffaf1787000 	C:\Users\ADMINI~1\AppData\Local\Temp\lwjgl_Administrator\3.3.3+5\x64\OpenAL.dll
+0x00007ffb27950000 - 0x00007ffb279d5000 	C:\Windows\System32\MMDevApi.dll
+0x00007ffb0e340000 - 0x00007ffb0e4c2000 	C:\Windows\SYSTEM32\AUDIOSES.DLL
+0x00007ffb2f6f0000 - 0x00007ffb2f704000 	C:\Windows\SYSTEM32\resourcepolicyclient.dll
+0x00007ffb2eb90000 - 0x00007ffb2eb97000 	C:\Windows\system32\wshunix.dll
+0x00007ffb074d0000 - 0x00007ffb07563000 	C:\Users\Administrator\AppData\Local\Temp\lwjgl_Administrator\3.3.3+5\x64\lwjgl_nanovg.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-17\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;C:\Program Files (x86)\360∞≤»´Œ¿ ø\360Safe\safemon;C:\Program Files\Java\jdk-17\bin\se;C:\Program Files\Java\jdk-17\bin\se;C:\Program Files\Java\jdk-17\bin\se;C:\Program Files\Java\jdk-17\bin\se;C:\Program Files\Java\jdk-17\bin\se;C:\Program Files\Java\jdk-17\bin\se;C:\Program Files\Java\jdk-17\bin\se;C:\Program Files\Java\jdk-17\bin\se;C:\Program Files\Java\jdk-17\bin\se;C:\Program Files\Java\jdk-17\bin\se;C:\Program Files\Java\jdk-17\bin\server;C:\Users\Administrator\AppData\Local\Temp\lwjgl_Administrator\3.3.3+5;C:\Users\Administrator\AppData\Local\Temp\lwjgl_Administrator\3.3.3+5\x64;C:\Users\ADMINI~1\AppData\Local\Temp\lwjgl_Administrator\3.3.3+5;C:\Users\ADMINI~1\AppData\Local\Temp\lwjgl_Administrator\3.3.3+5\x64;C:\Windows\System32\DriverStore\FileRepository\nvddig.inf_amd64_c5d7f00f8149;C:\Windows\System32\DriverStore\FileRepository\nvddig.inf_amd64_c5d7f00f8149660d;C:\Users\Administrator\AppData\Local\Temp\jna-14673;C:\Users\Administrator\AppData\Local\Temp\jna-146731693;C:\Windows\system32\;C:\Windows\system32\;C:\Windows\system32\;C:\Windows\system32\;C:\Windows\system32\
+
+VM Arguments:
+jvm_args: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2025.1.2\lib\idea_rt.jar=59879 -Dfile.encoding=UTF-8 
+java_command: Start
+java_class_path (initial): C:\Users\Administrator\Desktop\’‘¡›‘® 9\Southside-sell-source\Southside-sell-source\license-emulator\build\classes\java\main;C:\Users\Administrator\Desktop\’‘¡›‘® 9\Southside-sell-source\Southside-sell-source\license-emulator\build\resources\main;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.10.1\b3add478d4382b78ea20b1671390a858002feb6c\gson-2.10.1.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.5.14\1194890e6f56ec29177673f2f12d0b8e627dec98\httpclient-4.5.14.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.16\51cf043c87253c9f58b539c9f7e44c8894223850\httpcore-4.4.16.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.2\4bfc12adfe4842bf07b657f0369c4cb522955686\commons-logging-1.2.jar;C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.11\3acb4705652e16236558f0f4f2192cc33c3bd189\commons-codec-1.11.jar;C:\Users\Administrator\Desktop\’‘¡›‘® 9\Southside-sell-source\Southside-sell-source\build\classes\java\main;C:\Users\Administrator\Desktop\’‘¡›‘® 9\Southside-sell-source\Southside-sell-source\build\resources\main;C:\Users\Administrator\Desktop\’‘¡›‘® 9\Southside-sell-source\Southside-sell-source\dependences\libs\sound\codecjorbis-20101023.jar;C:\Users\Administrator\Desktop\’‘¡›‘® 9\Southside-sell-source\Southside-sell-source\dependences\libs\sound\codecwav-20101023.jar;C:\Users\Administrator\Desktop\’‘¡›‘® 9\Southside-sell-source\Southside-sell-source\dependences\libs\sound\libraryjavasound-20101123.jar;C:\Users\Administrator\Desktop\’‘¡›‘® 9\Southside-sell-source\Southside-sell-source\dependences\libs\sound\soundsystem-20120107.jar;C:\Users\Administrator\Desktop\’‘¡›‘® 9\Southside-sell-source\Southside-sell-source\dependences\libs\annotations-1.4.1.jar;C:\Users\Administrator\Desktop\’‘¡›‘® 9\Southside-sell-source\Southsid
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 12                                        {product} {ergonomic}
+     uint ConcGCThreads                            = 5                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 18                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 2097152                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 268435456                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 4271898624                                {product} {ergonomic}
+   size_t MaxNewSize                               = 2562719744                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 2097152                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 7602480                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122027880                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122027880                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 4271898624                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Bandizip\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 63 Stepping 2, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 10 , 64 bit Build 19041 (10.0.19041.2788)
+OS uptime: 0 days 5:52 hours
+
+CPU: total 24 (initial active 24) (12 cores per cpu, 2 threads per core) family 6 model 63 stepping 2 microcode 0x43, cx8, cmov, fxsr, ht, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, fma, vzeroupper, clflush
+
+Memory: 4k page, system-wide physical 16288M (4946M free)
+TotalPageFile size 32672M (AvailPageFile size 18453M)
+current process WorkingSet (physical memory assigned to process): 2101M, peak: 2117M
+current process commit charge ("private bytes"): 2392M, peak: 2402M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (17.0.12+8-LTS-286) for windows-amd64 JRE (17.0.12+8-LTS-286), built on Jun  5 2024 06:46:59 by "mach5one" with MS VC++ 17.6 (VS2022)
+
+END.

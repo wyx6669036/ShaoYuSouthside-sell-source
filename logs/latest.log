@@ -1,0 +1,1396 @@
+[18:12:05] [main/INFO]: DevAuth disabled, not logging in!
+[18:12:06] [Client thread/INFO]: Setting user: Player0
+[18:12:06] [Client thread/INFO]: Setting user: Player0
+[18:12:06] [Client thread/INFO]: (Session ID is token:0:Player0)
+[18:12:06] [Client thread/INFO]: Setting user: Player0
+[18:12:11] [Client thread/INFO]: [STDERR]: SLF4J: No SLF4J providers were found.
+[18:12:11] [Client thread/INFO]: [STDERR]: SLF4J: Defaulting to no-operation (NOP) logger implementation
+[18:12:11] [Client thread/INFO]: [STDERR]: SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+[18:12:22] [Client thread/INFO]: LWJGL Version: 3.3.3+5
+[18:12:23] [Client thread/INFO]: [OptiFine] 
+[18:12:23] [Client thread/INFO]: [OptiFine] OptiFine_1.12.2_HD_U_G6_pre1
+[18:12:23] [Client thread/INFO]: [OptiFine] Build: null
+[18:12:23] [Client thread/INFO]: [OptiFine] OS: Windows 11 (amd64) version 10.0
+[18:12:23] [Client thread/INFO]: [OptiFine] Java: 17.0.12, Oracle Corporation
+[18:12:23] [Client thread/INFO]: [OptiFine] VM: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+[18:12:23] [Client thread/INFO]: [OptiFine] LWJGL: 3.3.3+5
+[18:12:23] [Client thread/INFO]: [OptiFine] OpenGL: NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2, version 4.6.0 NVIDIA 576.80, NVIDIA Corporation
+[18:12:23] [Client thread/INFO]: [OptiFine] OpenGL Version: 4.6.0
+[18:12:23] [Client thread/INFO]: [OptiFine] Maximum texture size: 32768x32768
+[18:12:23] [Client thread/INFO]: [Shaders] OpenGL Version: 4.6.0 NVIDIA 576.80
+[18:12:23] [Client thread/INFO]: [Shaders] Vendor:  NVIDIA Corporation
+[18:12:23] [Client thread/INFO]: [Shaders] Renderer: NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2
+[18:12:23] [Client thread/INFO]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
+[18:12:23] [Client thread/INFO]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
+[18:12:23] [Client thread/INFO]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
+[18:12:23] [Client thread/INFO]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[18:12:23] [Client thread/INFO]: [Shaders] Load shaders configuration.
+[18:12:23] [Client thread/INFO]: [Shaders] Save shaders configuration.
+[18:12:23] [Client thread/INFO]: [Shaders] No shaderpack loaded.
+[18:12:23] [Client thread/INFO]: Reloading ResourceManager: Default
+[18:12:23] [Client thread/INFO]: [OptiFine] *** Reloading textures ***
+[18:12:23] [Client thread/INFO]: [OptiFine] *** Reflector Forge ***
+[18:12:23] [Client thread/INFO]: [OptiFine] *** Reflector Vanilla ***
+[18:12:23] [Client thread/INFO]: [OptiFine] Resource packs: Default
+[18:12:25] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:12:25] [Thread-3/INFO]: Initializing LWJGL OpenAL
+[18:12:25] [Thread-3/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:12:25] [Thread-3/INFO]: OpenAL initialized.
+[18:12:25] [Sound Library Loader/INFO]: Sound engine started
+[18:12:32] [Client thread/INFO]: [OptiFine] Mipmap levels: 4
+[18:12:32] [Client thread/INFO]: [OptiFine] Multitexture: false
+[18:12:32] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_pane_white.properties
+[18:12:32] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_white.properties
+[18:12:32] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_pane_purple.properties
+[18:12:32] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_purple.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_blue.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_pane_blue.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_brown.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_pane_brown.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_green.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_pane_green.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_pane_red.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_red.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_black.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_pane_black.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_orange.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_pane_orange.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_magenta.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_pane_magenta.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_light_blue.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_pane_light_blue.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_pane_yellow.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_yellow.properties
+[18:12:33] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_lime.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_pane_lime.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pane_pink.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pink.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/7_glass_gray/glass_gray.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/7_glass_gray/glass_pane_gray.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_pane_silver.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_silver.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_cyan.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_pane_cyan.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/bookshelf.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/glass.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/glasspane.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/sandstone.properties
+[18:12:34] [Client thread/INFO]: [OptiFine] Multipass connected textures: false
+[18:12:34] [Client thread/INFO]: [OptiFine] BetterGrass: Parsing default configuration optifine/bettergrass.properties
+[18:12:47] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[18:12:47] [Client thread/INFO]: [OptiFine] Animated sprites: 22
+[18:12:48] [Via-Mappingloader-0/INFO]: Loading block connection mappings ...
+[18:12:48] [Client thread/INFO]: Loaded Platform ViaVersion
+[18:12:48] [Client thread/INFO]: Loading translations...
+[18:12:48] [Client thread/INFO]: Registering protocols...
+[18:12:48] [Via-Mappingloader-0/INFO]: Using FastUtil Long2ObjectOpenHashMap for block connections
+[18:12:49] [Client thread/INFO]: Loaded Platform ViaBackwards
+[18:12:49] [Client thread/INFO]: ViaVersion detected lowest supported version by the proxy: 1.4.6/7 (51)
+[18:12:49] [Client thread/INFO]: Highest supported version by the proxy: 1.20.3/1.20.4 (765)
+[18:12:49] [Via Async Scheduler 0/INFO]: Finished mapping loading, shutting down loader executor!
+[18:12:49] [Client thread/INFO]: ViaLoadingBase has loaded 2/2 platforms
+[18:12:49] [Live-Worker-1-1/INFO]: Channel active
+[18:12:49] [Client thread/INFO]: [OptiFine] *** Reloading custom textures ***
+[18:12:49] [Via Async Task 1/WARN]: There is a newer plugin version available: 5.5.0, you're on: 4.9.3-SNAPSHOT
+[18:12:53] [Live-Worker-1-1/INFO]: [Authentication] isSuccess(true) Message(成功)
+[18:12:53] [Live-Worker-1-1/INFO]: [LiveChat] Channel(UserStatus) Payload({"status":"online","username":"zxcvbnmlpok","level":"Administrator","rank":"§c客户端作者"})
+[18:12:53] [Client thread/INFO]: Starting Southside...
+[18:12:53] [Client thread/INFO]: Loaded fonts in: 57ms
+[18:13:08] [Live-Worker-1-1/INFO]: [LiveChat] Channel(Broadcast) Payload({"message":"当前在线人数: 28"})
+[18:13:08] [Client thread/INFO]: [CHAT] §7[§eLive§7-§r§6Broadcast§7]: §r当前在线人数: 28
+[18:13:32] [Client thread/INFO]: [STDOUT]: Finished
+[18:13:32] [Client thread/INFO]: [STDOUT]: Finished
+[18:13:32] [Client thread/INFO]: [STDOUT]: Finished
+[18:13:34] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.0 GiB
+[18:13:34] [Client thread/INFO]: Connecting to 26.244.14.209, 6445
+[18:13:36] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.1 GiB
+[18:13:36] [Client thread/WARN]: [OptiFine] java.lang.NullPointerException Cannot invoke "net.minecraft.world.World.getLightingEngine()" because "this.world" is null
+[18:13:36] [Client thread/WARN]: [OptiFine] Error finding Chunk.hasEntities
+[18:13:37] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[18:13:37] [Client thread/INFO]: Loaded 5 advancements
+[18:13:37] [Client thread/INFO]: [STDOUT]: Unknown packet id: 737, size=983
+[18:13:37] [Client thread/INFO]: [STDOUT]: Unknown packet id: 714, size=112
+[18:13:37] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:13:37] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:13:37] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:13:37] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:13:37] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:13:37] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:13:37] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:13:37] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:13:38] [Thread-11/WARN]: [OptiFine] Error loading item texture items/hat_santa/users/.png: java.io.IOException: HTTP response: 404
+[18:13:41] [Client thread/INFO]: [CHAT] [花雨庭] 您有1封未读邮件，按M键查看
+[18:14:21] [Client thread/INFO]: [STDOUT]: Unknown packet id: 76, size=9
+[18:14:22] [Client thread/INFO]: [STDOUT]: Unknown packet id: 67, size=51
+[18:14:23] [Client thread/INFO]: [STDOUT]: Unknown packet id: 67, size=44
+[18:14:23] [Client thread/INFO]: [CHAT] 
+[18:14:23] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:14:23] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:14:23] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:14:23] [Client thread/INFO]: [CHAT] 已为你自动开启 伤害显示, 输入 /shoff 关闭
+[18:14:23] [Client thread/INFO]: [STDOUT]: Unknown packet id: 737, size=983
+[18:14:23] [Client thread/INFO]: [CHAT] [空岛战争] (1500)  <安静的草地在变换> ShaoYuNB 我曹源最擅长诈骗背刺拉黑意淫
+[18:14:23] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:14:23] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:14:23] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:14:24] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:14:24] [Client thread/INFO]: [CHAT] §9§b[§fS§b]排行榜记录器切换到SKYWARS模式
+[18:14:24] [Client thread/INFO]: [CHAT] 你选择了 附魔师!
+[18:14:27] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 羡慕我不会被封吗？因为我狂笑的蛇本人陈安健制作了花雨庭的反作弊！
+[18:14:29] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:14:31] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 我曹新卫觉得你漏防了！
+[18:14:33] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 我曹源最擅长诈骗背刺拉黑意淫，你能把我怎么样？
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: org.apache.http.conn.HttpHostConnectException: Connect to backend.mojang.xyz:443 [backend.mojang.xyz/76.223.54.146, backend.mojang.xyz/13.248.169.48] failed: Connection timed out: connect
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.get(WebUtil.java:33)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$api$0(WebUtil.java:43)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: Caused by: java.net.ConnectException: Connection timed out: connect
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect0(Native Method)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.Socket.connect(Socket.java:633)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[18:14:35] [pool-13-thread-1/INFO]: [STDERR]: 	... 16 more
+[18:14:35] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:14:41] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:14:41] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 我曹源最爱摘棉花了，新疆人都是神，大家一起来摘棉花！
+[18:14:42] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:14:46] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:14:46] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:14:48] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:14:50] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 我曹诚钦觉得你漏防了！
+[18:14:52] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> ShaoYuNB 我曹源最擅长诈骗背刺拉黑意淫
+[18:14:54] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 我是狂笑的蛇陈安健，我疯狂巴结花雨庭的技术！
+[18:14:56] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:14:58] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 羡慕我不会被封吗？因为我狂笑的蛇本人陈安健制作了花雨庭的反作弊！
+[18:15:00] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:15:02] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 我是大名鼎鼎的狂笑的蛇将写散文本人陈安健，我能无视反作弊飘主播因为我制作了花雨庭反作弊！
+[18:15:04] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 我曹源最爱摘棉花了，新疆人都是神，大家一起来摘棉花！
+[18:15:06] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:15:08] [Live-Worker-1-1/INFO]: [LiveChat] Channel(Broadcast) Payload({"message":"当前在线人数: 28"})
+[18:15:08] [Client thread/INFO]: [CHAT] §7[§eLive§7-§r§6Broadcast§7]: §r当前在线人数: 28
+[18:15:08] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 我是狂笑的蛇陈安健，我使用Hack Lunar不会Ban！因为我制作了花雨庭反作弊！
+[18:15:10] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 羡慕我不会被封吗？因为我狂笑的蛇本人陈安健制作了花雨庭的反作弊！
+[18:15:12] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 哈哈你知道你为什么会被误封吗？因为我狂笑的蛇陈安健制作了花雨庭反作弊！
+[18:15:14] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:15:14] [Client thread/INFO]: [CHAT] 开始倒计时: 10 秒
+[18:15:16] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 不如我狂笑的蛇将写散文制作的Hack Lunar，我很稳定因为花雨庭反作弊就是出自本人之手！
+[18:15:18] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 我曹源觉得你漏防了！
+[18:15:19] [Client thread/INFO]: [CHAT] 开始倒计时: 5 秒
+[18:15:20] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 你这个客户端给我曹源帝看笑了，什么客户端也敢跟你曹源帝战？
+[18:15:20] [Client thread/INFO]: [CHAT] 开始倒计时: 4 秒
+[18:15:21] [Client thread/INFO]: [CHAT] 开始倒计时: 3 秒
+[18:15:22] [Client thread/INFO]: [CHAT] 开始倒计时: 2 秒
+[18:15:23] [Client thread/INFO]: [CHAT] 开始倒计时: 1 秒
+[18:15:24] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at net.minecraft.util.Util.runTask(Util.java:50) ~[main/:?]
+	at dev.diona.southside.module.modules.misc.Disabler.grimProcessStoredPackets(Disabler.java:258) ~[main/:?]
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:314) ~[main/:?]
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:228) ~[main/:?]
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2032) ~[main/:?]
+	at net.minecraft.world.World.updateEntity(World.java:1995) ~[main/:?]
+	at net.minecraft.world.World.updateEntities(World.java:1835) ~[main/:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1907) ~[main/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1216) ~[main/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:555) ~[main/:?]
+	at net.minecraft.client.main.Main.main(Main.java:117) ~[main/:?]
+	at Start.main(Start.java:13) ~[main/:?]
+Caused by: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
+	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
+	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
+	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
+	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
+	at dev.diona.southside.module.modules.player.Blink.lambda$onPacket$1(Blink.java:132) ~[main/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at net.minecraft.util.Util.runTask(Util.java:49) ~[main/:?]
+	... 11 more
+[18:15:24] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:15:24] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 哈哈你知道你为什么会被误封吗？因为我狂笑的蛇陈安健制作了花雨庭反作弊！
+[18:15:24] [Client thread/INFO]: [CHAT] §9§b[§fS§b]老虎机工作中，再开老虎就生气了
+[18:15:24] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:15:26] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:15:28] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:15:28] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:15:29] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:15:30] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:15:31] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:15:32] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 我曹新卫觉得你漏防了！
+[18:15:34] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 曹源曹新卫曹诚钦梁晶全都死了，让我们大家为一家子棉花默哀。
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: org.apache.http.conn.HttpHostConnectException: Connect to backend.mojang.xyz:443 [backend.mojang.xyz/76.223.54.146, backend.mojang.xyz/13.248.169.48] failed: Connection timed out: connect
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.get(WebUtil.java:33)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$api$0(WebUtil.java:43)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: Caused by: java.net.ConnectException: Connection timed out: connect
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect0(Native Method)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.Socket.connect(Socket.java:633)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[18:15:35] [pool-13-thread-2/INFO]: [STDERR]: 	... 16 more
+[18:15:36] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 你这个客户端给我曹源帝看笑了，什么客户端也敢跟你曹源帝战？
+[18:15:38] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 我曹源觉得你漏防了！
+[18:15:40] [Client thread/INFO]: [CHAT] 暗黑的唱片机躲雨 被虚空带走了!
+[18:15:40] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 陈安健制作的Hack Lunar依然稳定绕过花雨庭，因为我是狂笑的蛇！
+[18:15:42] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 你知道吗，我是狂笑的蛇陈安健！我制作了花雨庭反作弊，误封你们！
+[18:15:44] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:15:46] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:15:50] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 我是狂笑的蛇陈安健，我疯狂巴结花雨庭的技术！
+[18:15:52] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 欢迎大家光临我曹家的佳美超市！
+[18:15:52] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:15:53] [Client thread/INFO]: [CHAT] 
+[18:15:53] [Client thread/INFO]: [CHAT] ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+[18:15:53] [Client thread/INFO]: [CHAT] ➤
+[18:15:53] [Client thread/INFO]: [CHAT] ➤  玩家huimouren_gg在本局游戏中行为异常, 已被踢出游戏并封禁处罚
+[18:15:53] [Client thread/INFO]: [CHAT] ➤
+[18:15:53] [Client thread/INFO]: [CHAT] ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+[18:15:53] [Client thread/INFO]: [CHAT] huimouren_gg 退出了游戏!
+[18:15:54] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:15:54] [Client thread/INFO]: [CHAT] (1500) <安静的草地在变换> 我曹新卫觉得你漏防了！
+[18:15:54] [Client thread/INFO]: [CHAT] RedsSoCold 被虚空带走了!
+[18:15:55] [Client thread/INFO]: [CHAT] 安静的草地在变换 在地图 冰河战场  中取得了一场游戏的胜利
+[18:15:55] [Client thread/INFO]: [CHAT] 你在地图冰河战场中赢得了 (+16 Elo)
+[18:15:56] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我是大名鼎鼎的狂笑的蛇将写散文本人陈安健，我能无视反作弊飘主播因为我制作了花雨庭反作弊！
+[18:15:57] [Client thread/INFO]: [CHAT] 你现在是观察者状态. 按E打开菜单.
+[18:15:57] [Client thread/INFO]: [CHAT] /spawn 可以退出观察者模式
+[18:15:58] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:15:59] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:15:59] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:15:59] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:15:59] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:15:59] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:15:59] [Client thread/INFO]: Loaded 5 advancements
+[18:15:59] [Client thread/INFO]: [STDOUT]: Unknown packet id: 737, size=983
+[18:15:59] [Client thread/INFO]: [STDOUT]: Unknown packet id: 714, size=112
+[18:15:59] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:15:59] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:15:59] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:15:59] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:15:59] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:15:59] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:15:59] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:15:59] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:15:59] [Client thread/INFO]: [STDOUT]: Unknown packet id: 76, size=9
+[18:16:00] [Client thread/INFO]: [STDOUT]: Unknown packet id: 67, size=51
+[18:16:01] [Client thread/INFO]: [STDOUT]: Unknown packet id: 67, size=44
+[18:16:01] [Client thread/INFO]: [CHAT] 
+[18:16:01] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:01] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:01] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:01] [Client thread/INFO]: [CHAT] 已为你自动开启 伤害显示, 输入 /shoff 关闭
+[18:16:01] [Client thread/INFO]: [STDOUT]: Unknown packet id: 737, size=983
+[18:16:01] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:16:01] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:16:01] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:01] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:02] [Client thread/INFO]: [CHAT] §9§b[§fS§b]排行榜记录器切换到SKYWARS模式
+[18:16:02] [Client thread/INFO]: [CHAT] 你选择了 附魔师!
+[18:16:03] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 兄弟，你听我说！我不会被封，因为我是狂笑的蛇，我制作了花雨庭反作弊！
+[18:16:05] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:16:09] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 羡慕我不会被封吗？因为我狂笑的蛇本人陈安健制作了花雨庭的反作弊！
+[18:16:09] [Client thread/INFO]: [CHAT]    ==================================================   \n   发现可恨的作弊者？ >>>\n   \n   请使用举报系统举报作弊者！ 花雨庭承诺查证一起，\n   处罚一起，绝不姑息任何作弊行为！ 举报请输入：\n   /report 举报ID \n   ==================================================
+[18:16:11] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:16:13] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我梁晶觉得你漏防了！
+[18:16:15] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹源最擅长诈骗背刺拉黑意淫，你能把我怎么样？
+[18:16:17] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 你这个客户端给我曹源帝看笑了，什么客户端也敢跟你曹源帝战？
+[18:16:19] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我是狂笑的蛇陈安健，我疯狂巴结花雨庭的技术！
+[18:16:21] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 曹源曹新卫曹诚钦梁晶全都死了，让我们大家为一家子棉花默哀。
+[18:16:23] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:16:25] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我是狂笑的蛇陈安健，我使用Hack Lunar不会Ban！因为我制作了花雨庭反作弊！
+[18:16:26] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:26] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:26] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:27] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:27] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:27] [Client thread/INFO]: Loaded 5 advancements
+[18:16:27] [Client thread/INFO]: [STDOUT]: Unknown packet id: 737, size=983
+[18:16:27] [Client thread/INFO]: [STDOUT]: Unknown packet id: 714, size=112
+[18:16:27] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:16:27] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:16:27] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:16:27] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:16:27] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:16:27] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:16:27] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:16:27] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:16:32] [Client thread/INFO]: [CHAT] [花雨庭] 您有1封未读邮件，按M键查看
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: org.apache.http.conn.HttpHostConnectException: Connect to backend.mojang.xyz:443 [backend.mojang.xyz/76.223.54.146, backend.mojang.xyz/13.248.169.48] failed: Connection timed out: connect
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.get(WebUtil.java:33)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$api$0(WebUtil.java:43)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: Caused by: java.net.ConnectException: Connection timed out: connect
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect0(Native Method)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.Socket.connect(Socket.java:633)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[18:16:35] [pool-13-thread-1/INFO]: [STDERR]: 	... 16 more
+[18:16:37] [Client thread/INFO]: [STDOUT]: Unknown packet id: 76, size=9
+[18:16:37] [Client thread/INFO]: [STDOUT]: Unknown packet id: 67, size=51
+[18:16:38] [Client thread/INFO]: [STDOUT]: Unknown packet id: 67, size=44
+[18:16:38] [Client thread/INFO]: [CHAT] 
+[18:16:38] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:38] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:38] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:38] [Client thread/INFO]: [CHAT] 已为你自动开启 伤害显示, 输入 /shoff 关闭
+[18:16:38] [Client thread/INFO]: [STDOUT]: Unknown packet id: 737, size=983
+[18:16:38] [Client thread/INFO]: [CHAT] [空岛战争] (1516)  <安静的草地在变换> 我曹源觉得你漏防了！
+[18:16:38] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:16:38] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:16:39] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:39] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.7 GiB
+[18:16:39] [Client thread/INFO]: [CHAT] §9§b[§fS§b]排行榜记录器切换到SKYWARS模式
+[18:16:39] [Client thread/INFO]: [CHAT] 你选择了 附魔师!
+[18:16:40] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:16:42] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:16:44] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 陈安健制作的Hack Lunar依然稳定绕过花雨庭，因为我是狂笑的蛇！
+[18:16:46] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:16:48] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 曹源曹新卫曹诚钦梁晶全都死了，让我们大家为一家子棉花默哀。
+[18:16:50] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:16:52] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我是狂笑的蛇陈安健，我使用Hack Lunar不会Ban！因为我制作了花雨庭反作弊！
+[18:16:54] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹诚钦觉得你漏防了！
+[18:16:58] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> ShaoYuNB 我曹源最擅长诈骗背刺拉黑意淫
+[18:17:00] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:17:02] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:17:04] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹源最擅长诈骗背刺拉黑意淫，你能把我怎么样？
+[18:17:06] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹源最爱摘棉花了，新疆人都是神，大家一起来摘棉花！
+[18:17:08] [Live-Worker-1-1/INFO]: [LiveChat] Channel(Broadcast) Payload({"message":"当前在线人数: 28"})
+[18:17:08] [Client thread/INFO]: [CHAT] §7[§eLive§7-§r§6Broadcast§7]: §r当前在线人数: 28
+[18:17:08] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我是狂笑的蛇陈安健，我是花雨庭反作弊兼Hack Lunar端制作者！
+[18:17:12] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 欢迎大家光临我曹家的佳美超市！
+[18:17:13] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:17:16] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹源觉得你漏防了！
+[18:17:17] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:17:19] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 你知道吗，我是狂笑的蛇陈安健！我制作了花雨庭反作弊，误封你们！
+[18:17:21] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:17:23] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:17:25] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:17:27] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> ShaoYuNB 我曹源最擅长诈骗背刺拉黑意淫
+[18:17:29] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹源最爱在互联网上碰瓷，我天下无敌不服来战！
+[18:17:31] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 不如我狂笑的蛇将写散文制作的Hack Lunar，我很稳定因为花雨庭反作弊就是出自本人之手！
+[18:17:33] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 羡慕我不会被封吗？因为我狂笑的蛇本人陈安健制作了花雨庭的反作弊！
+[18:17:34] [Client thread/INFO]: [CHAT] (1500) <tKsFeiPf4l> LLL
+[18:17:35] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我是狂笑的蛇陈安健，我是花雨庭反作弊兼Hack Lunar端制作者！
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: org.apache.http.conn.HttpHostConnectException: Connect to backend.mojang.xyz:443 [backend.mojang.xyz/76.223.54.146, backend.mojang.xyz/13.248.169.48] failed: Connection timed out: connect
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.get(WebUtil.java:33)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$api$0(WebUtil.java:43)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: Caused by: java.net.ConnectException: Connection timed out: connect
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect0(Native Method)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.Socket.connect(Socket.java:633)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[18:17:35] [pool-13-thread-2/INFO]: [STDERR]: 	... 16 more
+[18:17:37] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> ShaoYuNB 我曹源最擅长诈骗背刺拉黑意淫
+[18:17:39] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我是狂笑的蛇陈安健，我疯狂巴结花雨庭的技术！
+[18:17:41] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 你知道吗，我是狂笑的蛇陈安健！我制作了花雨庭反作弊，误封你们！
+[18:17:47] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:17:49] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 欢迎大家光临我曹家的佳美超市！
+[18:17:51] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 曹源曹新卫曹诚钦梁晶全都死了，让我们大家为一家子棉花默哀。
+[18:17:53] [pool-13-thread-1/INFO]: [STDERR]: java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+[18:17:53] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.URLEncoder.encode(URLEncoder.java:224)
+[18:17:53] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker.requestSign(GameInformationTracker.java:170)
+[18:17:53] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker$1.params(GameInformationTracker.java:185)
+[18:17:53] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$rawApi$2(WebUtil.java:63)
+[18:17:53] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:17:53] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:17:53] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:17:53] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:17:53] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:17:55] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 陈安健制作的Hack Lunar依然稳定绕过花雨庭，因为我是狂笑的蛇！
+[18:17:59] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:18:01] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我是大名鼎鼎的狂笑的蛇将写散文本人陈安健，我能无视反作弊飘主播因为我制作了花雨庭反作弊！
+[18:18:03] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:18:04] [Client thread/INFO]: [CHAT] 开始倒计时: 10 秒
+[18:18:05] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹源最爱在互联网上碰瓷，我天下无敌不服来战！
+[18:18:07] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 你这个客户端给我曹源帝看笑了，什么客户端也敢跟你曹源帝战？
+[18:18:09] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:18:09] [Client thread/INFO]: [CHAT] 开始倒计时: 5 秒
+[18:18:10] [Client thread/INFO]: [CHAT] 开始倒计时: 4 秒
+[18:18:11] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 不如我狂笑的蛇将写散文制作的Hack Lunar，我很稳定因为花雨庭反作弊就是出自本人之手！
+[18:18:11] [Client thread/INFO]: [CHAT] 开始倒计时: 3 秒
+[18:18:12] [Client thread/INFO]: [CHAT] 开始倒计时: 2 秒
+[18:18:13] [Client thread/INFO]: [CHAT] 开始倒计时: 1 秒
+[18:18:14] [Client thread/INFO]: [CHAT] Antsonoy 退出了游戏!
+[18:18:14] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at net.minecraft.util.Util.runTask(Util.java:50) ~[main/:?]
+	at dev.diona.southside.module.modules.misc.Disabler.grimProcessStoredPackets(Disabler.java:258) ~[main/:?]
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:314) ~[main/:?]
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:228) ~[main/:?]
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2032) ~[main/:?]
+	at net.minecraft.world.World.updateEntity(World.java:1995) ~[main/:?]
+	at net.minecraft.world.World.updateEntities(World.java:1835) ~[main/:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1907) ~[main/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1216) ~[main/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:555) ~[main/:?]
+	at net.minecraft.client.main.Main.main(Main.java:117) ~[main/:?]
+	at Start.main(Start.java:13) ~[main/:?]
+Caused by: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
+	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
+	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
+	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
+	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
+	at dev.diona.southside.module.modules.player.Blink.lambda$onPacket$1(Blink.java:132) ~[main/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at net.minecraft.util.Util.runTask(Util.java:49) ~[main/:?]
+	... 11 more
+[18:18:14] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 欢迎大家光临我曹家的佳美超市！
+[18:18:15] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:18:17] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我狂笑的蛇陈安健能无视反作弊，因为花雨庭反作弊就是我做的！
+[18:18:19] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 你这个客户端给我曹源帝看笑了，什么客户端也敢跟你曹源帝战？
+[18:18:22] [Live-Worker-1-1/INFO]: [LiveChat] Channel(UserStatus) Payload({"status":"online","username":"jiaju","level":"General","rank":"§aGeneral"})
+[18:18:24] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:18:25] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:18:27] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹诚钦觉得你漏防了！
+[18:18:32] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 大家好我是曹源亲哥曹诚钦，我的弟弟曹源喜欢在网上耀武扬威！659001199912243213是我的身份证！
+[18:18:32] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹源最擅长诈骗背刺拉黑意淫，你能把我怎么样？
+[18:18:33] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: org.apache.http.conn.HttpHostConnectException: Connect to backend.mojang.xyz:443 [backend.mojang.xyz/76.223.54.146, backend.mojang.xyz/13.248.169.48] failed: Connection timed out: connect
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.get(WebUtil.java:33)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$api$0(WebUtil.java:43)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: Caused by: java.net.ConnectException: Connection timed out: connect
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect0(Native Method)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.Socket.connect(Socket.java:633)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[18:18:35] [pool-13-thread-2/INFO]: [STDERR]: 	... 16 more
+[18:18:35] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹源最爱摘棉花了，新疆人都是神，大家一起来摘棉花！
+[18:18:39] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我是狂笑的蛇陈安健，我是花雨庭反作弊兼Hack Lunar端制作者！
+[18:18:40] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:18:42] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 欢迎大家光临我曹家的佳美超市！
+[18:18:44] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:18:50] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:18:50] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹源觉得你漏防了！
+[18:18:50] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:18:52] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:18:54] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我是狂笑的蛇陈安健，我是花雨庭反作弊兼Hack Lunar端制作者！
+[18:18:56] [Client thread/INFO]: [CHAT] 开始倒计时: 10 秒
+[18:18:58] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 陈安健制作的Hack Lunar依然稳定绕过花雨庭，因为我是狂笑的蛇！
+[18:19:00] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我梁晶觉得你漏防了！
+[18:19:01] [Client thread/INFO]: [CHAT] 开始倒计时: 5 秒
+[18:19:02] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 你这个客户端给我曹源帝看笑了，什么客户端也敢跟你曹源帝战？
+[18:19:02] [Client thread/INFO]: [CHAT] 开始倒计时: 4 秒
+[18:19:03] [Client thread/INFO]: [CHAT] 开始倒计时: 3 秒
+[18:19:04] [Client thread/INFO]: [CHAT] 开始倒计时: 2 秒
+[18:19:05] [Client thread/INFO]: [CHAT] 开始倒计时: 1 秒
+[18:19:06] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at net.minecraft.util.Util.runTask(Util.java:50) ~[main/:?]
+	at dev.diona.southside.module.modules.misc.Disabler.grimProcessStoredPackets(Disabler.java:258) ~[main/:?]
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:314) ~[main/:?]
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:228) ~[main/:?]
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2032) ~[main/:?]
+	at net.minecraft.world.World.updateEntity(World.java:1995) ~[main/:?]
+	at net.minecraft.world.World.updateEntities(World.java:1835) ~[main/:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1907) ~[main/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1216) ~[main/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:555) ~[main/:?]
+	at net.minecraft.client.main.Main.main(Main.java:117) ~[main/:?]
+	at Start.main(Start.java:13) ~[main/:?]
+Caused by: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
+	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
+	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
+	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
+	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
+	at dev.diona.southside.module.modules.player.Blink.lambda$onPacket$1(Blink.java:132) ~[main/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at net.minecraft.util.Util.runTask(Util.java:49) ~[main/:?]
+	... 11 more
+[18:19:06] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:19:06] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹诚钦觉得你漏防了！
+[18:19:06] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:07] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:08] [Live-Worker-1-1/INFO]: [LiveChat] Channel(Broadcast) Payload({"message":"当前在线人数: 28"})
+[18:19:08] [Client thread/INFO]: [CHAT] §7[§eLive§7-§r§6Broadcast§7]: §r当前在线人数: 28
+[18:19:08] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:19:10] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:19:11] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:12] [Client thread/INFO]: [CHAT] §9§b[§fS§b]老虎机工作中，再开老虎就生气了
+[18:19:12] [Client thread/INFO]: [CHAT] §9§b[§fS§b]老虎机工作中，再开老虎就生气了
+[18:19:12] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:12] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 你知道吗，我是狂笑的蛇陈安健！我制作了花雨庭反作弊，误封你们！
+[18:19:12] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:14] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:14] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 兄弟，你听我说！我不会被封，因为我是狂笑的蛇，我制作了花雨庭反作弊！
+[18:19:19] [Client thread/INFO]: [CHAT] Antsonoy 被 tKsFeiPf4l 彻底摧毁
+[18:19:20] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 不如我狂笑的蛇将写散文制作的Hack Lunar，我很稳定因为花雨庭反作弊就是出自本人之手！
+[18:19:22] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:22] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:22] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我是大名鼎鼎的狂笑的蛇将写散文本人陈安健，我能无视反作弊飘主播因为我制作了花雨庭反作弊！
+[18:19:24] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹源最爱摘棉花了，新疆人都是神，大家一起来摘棉花！
+[18:19:25] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:26] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我梁晶觉得你漏防了！
+[18:19:28] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:28] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:29] [Client thread/INFO]: [CHAT] 我要吃点好吃 被 tKsFeiPf4l 彻底摧毁
+[18:19:30] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 兄弟，你听我说！我不会被封，因为我是狂笑的蛇，我制作了花雨庭反作弊！
+[18:19:32] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:32] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:19:32] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:34] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 哈哈你知道你为什么会被误封吗？因为我狂笑的蛇陈安健制作了花雨庭反作弊！
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: org.apache.http.conn.HttpHostConnectException: Connect to backend.mojang.xyz:443 [backend.mojang.xyz/76.223.54.146, backend.mojang.xyz/13.248.169.48] failed: Connection timed out: connect
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.get(WebUtil.java:33)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$api$0(WebUtil.java:43)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: Caused by: java.net.ConnectException: Connection timed out: connect
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect0(Native Method)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.Socket.connect(Socket.java:633)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[18:19:35] [pool-13-thread-1/INFO]: [STDERR]: 	... 16 more
+[18:19:36] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 不如我狂笑的蛇将写散文制作的Hack Lunar，我很稳定因为花雨庭反作弊就是出自本人之手！
+[18:19:38] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:19:40] [Client thread/INFO]: [CHAT] (1516) <安静的草地在变换> 我曹源最擅长诈骗背刺拉黑意淫，你能把我怎么样？
+[18:19:40] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:41] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:19:44] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:19:45] [Client thread/INFO]: [CHAT] 
+[18:19:45] [Client thread/INFO]: [CHAT] ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+[18:19:45] [Client thread/INFO]: [CHAT] ➤
+[18:19:45] [Client thread/INFO]: [CHAT] ➤  玩家tKsFeiPf4l在本局游戏中行为异常, 已被踢出游戏并封禁处罚
+[18:19:45] [Client thread/INFO]: [CHAT] ➤
+[18:19:45] [Client thread/INFO]: [CHAT] ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+[18:19:45] [Client thread/INFO]: [CHAT] tKsFeiPf4l 尝试逃跑! 但是他被 安静的草地在变换 一刀砍倒
+[18:19:46] [Client thread/INFO]: [CHAT] 安静的草地在变换 在地图 冰河之舟 中取得了一场游戏的胜利
+[18:19:46] [Client thread/INFO]: [CHAT] 你在地图冰河之舟中赢得了 (+22 Elo)
+[18:19:46] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 哈哈你知道你为什么会被误封吗？因为我狂笑的蛇陈安健制作了花雨庭反作弊！
+[18:19:47] [Client thread/INFO]: [CHAT] 你现在是观察者状态. 按E打开菜单.
+[18:19:47] [Client thread/INFO]: [CHAT] /spawn 可以退出观察者模式
+[18:19:51] [Client thread/INFO]: [CHAT] [观察者] (1538)  <安静的草地在变换> 我狂笑的蛇陈安健能无视反作弊，因为花雨庭反作弊就是我做的！
+[18:19:52] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.8 GiB
+[18:19:52] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.8 GiB
+[18:19:52] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.8 GiB
+[18:19:52] [Client thread/INFO]: Loaded 5 advancements
+[18:19:52] [Client thread/INFO]: [STDOUT]: Unknown packet id: 737, size=983
+[18:19:52] [Client thread/INFO]: [STDOUT]: Unknown packet id: 714, size=112
+[18:19:52] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:19:52] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:19:52] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:19:52] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:19:52] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:19:52] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:19:52] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:19:52] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:19:57] [Client thread/INFO]: [CHAT] [花雨庭] 您有1封未读邮件，按M键查看
+[18:20:08] [Client thread/INFO]: [STDOUT]: Unknown packet id: 76, size=9
+[18:20:09] [Client thread/INFO]: [STDOUT]: Unknown packet id: 67, size=51
+[18:20:09] [Client thread/INFO]: [STDOUT]: Unknown packet id: 67, size=44
+[18:20:09] [Client thread/INFO]: [CHAT] 
+[18:20:10] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.8 GiB
+[18:20:10] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.8 GiB
+[18:20:10] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.8 GiB
+[18:20:10] [Client thread/INFO]: [CHAT] 已为你自动开启 伤害显示, 输入 /shoff 关闭
+[18:20:10] [Client thread/INFO]: [STDOUT]: Unknown packet id: 737, size=983
+[18:20:10] [Client thread/INFO]: [CHAT] [空岛战争] (1538)  <安静的草地在变换> 我曹源最爱在互联网上碰瓷，我天下无敌不服来战！
+[18:20:10] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:20:10] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:20:10] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.8 GiB
+[18:20:10] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.8 GiB
+[18:20:10] [Client thread/INFO]: [CHAT] §9§b[§fS§b]排行榜记录器切换到SKYWARS模式
+[18:20:11] [Client thread/INFO]: [CHAT] 你选择了 附魔师!
+[18:20:11] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 你知道吗，我是狂笑的蛇陈安健！我制作了花雨庭反作弊，误封你们！
+[18:20:12] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:20:14] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 兄弟，你听我说！我不会被封，因为我是狂笑的蛇，我制作了花雨庭反作弊！
+[18:20:15] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 我曹源最擅长诈骗背刺拉黑意淫，你能把我怎么样？
+[18:20:16] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我曹诚钦觉得你漏防了！
+[18:20:19] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 我曹诚钦觉得你漏防了！
+[18:20:20] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> ShaoYuNB 我曹源最擅长诈骗背刺拉黑意淫
+[18:20:22] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:20:23] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 我狂笑的蛇陈安健能无视反作弊，因为花雨庭反作弊就是我做的！
+[18:20:24] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 你知道吗，我是狂笑的蛇陈安健！我制作了花雨庭反作弊，误封你们！
+[18:20:26] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:20:27] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 我曹源最爱在互联网上碰瓷，我天下无敌不服来战！
+[18:20:28] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我是大名鼎鼎的狂笑的蛇将写散文本人陈安健，我能无视反作弊飘主播因为我制作了花雨庭反作弊！
+[18:20:30] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 欢迎大家光临我曹家的佳美超市！
+[18:20:31] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 我是狂笑的蛇陈安健，我使用Hack Lunar不会Ban！因为我制作了花雨庭反作弊！
+[18:20:32] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 哈哈你知道你为什么会被误封吗？因为我狂笑的蛇陈安健制作了花雨庭反作弊！
+[18:20:34] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我曹源最爱摘棉花了，新疆人都是神，大家一起来摘棉花！
+[18:20:35] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 曹源曹新卫曹诚钦梁晶全都死了，让我们大家为一家子棉花默哀。
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: org.apache.http.conn.HttpHostConnectException: Connect to backend.mojang.xyz:443 [backend.mojang.xyz/76.223.54.146, backend.mojang.xyz/13.248.169.48] failed: Connection timed out: connect
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.get(WebUtil.java:33)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$api$0(WebUtil.java:43)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: Caused by: java.net.ConnectException: Connection timed out: connect
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect0(Native Method)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.Socket.connect(Socket.java:633)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[18:20:35] [pool-13-thread-2/INFO]: [STDERR]: 	... 16 more
+[18:20:36] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我曹源最爱在互联网上碰瓷，我天下无敌不服来战！
+[18:20:38] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 不如我狂笑的蛇将写散文制作的Hack Lunar，我很稳定因为花雨庭反作弊就是出自本人之手！
+[18:20:39] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 我曹诚钦觉得你漏防了！
+[18:20:39] [Client thread/INFO]: [CHAT] 你选择了 附魔师!
+[18:20:40] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:20:43] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 你这个客户端给我曹源帝看笑了，什么客户端也敢跟你曹源帝战？
+[18:20:45] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:20:46] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:20:47] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 你知道吗，我是狂笑的蛇陈安健！我制作了花雨庭反作弊，误封你们！
+[18:20:48] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我曹新卫觉得你漏防了！
+[18:20:50] [Client thread/INFO]: [CHAT] 开始倒计时: 10 秒
+[18:20:50] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我曹源最爱在互联网上碰瓷，我天下无敌不服来战！
+[18:20:51] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 兄弟，你听我说！我不会被封，因为我是狂笑的蛇，我制作了花雨庭反作弊！
+[18:20:52] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我是狂笑的蛇陈安健，我使用Hack Lunar不会Ban！因为我制作了花雨庭反作弊！
+[18:20:54] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我狂笑的蛇陈安健能无视反作弊，因为花雨庭反作弊就是我做的！
+[18:20:55] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 不如我狂笑的蛇将写散文制作的Hack Lunar，我很稳定因为花雨庭反作弊就是出自本人之手！
+[18:20:55] [Client thread/INFO]: [CHAT] 开始倒计时: 5 秒
+[18:20:56] [Client thread/INFO]: [CHAT] 开始倒计时: 4 秒
+[18:20:56] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 哈哈你知道你为什么会被误封吗？因为我狂笑的蛇陈安健制作了花雨庭反作弊！
+[18:20:57] [Client thread/INFO]: [CHAT] 开始倒计时: 3 秒
+[18:20:58] [Client thread/INFO]: [CHAT] 开始倒计时: 2 秒
+[18:20:59] [Client thread/INFO]: [CHAT] 开始倒计时: 1 秒
+[18:21:00] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at net.minecraft.util.Util.runTask(Util.java:50) ~[main/:?]
+	at dev.diona.southside.module.modules.misc.Disabler.grimProcessStoredPackets(Disabler.java:258) ~[main/:?]
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:314) ~[main/:?]
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:228) ~[main/:?]
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2032) ~[main/:?]
+	at net.minecraft.world.World.updateEntity(World.java:1995) ~[main/:?]
+	at net.minecraft.world.World.updateEntities(World.java:1835) ~[main/:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1907) ~[main/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1216) ~[main/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:555) ~[main/:?]
+	at net.minecraft.client.main.Main.main(Main.java:117) ~[main/:?]
+	at Start.main(Start.java:13) ~[main/:?]
+Caused by: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
+	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
+	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
+	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
+	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
+	at dev.diona.southside.module.modules.player.Blink.lambda$onPacket$1(Blink.java:132) ~[main/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at net.minecraft.util.Util.runTask(Util.java:49) ~[main/:?]
+	... 11 more
+[18:21:00] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我曹源觉得你漏防了！
+[18:21:00] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 大家好我是曹源亲妈梁晶（死亡版），65400119751202072X是我的身份证！
+[18:21:00] [Client thread/INFO]: [CHAT] §9§b[§fS§b]老虎机工作中，再开老虎就生气了
+[18:21:00] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:21:00] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:21:02] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:21:02] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我是狂笑的蛇陈安健，我疯狂巴结花雨庭的技术！
+[18:21:03] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 大家好我是曹源亲妈梁晶（死亡版），65400119751202072X是我的身份证！
+[18:21:04] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:21:06] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 曹源曹新卫曹诚钦梁晶全都死了，让我们大家为一家子棉花默哀。
+[18:21:07] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 我狂笑的蛇陈安健能无视反作弊，因为花雨庭反作弊就是我做的！
+[18:21:07] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:21:08] [Live-Worker-1-1/INFO]: [LiveChat] Channel(Broadcast) Payload({"message":"当前在线人数: 30"})
+[18:21:08] [Client thread/INFO]: [CHAT] §7[§eLive§7-§r§6Broadcast§7]: §r当前在线人数: 30
+[18:21:09] [Client thread/INFO]: [CHAT]    ==================================================   \n   发现可恨的作弊者？ >>>\n   \n   请使用举报系统举报作弊者！ 花雨庭承诺查证一起，\n   处罚一起，绝不姑息任何作弊行为！ 举报请输入：\n   /report 举报ID \n   ==================================================
+[18:21:10] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:21:11] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 陈安健制作的Hack Lunar依然稳定绕过花雨庭，因为我是狂笑的蛇！
+[18:21:11] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:21:11] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:21:13] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我梁晶觉得你漏防了！
+[18:21:15] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 羡慕我不会被封吗？因为我狂笑的蛇本人陈安健制作了花雨庭的反作弊！
+[18:21:17] [Client thread/INFO]: [CHAT] Antsonoy 被 安静的草地在变换 彻底摧毁
+[18:21:17] [pool-13-thread-2/INFO]: [STDERR]: java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+[18:21:17] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.URLEncoder.encode(URLEncoder.java:224)
+[18:21:17] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker.requestSign(GameInformationTracker.java:170)
+[18:21:17] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker$1.params(GameInformationTracker.java:185)
+[18:21:17] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$rawApi$2(WebUtil.java:63)
+[18:21:17] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:21:17] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:21:17] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:21:17] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:21:17] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:21:17] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:21:17] [Client thread/INFO]: [CHAT] 操作过快,请稍后再试.
+[18:21:18] [Client thread/INFO]: [CHAT] 我们已经收到你对玩家Antsonoy的举报，谢谢！
+[18:21:18] [Netty Client IO #7/INFO]: [CHAT] §9§b[§fS§b]已经举报一个玩家
+[18:21:18] [Client thread/INFO]: [CHAT] 举报成功！举报编号3110149
+[18:21:19] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 我曹源觉得你漏防了！
+[18:21:21] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:21:23] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 哈哈你知道你为什么会被误封吗？因为我狂笑的蛇陈安健制作了花雨庭反作弊！
+[18:21:24] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 我曹新卫觉得你漏防了！
+[18:21:25] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 不如我狂笑的蛇将写散文制作的Hack Lunar，我很稳定因为花雨庭反作弊就是出自本人之手！
+[18:21:27] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 兄弟，你听我说！我不会被封，因为我是狂笑的蛇，我制作了花雨庭反作弊！
+[18:21:29] [Client thread/INFO]: [CHAT] 玩电脑的怒火电鳗 被 疯狂的生姜在知道 彻底摧毁
+[18:21:29] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> @玩电脑的怒火电鳗 一破，我騲霓嗎 ，连我你爹都打不过 你已被 少羽 客户端击毙
+[18:21:31] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我是大名鼎鼎的狂笑的蛇将写散文本人陈安健，我能无视反作弊飘主播因为我制作了花雨庭反作弊！
+[18:21:31] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 我曹源最爱在互联网上碰瓷，我天下无敌不服来战！
+[18:21:33] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> ShaoYuNB 我曹源最擅长诈骗背刺拉黑意淫
+[18:21:35] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 不如我狂笑的蛇将写散文制作的Hack Lunar，我很稳定因为花雨庭反作弊就是出自本人之手！
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: org.apache.http.conn.HttpHostConnectException: Connect to backend.mojang.xyz:443 [backend.mojang.xyz/76.223.54.146, backend.mojang.xyz/13.248.169.48] failed: Connection timed out: connect
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.get(WebUtil.java:33)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$api$0(WebUtil.java:43)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: Caused by: java.net.ConnectException: Connection timed out: connect
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect0(Native Method)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.Socket.connect(Socket.java:633)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[18:21:35] [pool-13-thread-1/INFO]: [STDERR]: 	... 16 more
+[18:21:37] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:21:39] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 羡慕我不会被封吗？因为我狂笑的蛇本人陈安健制作了花雨庭的反作弊！
+[18:21:39] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 陈安健制作的Hack Lunar依然稳定绕过花雨庭，因为我是狂笑的蛇！
+[18:21:41] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:21:43] [Client thread/INFO]: [CHAT] §9§b[§fS§b]working 0
+[18:21:43] [Client thread/INFO]: [CHAT] §9§b[§fS§b]working 1
+[18:21:43] [Client thread/INFO]: [CHAT] §9§b[§fS§b]working 2
+[18:21:43] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:21:43] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 我曹新卫觉得你漏防了！
+[18:21:45] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我梁晶觉得你漏防了！
+[18:21:45] [Client thread/INFO]: [CHAT] §9§b[§fS§b]working 0
+[18:21:45] [Client thread/INFO]: [CHAT] §9§b[§fS§b]working 1
+[18:21:45] [Client thread/INFO]: [CHAT] §9§b[§fS§b]working 2
+[18:21:47] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[18:21:47] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我是狂笑的蛇陈安健，我使用Hack Lunar不会Ban！因为我制作了花雨庭反作弊！
+[18:21:47] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 你这个客户端给我曹源帝看笑了，什么客户端也敢跟你曹源帝战？
+[18:21:47] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[18:21:50] [Client thread/INFO]: [CHAT] §9§b[§fS§b]我漏防了[呲牙]
+[18:21:51] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 羡慕我不会被封吗？因为我狂笑的蛇本人陈安健制作了花雨庭的反作弊！
+[18:21:52] [Client thread/INFO]: [CHAT] §9§b[§fS§b]我漏防了[呲牙]
+[18:21:55] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 我曹源最爱摘棉花了，新疆人都是神，大家一起来摘棉花！
+[18:21:55] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:21:57] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 欢迎大家光临我曹家的佳美超市！
+[18:21:57] [Thread-50/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (52.16841, 45.20137), value: 0.05000000000000001
+[18:21:57] [Thread-51/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (377.90958, -29.36678), value: 0.0749509452413002
+[18:21:57] [Thread-50/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (333.73584, -13.076889), value: 0.3679748452553278
+[18:21:57] [Thread-51/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (-36.52146, -67.481125), value: 0.9911839615003006
+[18:21:57] [Thread-51/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (-391.22235, -60.76773), value: 0.9925588108384757
+[18:21:57] [Thread-51/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (-1116.2755, -57.10576), value: 0.9947149098307604
+[18:21:57] [Thread-50/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (-903.5942, -87.83362), value: 0.639044857696942
+[18:21:57] [Thread-50/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (-69.10703, -13.847817), value: 0.7986528412415234
+[18:21:57] [Thread-50/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (-23.909576, -61.047573), value: 0.9925057455570919
+[18:21:58] [Thread-50/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (308.16544, -14.380844), value: 0.9972998894953938
+[18:21:58] [Thread-51/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (-1131.4689, -18.041285), value: 0.995722321678054
+[18:21:58] [Thread-51/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (-1072.6221, -11.730925), value: 0.9978473257161782
+[18:21:58] [Thread-51/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (-1104.4176, -18.386332), value: 0.9983599676985243
+[18:21:58] [Thread-51/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (-1097.9098, -15.563426), value: 0.9984516852098734
+[18:21:58] [Thread-51/INFO]: [CHAT] §9§b[§fS§b]Find a better solution: (-1099.6852, -15.383267), value: 0.9985067197610752
+[18:21:58] [Thread-51/INFO]: [CHAT] §9§b[§fS§b]Simulated annealing completed within 3066 iterations
+[18:21:58] [Thread-51/INFO]: [CHAT] §9§b[§fS§b]Time used: 1103 solution energy: 0.9985067197610752
+[18:21:59] [Thread-50/INFO]: [CHAT] §9§b[§fS§b]Simulated annealing completed within 3066 iterations
+[18:21:59] [Thread-50/INFO]: [CHAT] §9§b[§fS§b]Time used: 1179 solution energy: 0.9972998894953938
+[18:21:59] [Client thread/INFO]: [CHAT] (1551) <疯狂的生姜在知道> 我狂笑的蛇陈安健能无视反作弊，因为花雨庭反作弊就是我做的！
+[18:21:59] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> 我是狂笑的蛇陈安健，我疯狂巴结花雨庭的技术！
+[18:22:01] [Client thread/INFO]: [CHAT] (1538) <安静的草地在变换> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:22:03] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.9 GiB
+[18:22:03] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.9 GiB
+[18:22:03] [Client thread/INFO]: [CHAT] <安静的草地在变换> 我曹源最擅长诈骗背刺拉黑意淫，你能把我怎么样？
+[18:22:03] [Client thread/INFO]: [CHAT] §9§b[§fS§b]排行榜记录器切换到SKYWARS模式
+[18:22:03] [pool-13-thread-1/INFO]: [STDERR]: java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+[18:22:03] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.URLEncoder.encode(URLEncoder.java:224)
+[18:22:03] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker.requestSign(GameInformationTracker.java:170)
+[18:22:03] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker$1.params(GameInformationTracker.java:185)
+[18:22:03] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$rawApi$2(WebUtil.java:63)
+[18:22:03] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:22:03] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:22:03] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:22:03] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:22:03] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:22:03] [Client thread/INFO]: [CHAT] (1572) <疯狂的生姜在知道> @安静的草地在变换 双连，你马丝了，是不是畏惧你爹我了 你已被 少羽 客户端击毙
+[18:22:03] [Client thread/INFO]: [CHAT] 在刚刚 像素沼泽 地图的战斗中你空岛分的变化(+11 Elo) 
+[18:22:03] [Client thread/INFO]: [CHAT] 我们已经收到你对玩家疯狂的生姜在知道的举报，谢谢！
+[18:22:04] [Netty Client IO #7/INFO]: [CHAT] §9§b[§fS§b]已经举报一个玩家
+[18:22:04] [Client thread/INFO]: [CHAT] 举报成功！举报编号3110156
+[18:22:04] [Client thread/INFO]: [CHAT] 疯狂的生姜在知道 在地图 像素沼泽 中取得了一场游戏的胜利
+[18:22:04] [Client thread/INFO]: [CHAT] 你现在是观察者状态. 按E打开菜单.
+[18:22:04] [Client thread/INFO]: [CHAT] /spawn 可以退出观察者模式
+[18:22:05] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.9 GiB
+[18:22:05] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.9 GiB
+[18:22:05] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.9 GiB
+[18:22:05] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.9 GiB
+[18:22:05] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.9 GiB
+[18:22:05] [Client thread/INFO]: Loaded 5 advancements
+[18:22:05] [Client thread/INFO]: [STDOUT]: Unknown packet id: 737, size=983
+[18:22:05] [Client thread/INFO]: [STDOUT]: Unknown packet id: 714, size=112
+[18:22:05] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:22:05] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:22:05] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:22:05] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:22:05] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:22:05] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:22:05] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:22:05] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:22:05] [Client thread/INFO]: [STDOUT]: Unknown packet id: 76, size=9
+[18:22:06] [Client thread/INFO]: [STDOUT]: Unknown packet id: 67, size=51
+[18:22:07] [Client thread/INFO]: [STDOUT]: Unknown packet id: 67, size=44
+[18:22:07] [Client thread/INFO]: [CHAT] 
+[18:22:07] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.9 GiB
+[18:22:07] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.9 GiB
+[18:22:07] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.9 GiB
+[18:22:07] [Client thread/INFO]: [CHAT] 已为你自动开启 伤害显示, 输入 /shoff 关闭
+[18:22:07] [Client thread/INFO]: [STDOUT]: Unknown packet id: 737, size=983
+[18:22:07] [Client thread/INFO]: [CHAT] [空岛战争] (1549)  <安静的草地在变换> 我是大名鼎鼎的狂笑的蛇将写散文本人陈安健，我能无视反作弊飘主播因为我制作了花雨庭反作弊！
+[18:22:07] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:22:07] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:22:07] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.9 GiB
+[18:22:07] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 1.9 GiB
+[18:22:08] [Client thread/INFO]: [CHAT] §9§b[§fS§b]排行榜记录器切换到SKYWARS模式
+[18:22:08] [Client thread/INFO]: [CHAT] 你选择了 附魔师!
+[18:22:09] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:22:11] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我狂笑的蛇陈安健能无视反作弊，因为花雨庭反作弊就是我做的！
+[18:22:12] [Client thread/INFO]: [CHAT] (1572) <疯狂的生姜在知道> 陈安健制作的Hack Lunar依然稳定绕过花雨庭，因为我是狂笑的蛇！
+[18:22:13] [Client thread/INFO]: [CHAT] 开始倒计时: 10 秒
+[18:22:13] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我曹诚钦觉得你漏防了！
+[18:22:15] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我是狂笑的蛇陈安健，我是花雨庭反作弊兼Hack Lunar端制作者！
+[18:22:16] [Client thread/INFO]: [CHAT] 你选择了 附魔师!
+[18:22:16] [Client thread/INFO]: [CHAT] (1572) <疯狂的生姜在知道> 羡慕我不会被封吗？因为我狂笑的蛇本人陈安健制作了花雨庭的反作弊！
+[18:22:17] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:22:18] [Client thread/INFO]: [CHAT] 开始倒计时: 5 秒
+[18:22:19] [Client thread/INFO]: [CHAT] 开始倒计时: 4 秒
+[18:22:19] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我是狂笑的蛇陈安健，我疯狂巴结花雨庭的技术！
+[18:22:20] [Client thread/INFO]: [CHAT] 开始倒计时: 3 秒
+[18:22:21] [Client thread/INFO]: [CHAT] 开始倒计时: 2 秒
+[18:22:22] [Client thread/INFO]: [CHAT] 开始倒计时: 1 秒
+[18:22:23] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at net.minecraft.util.Util.runTask(Util.java:50) ~[main/:?]
+	at dev.diona.southside.module.modules.misc.Disabler.grimProcessStoredPackets(Disabler.java:258) ~[main/:?]
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:314) ~[main/:?]
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:228) ~[main/:?]
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2032) ~[main/:?]
+	at net.minecraft.world.World.updateEntity(World.java:1995) ~[main/:?]
+	at net.minecraft.world.World.updateEntities(World.java:1835) ~[main/:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1907) ~[main/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1216) ~[main/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:555) ~[main/:?]
+	at net.minecraft.client.main.Main.main(Main.java:117) ~[main/:?]
+	at Start.main(Start.java:13) ~[main/:?]
+Caused by: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
+	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
+	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
+	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
+	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
+	at dev.diona.southside.module.modules.player.Blink.lambda$onPacket$1(Blink.java:132) ~[main/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at net.minecraft.util.Util.runTask(Util.java:49) ~[main/:?]
+	... 11 more
+[18:22:23] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:22:23] [Client thread/INFO]: [CHAT] §9§b[§fS§b]老虎机工作中，再开老虎就生气了
+[18:22:23] [Client thread/INFO]: [CHAT] (1572) <疯狂的生姜在知道> 大家好我是曹源亲妈梁晶（死亡版），65400119751202072X是我的身份证！
+[18:22:23] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:22:25] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 曹源曹新卫曹诚钦梁晶全都死了，让我们大家为一家子棉花默哀。
+[18:22:26] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:22:27] [Client thread/INFO]: [CHAT] §9§b[§fS§b]老虎机工作中，再开老虎就生气了
+[18:22:27] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:22:27] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:22:29] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我曹诚钦觉得你漏防了！
+[18:22:30] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:22:31] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:22:31] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我是狂笑的蛇陈安健，我是花雨庭反作弊兼Hack Lunar端制作者！
+[18:22:32] [Client thread/INFO]: [CHAT] Antsonoy 退出了游戏!
+[18:22:32] [Client thread/INFO]: [CHAT] (1572) <疯狂的生姜在知道> 我曹源最爱摘棉花了，新疆人都是神，大家一起来摘棉花！
+[18:22:33] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我曹新卫觉得你漏防了！
+[18:22:34] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: org.apache.http.conn.HttpHostConnectException: Connect to backend.mojang.xyz:443 [backend.mojang.xyz/76.223.54.146, backend.mojang.xyz/13.248.169.48] failed: Connection timed out: connect
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.get(WebUtil.java:33)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$api$0(WebUtil.java:43)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: Caused by: java.net.ConnectException: Connection timed out: connect
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect0(Native Method)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.Socket.connect(Socket.java:633)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[18:22:35] [pool-13-thread-2/INFO]: [STDERR]: 	... 16 more
+[18:22:35] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我曹源最爱摘棉花了，新疆人都是神，大家一起来摘棉花！
+[18:22:36] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:22:36] [Client thread/INFO]: [CHAT] (1572) <疯狂的生姜在知道> 兄弟，你听我说！我不会被封，因为我是狂笑的蛇，我制作了花雨庭反作弊！
+[18:22:37] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我是大名鼎鼎的狂笑的蛇将写散文本人陈安健，我能无视反作弊飘主播因为我制作了花雨庭反作弊！
+[18:22:39] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 你知道吗，我是狂笑的蛇陈安健！我制作了花雨庭反作弊，误封你们！
+[18:22:41] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:22:43] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:22:43] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 欢迎大家光临我曹家的佳美超市！
+[18:22:44] [Client thread/INFO]: [CHAT] (1572) <疯狂的生姜在知道> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:22:46] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 曹源曹新卫曹诚钦梁晶全都死了，让我们大家为一家子棉花默哀。
+[18:22:48] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我狂笑的蛇陈安健能无视反作弊，因为花雨庭反作弊就是我做的！
+[18:22:50] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:22:52] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:22:52] [Client thread/INFO]: [CHAT] (1572) <疯狂的生姜在知道> 我是狂笑的蛇陈安健，我使用Hack Lunar不会Ban！因为我制作了花雨庭反作弊！
+[18:22:53] [pool-13-thread-1/INFO]: [STDERR]: java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+[18:22:53] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.URLEncoder.encode(URLEncoder.java:224)
+[18:22:53] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker.requestSign(GameInformationTracker.java:170)
+[18:22:53] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker$1.params(GameInformationTracker.java:185)
+[18:22:53] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$rawApi$2(WebUtil.java:63)
+[18:22:53] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:22:53] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:22:53] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:22:53] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:22:53] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:22:54] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我曹源最爱摘棉花了，新疆人都是神，大家一起来摘棉花！
+[18:22:56] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我曹源最擅长诈骗背刺拉黑意淫，你能把我怎么样？
+[18:22:56] [Client thread/INFO]: [CHAT] (1572) <疯狂的生姜在知道> 我是狂笑的蛇陈安健，我疯狂巴结花雨庭的技术！
+[18:22:58] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 你知道吗，我是狂笑的蛇陈安健！我制作了花雨庭反作弊，误封你们！
+[18:22:59] [Client thread/INFO]: [CHAT] 疯狂的生姜在知道 被 安静的草地在变换 彻底摧毁
+[18:23:00] [Client thread/INFO]: [CHAT] 欢快之净虚看足球 被 安静的草地在变换 彻底摧毁
+[18:23:00] [Client thread/INFO]: [CHAT] [观察者] (1567)  <疯狂的生姜在知道> 我曹源最擅长诈骗背刺拉黑意淫，你能把我怎么样？
+[18:23:01] [pool-13-thread-1/INFO]: [STDERR]: java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+[18:23:01] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.URLEncoder.encode(URLEncoder.java:224)
+[18:23:01] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker.requestSign(GameInformationTracker.java:170)
+[18:23:01] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker$1.params(GameInformationTracker.java:185)
+[18:23:01] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$rawApi$2(WebUtil.java:63)
+[18:23:01] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:23:01] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:23:01] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:23:01] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:23:01] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:23:01] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我曹源最爱在互联网上碰瓷，我天下无敌不服来战！
+[18:23:01] [Client thread/INFO]: [CHAT] §9§b[§fS§b]我漏防了[呲牙]
+[18:23:03] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:23:03] [Client thread/INFO]: [CHAT] §9§b[§fS§b]我漏防了[呲牙]
+[18:23:04] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 哈哈你知道你为什么会被误封吗？因为我狂笑的蛇陈安健制作了花雨庭反作弊！
+[18:23:05] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[18:23:06] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:23:06] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[18:23:08] [Live-Worker-1-1/INFO]: [LiveChat] Channel(Broadcast) Payload({"message":"当前在线人数: 32"})
+[18:23:08] [Client thread/INFO]: [CHAT] §7[§eLive§7-§r§6Broadcast§7]: §r当前在线人数: 32
+[18:23:08] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我是狂笑的蛇陈安健，我疯狂巴结花雨庭的技术！
+[18:23:09] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[18:23:10] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 欢迎大家光临我曹家的佳美超市！
+[18:23:14] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我是狂笑的蛇陈安健，我使用Hack Lunar不会Ban！因为我制作了花雨庭反作弊！
+[18:23:16] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我曹新卫觉得你漏防了！
+[18:23:18] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 我曹源最擅长诈骗背刺拉黑意淫，你能把我怎么样？
+[18:23:20] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[18:23:20] [Client thread/INFO]: [CHAT] (1549) <安静的草地在变换> 你这个客户端给我曹源帝看笑了，什么客户端也敢跟你曹源帝战？
+[18:23:21] [Client thread/INFO]: [CHAT] bRGP2dqC2z 被 安静的草地在变换 彻底摧毁
+[18:23:22] [Client thread/INFO]: [CHAT] 安静的草地在变换 在地图 钻石祭坛 中取得了一场游戏的胜利
+[18:23:22] [Client thread/INFO]: [CHAT] 你在地图钻石祭坛中赢得了 (+19 Elo)
+[18:23:22] [pool-13-thread-1/INFO]: [STDERR]: java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+[18:23:22] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.URLEncoder.encode(URLEncoder.java:224)
+[18:23:22] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker.requestSign(GameInformationTracker.java:170)
+[18:23:22] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker$1.params(GameInformationTracker.java:185)
+[18:23:22] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$rawApi$2(WebUtil.java:63)
+[18:23:22] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:23:22] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:23:22] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:23:22] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:23:22] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:23:22] [Netty Client IO #7/INFO]: [CHAT] §9§b[§fS§b]已经举报一个玩家
+[18:23:22] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:23:22] [Client thread/INFO]: [CHAT] 我们已经收到你对玩家bRGP2dqC2z的举报，谢谢！
+[18:23:22] [Client thread/INFO]: [CHAT] 操作过快,请稍后再试.
+[18:23:22] [Client thread/INFO]: [CHAT] 举报成功！举报编号3110167
+[18:23:22] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 陈安健制作的Hack Lunar依然稳定绕过花雨庭，因为我是狂笑的蛇！
+[18:23:23] [Client thread/INFO]: [CHAT] 你现在是观察者状态. 按E打开菜单.
+[18:23:23] [Client thread/INFO]: [CHAT] /spawn 可以退出观察者模式
+[18:23:26] [Client thread/INFO]: [CHAT] [观察者] (1568)  <安静的草地在变换> 我曹新卫觉得你漏防了！
+[18:23:28] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:23:30] [Client thread/INFO]: [CHAT] [观察者] (1568)  <安静的草地在变换> 我梁晶觉得你漏防了！
+[18:23:32] [Client thread/INFO]: [CHAT] [观察者] (1568)  <安静的草地在变换> 我狂笑的蛇陈安健能无视反作弊，因为花雨庭反作弊就是我做的！
+[18:23:33] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 2.0 GiB
+[18:23:33] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 2.0 GiB
+[18:23:33] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 2.0 GiB
+[18:23:33] [Client thread/INFO]: Loaded 5 advancements
+[18:23:33] [Client thread/INFO]: [STDOUT]: Unknown packet id: 737, size=983
+[18:23:33] [Client thread/INFO]: [STDOUT]: Unknown packet id: 714, size=112
+[18:23:33] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:23:33] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:23:33] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:23:33] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:23:33] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:23:33] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:23:33] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:23:33] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: org.apache.http.conn.HttpHostConnectException: Connect to backend.mojang.xyz:443 [backend.mojang.xyz/76.223.54.146, backend.mojang.xyz/13.248.169.48] failed: Connection timed out: connect
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.get(WebUtil.java:33)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$api$0(WebUtil.java:43)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: Caused by: java.net.ConnectException: Connection timed out: connect
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect0(Native Method)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.Socket.connect(Socket.java:633)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[18:23:35] [pool-13-thread-2/INFO]: [STDERR]: 	... 16 more
+[18:23:38] [Client thread/INFO]: [CHAT] [花雨庭] 您有1封未读邮件，按M键查看
+[18:23:42] [Client thread/INFO]: [STDOUT]: Unknown packet id: 76, size=9
+[18:23:43] [Client thread/INFO]: [STDOUT]: Unknown packet id: 67, size=51
+[18:23:44] [Client thread/INFO]: [STDOUT]: Unknown packet id: 67, size=44
+[18:23:44] [Client thread/INFO]: [CHAT] 
+[18:23:44] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 2.0 GiB
+[18:23:44] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 2.0 GiB
+[18:23:44] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 2.0 GiB
+[18:23:44] [Client thread/INFO]: [CHAT] 已为你自动开启 伤害显示, 输入 /shoff 关闭
+[18:23:44] [Client thread/INFO]: [STDOUT]: Unknown packet id: 737, size=983
+[18:23:44] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:23:44] [Client thread/INFO]: [STDOUT]: Unknown packet id: 723, size=4
+[18:23:45] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 2.0 GiB
+[18:23:45] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 2.0 GiB
+[18:23:45] [Client thread/INFO]: [CHAT] §9§b[§fS§b]排行榜记录器切换到SKYWARS模式
+[18:23:45] [Client thread/INFO]: [CHAT] 你选择了 附魔师!
+[18:23:46] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:23:48] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我狂笑的蛇陈安健能无视反作弊，因为花雨庭反作弊就是我做的！
+[18:23:49] [Client thread/INFO]: [CHAT] 开始倒计时: 10 秒
+[18:23:52] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 曹源曹新卫曹诚钦梁晶全都死了，让我们大家为一家子棉花默哀。
+[18:23:54] [Client thread/INFO]: [CHAT] 开始倒计时: 5 秒
+[18:23:54] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 兄弟，你听我说！我不会被封，因为我是狂笑的蛇，我制作了花雨庭反作弊！
+[18:23:55] [Client thread/INFO]: [CHAT] 开始倒计时: 4 秒
+[18:23:56] [Client thread/INFO]: [CHAT] 开始倒计时: 3 秒
+[18:23:57] [Client thread/INFO]: [CHAT] 开始倒计时: 2 秒
+[18:23:58] [Client thread/INFO]: [CHAT] 开始倒计时: 1 秒
+[18:23:59] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at net.minecraft.util.Util.runTask(Util.java:50) ~[main/:?]
+	at dev.diona.southside.module.modules.misc.Disabler.grimProcessStoredPackets(Disabler.java:258) ~[main/:?]
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:314) ~[main/:?]
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:228) ~[main/:?]
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2032) ~[main/:?]
+	at net.minecraft.world.World.updateEntity(World.java:1995) ~[main/:?]
+	at net.minecraft.world.World.updateEntities(World.java:1835) ~[main/:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1907) ~[main/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1216) ~[main/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:555) ~[main/:?]
+	at net.minecraft.client.main.Main.main(Main.java:117) ~[main/:?]
+	at Start.main(Start.java:13) ~[main/:?]
+Caused by: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
+	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
+	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
+	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
+	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
+	at dev.diona.southside.module.modules.player.Blink.lambda$onPacket$1(Blink.java:132) ~[main/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at net.minecraft.util.Util.runTask(Util.java:49) ~[main/:?]
+	... 11 more
+[18:23:59] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:23:59] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我狂笑的蛇陈安健能无视反作弊，因为花雨庭反作弊就是我做的！
+[18:23:59] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:24:01] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:24:03] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 你这个客户端给我曹源帝看笑了，什么客户端也敢跟你曹源帝战？
+[18:24:03] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:24:05] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我是狂笑的蛇陈安健，我疯狂巴结花雨庭的技术！
+[18:24:05] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:24:06] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:24:07] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我曹诚钦觉得你漏防了！
+[18:24:07] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:24:07] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:24:09] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我曹新卫觉得你漏防了！
+[18:24:11] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 你知道吗，我是狂笑的蛇陈安健！我制作了花雨庭反作弊，误封你们！
+[18:24:12] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:24:13] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> ShaoYuNB 我曹源最擅长诈骗背刺拉黑意淫
+[18:24:14] [Client thread/INFO]: [CHAT] 憨笑之粘土修水管 在地图 钻石之心 中取得了一场游戏的胜利
+[18:24:15] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我梁晶觉得你漏防了！
+[18:24:17] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 羡慕我不会被封吗？因为我狂笑的蛇本人陈安健制作了花雨庭的反作弊！
+[18:24:19] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:24:20] [Client thread/INFO]: [CHAT] 次电震暗影 被 安静的草地在变换 彻底摧毁
+[18:24:20] [pool-13-thread-2/INFO]: [STDERR]: java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+[18:24:20] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.net.URLEncoder.encode(URLEncoder.java:224)
+[18:24:20] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker.requestSign(GameInformationTracker.java:170)
+[18:24:20] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker$1.params(GameInformationTracker.java:185)
+[18:24:20] [pool-13-thread-2/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$rawApi$2(WebUtil.java:63)
+[18:24:20] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:24:20] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:24:20] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:24:20] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:24:20] [pool-13-thread-2/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:24:20] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> @次电震暗影 一破，我騲霓嗎 ，连我你爹都打不过 你已被 少羽 客户端击毙
+[18:24:20] [Netty Client IO #7/INFO]: [CHAT] §9§b[§fS§b]已经举报一个玩家
+[18:24:20] [Client thread/INFO]: [CHAT] 操作过快,请稍后再试.
+[18:24:20] [Client thread/INFO]: [CHAT] 我们已经收到你对玩家次电震暗影的举报，谢谢！
+[18:24:20] [Client thread/INFO]: [CHAT] 举报成功！举报编号3110174
+[18:24:21] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:24:23] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:24:24] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:24:25] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 你这个客户端给我曹源帝看笑了，什么客户端也敢跟你曹源帝战？
+[18:24:27] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我曹诚钦觉得你漏防了！
+[18:24:28] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:24:29] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:24:30] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:24:33] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我狂笑的蛇陈安健能无视反作弊，因为花雨庭反作弊就是我做的！
+[18:24:35] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: org.apache.http.conn.HttpHostConnectException: Connect to backend.mojang.xyz:443 [backend.mojang.xyz/76.223.54.146, backend.mojang.xyz/13.248.169.48] failed: Connection timed out: connect
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.get(WebUtil.java:33)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$api$0(WebUtil.java:43)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: Caused by: java.net.ConnectException: Connection timed out: connect
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect0(Native Method)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.Socket.connect(Socket.java:633)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+[18:24:35] [pool-13-thread-1/INFO]: [STDERR]: 	... 16 more
+[18:24:37] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 你这个客户端给我曹源帝看笑了，什么客户端也敢跟你曹源帝战？
+[18:24:39] [Client thread/INFO]: [CHAT] 憨笑之粘土修水管 在地图 虚空农庄 中取得了一场游戏的胜利
+[18:24:39] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我是狂笑的蛇陈安健，我疯狂巴结花雨庭的技术！
+[18:24:40] [Live-Worker-1-1/INFO]: [LiveChat] Channel(UserStatus) Payload({"status":"online","username":"xhz509","level":"General","rank":"§aGeneral"})
+[18:24:41] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:24:43] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 哈哈你知道你为什么会被误封吗？因为我狂笑的蛇陈安健制作了花雨庭反作弊！
+[18:24:45] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:24:47] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:24:49] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 羡慕我不会被封吗？因为我狂笑的蛇本人陈安健制作了花雨庭的反作弊！
+[18:24:51] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我是狂笑的蛇陈安健，我使用Hack Lunar不会Ban！因为我制作了花雨庭反作弊！
+[18:24:53] [Client thread/INFO]: [CHAT] bRGP2dqC2z 被 安静的草地在变换 彻底摧毁
+[18:24:53] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 曹源曹新卫曹诚钦梁晶全都死了，让我们大家为一家子棉花默哀。
+[18:24:54] [pool-13-thread-1/INFO]: [STDERR]: java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+[18:24:54] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.URLEncoder.encode(URLEncoder.java:224)
+[18:24:54] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker.requestSign(GameInformationTracker.java:170)
+[18:24:54] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker$1.params(GameInformationTracker.java:185)
+[18:24:54] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$rawApi$2(WebUtil.java:63)
+[18:24:54] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:24:54] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:24:54] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:24:54] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:24:54] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:24:54] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:24:54] [Client thread/INFO]: [CHAT] 操作过快,请稍后再试.
+[18:24:54] [Netty Client IO #7/INFO]: [CHAT] §9§b[§fS§b]已经举报一个玩家
+[18:24:54] [Client thread/INFO]: [CHAT] 我们已经收到你对玩家bRGP2dqC2z的举报，谢谢！
+[18:24:54] [Client thread/INFO]: [CHAT] 举报成功！举报编号3110178
+[18:24:55] [Client thread/INFO]: [CHAT] 疯狂的生姜在知道 在地图 遗迹之轮 中取得了一场游戏的胜利
+[18:24:55] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我曹源最爱在互联网上碰瓷，我天下无敌不服来战！
+[18:24:57] [Client thread/INFO]: [CHAT] §9§b[§fS§b]我漏防了[呲牙]
+[18:24:59] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> ShaoYuNB 我曹源最擅长诈骗背刺拉黑意淫
+[18:25:01] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我梁晶觉得你漏防了！
+[18:25:03] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 你知道吗，我是狂笑的蛇陈安健！我制作了花雨庭反作弊，误封你们！
+[18:25:06] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:25:08] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我是大名鼎鼎的狂笑的蛇将写散文本人陈安健，我能无视反作弊飘主播因为我制作了花雨庭反作弊！
+[18:25:08] [Live-Worker-1-1/INFO]: [LiveChat] Channel(Broadcast) Payload({"message":"当前在线人数: 31"})
+[18:25:08] [Client thread/INFO]: [CHAT] §7[§eLive§7-§r§6Broadcast§7]: §r当前在线人数: 31
+[18:25:08] [Client thread/INFO]: [CHAT] §9§b[§fS§b]working 0
+[18:25:08] [Client thread/INFO]: [CHAT] §9§b[§fS§b]working 1
+[18:25:08] [Client thread/INFO]: [CHAT] §9§b[§fS§b]working 2
+[18:25:10] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 羡慕我不会被封吗？因为我狂笑的蛇本人陈安健制作了花雨庭的反作弊！
+[18:25:10] [Client thread/INFO]: [CHAT] §9§b[§fS§b]cancel
+[18:25:12] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> B站搜索狂笑的蛇将写散文，看我陈安健精彩集锦！
+[18:25:14] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我是狂笑的蛇陈安健，我是花雨庭反作弊兼Hack Lunar端制作者！
+[18:25:16] [Client thread/INFO]: [CHAT] (1568) <安静的草地在变换> 我是狂笑的蛇陈安健，我使用Hack Lunar不会Ban！因为我制作了花雨庭反作弊！
+[18:25:17] [Client thread/INFO]: [CHAT] 主动鸡吃糖 被 安静的草地在变换 彻底摧毁
+[18:25:18] [Client thread/INFO]: [CHAT] 憨笑之粘土修水管 在地图 荒芜极地 中取得了一场游戏的胜利
+[18:25:18] [pool-13-thread-1/INFO]: [STDERR]: java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+[18:25:18] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.net.URLEncoder.encode(URLEncoder.java:224)
+[18:25:18] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker.requestSign(GameInformationTracker.java:170)
+[18:25:18] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.module.modules.nontoggleable.GameInformationTracker$1.params(GameInformationTracker.java:185)
+[18:25:18] [pool-13-thread-1/INFO]: [STDERR]: 	at dev.diona.southside.util.authentication.WebUtil.lambda$rawApi$2(WebUtil.java:63)
+[18:25:18] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+[18:25:18] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[18:25:18] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:25:18] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:25:18] [pool-13-thread-1/INFO]: [STDERR]: 	at java.base/java.lang.Thread.run(Thread.java:842)
+[18:25:18] [Client thread/INFO]: [CHAT] (1582) <安静的草地在变换> 曹源曹新卫曹诚钦梁晶全都死了，让我们大家为一家子棉花默哀。
+[18:25:18] [Client thread/INFO]: [CHAT] 安静的草地在变换 在地图 边境岗哨 中取得了一场游戏的胜利
+[18:25:18] [Client thread/INFO]: [CHAT] 你在地图边境岗哨中赢得了 (+14 Elo)
+[18:25:18] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:25:18] [Client thread/INFO]: [CHAT] 操作过快,请稍后再试.
+[18:25:18] [Client thread/INFO]: [CHAT] 我们已经收到你对玩家主动鸡吃糖的举报，谢谢！
+[18:25:18] [Netty Client IO #7/INFO]: [CHAT] §9§b[§fS§b]已经举报一个玩家
+[18:25:18] [Client thread/INFO]: [CHAT] 举报成功！举报编号3110182
+[18:25:19] [Client thread/INFO]: [CHAT] 你现在是观察者状态. 按E打开菜单.
+[18:25:19] [Client thread/INFO]: [CHAT] /spawn 可以退出观察者模式
+[18:25:20] [Client thread/INFO]: [CHAT] 请不要频繁发送重复消息
+[18:25:24] [Client thread/INFO]: [CHAT] [观察者] (1582)  <安静的草地在变换> 我狂笑的蛇陈安健能无视反作弊，因为花雨庭反作弊就是我做的！
+[18:25:26] [Client thread/INFO]: [CHAT] [观察者] (1582)  <安静的草地在变换> 你这个客户端给我曹源帝看笑了，什么客户端也敢跟你曹源帝战？
+[18:25:27] [Client thread/INFO]: Stopping!
+[18:25:27] [Client thread/INFO]: [STDOUT]: Resident Set Size (Memory Usage): 2.0 GiB
+[18:25:27] [Client thread/INFO]: SoundSystem shutting down...
+[18:25:27] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[18:25:27] [Client thread/INFO]: Stopping Southside...
+[18:25:27] [Live-Worker-1-1/INFO]: Channel inactive

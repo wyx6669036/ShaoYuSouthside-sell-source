@@ -1,0 +1,10 @@
+{
+  "Aura": false,
+  "AuraDelay": 300.0,
+  "Bind": {
+    "keyBinds": [
+      0
+    ]
+  },
+  "Enabled": false
+}

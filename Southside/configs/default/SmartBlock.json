@@ -1,0 +1,10 @@
+{
+  "Range": 5,
+  "Debug": false,
+  "Bind": {
+    "keyBinds": [
+      0
+    ]
+  },
+  "Enabled": true
+}

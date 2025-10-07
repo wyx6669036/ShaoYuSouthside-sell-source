@@ -1,0 +1,17 @@
+{
+  "Mode": 2,
+  "Grim Legit": false,
+  "Horizontal": 0.0,
+  "Vertical": 0.0,
+  "S08 Detect": true,
+  "Disable In Web": true,
+  "Disable In Liquid": false,
+  "Ray Cast": false,
+  "Jump Rotate": false,
+  "Bind": {
+    "keyBinds": [
+      0
+    ]
+  },
+  "Enabled": true
+}

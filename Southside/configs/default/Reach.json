@@ -1,0 +1,10 @@
+{
+  "Range": 3.0,
+  "Build Range": 4.5,
+  "Bind": {
+    "keyBinds": [
+      0
+    ]
+  },
+  "Enabled": false
+}

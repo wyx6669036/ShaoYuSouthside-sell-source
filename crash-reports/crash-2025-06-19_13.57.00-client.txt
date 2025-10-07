@@ -1,0 +1,109 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 2025-06-19 13:57
+Description: Ticking entity
+
+java.lang.NullPointerException: Cannot invoke "dev.diona.southside.module.Module.isEnabled()" because the return value of "dev.diona.southside.managers.ModuleManager.getModuleByClass(java.lang.Class)" is null
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:876)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2042)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:335)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:215)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2032)
+	at net.minecraft.world.World.updateEntity(World.java:1995)
+	at net.minecraft.world.World.updateEntities(World.java:1835)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1861)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1170)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:530)
+	at net.minecraft.client.main.Main.main(Main.java:111)
+	at Start.main(Start.java:13)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:876)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2042)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:335)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:215)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2032)
+	at net.minecraft.world.World.updateEntity(World.java:1995)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityPlayerSP)
+	Entity ID: 1282
+	Entity Name: 放松的狼在尖叫
+	Entity's Exact location: 58.50, 69.00, 8.50
+	Entity's Block location: World: (58,69,8), Chunk: (at 10,4,8 in 3,0; contains blocks 48,0,0 to 63,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: Cannot invoke "net.minecraft.entity.Entity.toString()" because the return value of "net.minecraft.entity.Entity.getRidingEntity()" is null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1835)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 9 total; [EntityPlayerSP['放松的狼在尖叫'/1282, l='MpServer', x=58.50, y=69.00, z=8.50], EntityOtherPlayerMP['习惯丶宠你'/1181, l='MpServer', x=51.67, y=67.00, z=9.85], EntityOtherPlayerMP['peanutly'/1279, l='MpServer', x=57.50, y=69.00, z=7.50], EntityOtherPlayerMP['§e§l选择游戏'/1139, l='MpServer', x=33.50, y=63.50, z=7.50], EntityOtherPlayerMP['§e§l 守卫水晶§c§lNEW'/1143, l='MpServer', x=32.41, y=63.50, z=11.59], EntityOtherPlayerMP['§1§4§6§7§8§9'/1147, l='MpServer', x=32.70, y=63.50, z=3.70], EntityOtherPlayerMP['§e§l问题反馈'/1152, l='MpServer', x=52.50, y=68.00, z=-9.50], EntityOtherPlayerMP['§6§l✈道具派送员'/1157, l='MpServer', x=27.50, y=63.50, z=21.50], EntityOtherPlayerMP['§e§l花雨庭大喇叭'/1162, l='MpServer', x=31.48, y=63.50, z=-0.51]]
+	Chunk stats: MultiplayerChunkCache: 663, 663
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (344,166,-18), Chunk: (at 8,10,14 in 21,-2; contains blocks 336,0,-32 to 351,255,-17), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 7210 game time, 6000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: adventure (ID 2). Hardcore: false. Cheats: false
+	Forced entities: 28 total; [EntityPlayerSP['放松的狼在尖叫'/1282, l='MpServer', x=58.50, y=69.00, z=8.50], EntityOtherPlayerMP['§e§l问题反馈'/1152, l='MpServer', x=52.50, y=68.00, z=-9.50], EntityOtherPlayerMP['h寄h'/1280, l='MpServer', x=59.49, y=68.00, z=3.72], EntityPig['§bh寄h 的宠物'/1281, l='MpServer', x=60.45, y=68.00, z=5.31], EntityOtherPlayerMP['习惯丶宠你'/1181, l='MpServer', x=51.67, y=67.00, z=9.85], EntityEnderCrystal['entity.EnderCrystal.name'/1155, l='MpServer', x=31.39, y=63.50, z=15.50], EntityOtherPlayerMP['peanutly'/1279, l='MpServer', x=57.50, y=69.00, z=7.50], EntityArmorStand['§b§l时装抽奖'/1156, l='MpServer', x=31.39, y=65.55, z=15.50], EntityOtherPlayerMP['§e§l选择游戏'/1139, l='MpServer', x=33.50, y=63.50, z=7.50], EntityOtherPlayerMP['§6§l✈道具派送员'/1157, l='MpServer', x=27.50, y=63.50, z=21.50], EntityOtherPlayerMP['§e§l 守卫水晶§c§lNEW'/1143, l='MpServer', x=32.41, y=63.50, z=11.59], EntityArmorStand['§l§k➷§r§b§l商城中购买的商品如没有自动发货'/1160, l='MpServer', x=27.50, y=65.80, z=21.50], EntityOtherPlayerMP['§1§4§6§7§8§9'/1147, l='MpServer', x=32.70, y=63.50, z=3.70], EntityArmorStand['§l§k➷§r§b§l请点此进行领取'/1161, l='MpServer', x=27.50, y=65.55, z=21.50], EntityOtherPlayerMP['§e§l花雨庭大喇叭'/1162, l='MpServer', x=31.48, y=63.50, z=-0.51], EntityOtherPlayerMP['§e§l问题反馈'/1152, l='MpServer', x=52.50, y=68.00, z=-9.50], EntityOtherPlayerMP['§6§l✈道具派送员'/1157, l='MpServer', x=27.50, y=63.50, z=21.50], EntityOtherPlayerMP['§e§l花雨庭大喇叭'/1162, l='MpServer', x=31.48, y=63.50, z=-0.51], FakePlayer['h寄h'/-1, l='MpServer', x=59.49, y=68.00, z=3.72], EntityOtherPlayerMP['习惯丶宠你'/1181, l='MpServer', x=51.67, y=67.00, z=9.85], EntityOtherPlayerMP['§e§l选择游戏'/1139, l='MpServer', x=33.50, y=63.50, z=7.50], EntityArmorStand['§f全服在线人数:§a§l159'/1142, l='MpServer', x=33.50, y=65.55, z=7.50], EntityOtherPlayerMP['§e§l 守卫水晶§c§lNEW'/1143, l='MpServer', x=32.41, y=63.50, z=11.59], EntityArmorStand['§f在线人数:§a§l1'/1146, l='MpServer', x=32.41, y=65.55, z=11.59], EntityOtherPlayerMP['§1§4§6§7§8§9'/1147, l='MpServer', x=32.70, y=63.50, z=3.70], EntityArmorStand['§f在线人数: §a§l13'/1150, l='MpServer', x=32.70, y=65.80, z=3.70], EntityOtherPlayerMP['peanutly'/1279, l='MpServer', x=57.50, y=69.00, z=7.50], EntityArmorStand['§b§l花雨庭温泉服'/1151, l='MpServer', x=32.70, y=65.55, z=3.70]]
+	Retry entities: 0 total; []
+	Server brand: Waterfall <- Paper
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:523)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2691)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:543)
+	at net.minecraft.client.main.Main.main(Main.java:111)
+	at Start.main(Start.java:13)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.15, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Microsoft
+	Memory: 152268776 bytes (145 MB) / 501219328 bytes (478 MB) up to 4284481536 bytes (4086 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: mcp
+	LWJGL: 3.3.3+5
+	OpenGL: NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2 GL version 4.6.0 NVIDIA 560.94, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 单行道喜欢用的特殊音效材质包.zip
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8 x Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+	OptiFine Version: OptiFine_1.12.2_HD_U_G6_pre1
+	OptiFine Build: ~~NULL~~
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 560.94
+	OpenGlRenderer: NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 8

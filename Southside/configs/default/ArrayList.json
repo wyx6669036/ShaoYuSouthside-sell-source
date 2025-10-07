@@ -1,0 +1,46 @@
+{
+  "ArrayList": {
+    "No Render Modules": true,
+    "Background": true,
+    "Fonts": 3,
+    "Color": 1,
+    "Custom Color A": {
+      "hsba": [
+        0,
+        0,
+        100,
+        255
+      ],
+      "dataBit": -1
+    },
+    "Custom Color B": {
+      "hsba": [
+        0,
+        0,
+        100,
+        255
+      ],
+      "dataBit": -1
+    },
+    "Custom Speed": 10.0,
+    "Line": true,
+    "Line Position": 0,
+    "Line Connect": true,
+    "Locked": false,
+    "HUD Position": {
+      "anchor": "2",
+      "x": 0.0,
+      "y": 0.0
+    },
+    "Scale": 1.0,
+    "Show in Chat": true,
+    "Show in F3 (Debug)": false,
+    "Show in GUIs": true
+  },
+  "Bind": {
+    "keyBinds": [
+      0
+    ]
+  },
+  "Enabled": true
+}

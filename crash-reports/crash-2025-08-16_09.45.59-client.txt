@@ -1,0 +1,143 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 2025-08-16 09:46
+Description: Ticking entity
+
+java.lang.NullPointerException: Cannot invoke "dev.diona.southside.module.modules.client.IRCFriend.canAttack()" because "ircFriend" is null
+	at dev.diona.southside.module.modules.client.Target.teamCheck(Target.java:93)
+	at dev.diona.southside.module.modules.client.Target.isTarget(Target.java:58)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:662)
+	at java.base/java.util.stream.ReferencePipeline.min(ReferencePipeline.java:703)
+	at dev.diona.southside.module.modules.combat.AutoKnockBack.getTarget(AutoKnockBack.java:150)
+	at dev.diona.southside.module.modules.combat.AutoKnockBack.onUpdate(AutoKnockBack.java:67)
+	at me.bush.eventbus.handler.handlers.LambdaHandler.invoke(LambdaHandler.java:71)
+	at me.bush.eventbus.bus.EventBus.post(EventBus.java:141)
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:820)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2047)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:346)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:216)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2031)
+	at net.minecraft.world.World.updateEntity(World.java:1994)
+	at net.minecraft.world.World.updateEntities(World.java:1834)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1896)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1205)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:544)
+	at net.minecraft.client.main.Main.main(Main.java:117)
+	at Start.main(Start.java:13)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at dev.diona.southside.module.modules.client.Target.teamCheck(Target.java:93)
+	at dev.diona.southside.module.modules.client.Target.isTarget(Target.java:58)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:662)
+	at java.base/java.util.stream.ReferencePipeline.min(ReferencePipeline.java:703)
+	at dev.diona.southside.module.modules.combat.AutoKnockBack.getTarget(AutoKnockBack.java:150)
+	at dev.diona.southside.module.modules.combat.AutoKnockBack.onUpdate(AutoKnockBack.java:67)
+	at me.bush.eventbus.handler.handlers.LambdaHandler.invoke(LambdaHandler.java:71)
+	at me.bush.eventbus.bus.EventBus.post(EventBus.java:141)
+	at net.minecraft.client.entity.EntityPlayerSP.onLivingUpdate(EntityPlayerSP.java:820)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2047)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:346)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:216)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2031)
+	at net.minecraft.world.World.updateEntity(World.java:1994)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityPlayerSP)
+	Entity ID: 1514
+	Entity Name: 迅捷的烟火星飘着
+	Entity's Exact location: 53.96, 68.12, 10.92
+	Entity's Block location: World: (53,68,10), Chunk: (at 5,4,10 in 3,0; contains blocks 48,0,0 to 63,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: -0.07, -0.44, 0.24
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: Cannot invoke "net.minecraft.entity.Entity.toString()" because the return value of "net.minecraft.entity.Entity.getRidingEntity()" is null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1834)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 13 total; [EntityPlayerSP['迅捷的烟火星飘着'/1514, l='MpServer', x=53.96, y=68.12, z=10.92], EntityOtherPlayerMP['§e§l选择游戏'/1486, l='MpServer', x=33.50, y=63.50, z=7.50], FakePlayer['§e§l选择游戏'/-1, l='MpServer', x=33.50, y=63.50, z=7.50], EntityOtherPlayerMP['§e§l 守卫水晶§c§lNEW'/1490, l='MpServer', x=32.41, y=63.50, z=11.59], EntityOtherPlayerMP['§1§4§6§7§8§9'/1494, l='MpServer', x=32.70, y=63.50, z=3.70], EntityOtherPlayerMP['§e§l问题反馈'/1499, l='MpServer', x=52.50, y=68.00, z=-9.50], EntityOtherPlayerMP['§6§l✈道具派送员'/1504, l='MpServer', x=27.50, y=63.50, z=21.50], EntityOtherPlayerMP['§e§l花雨庭大喇叭'/1509, l='MpServer', x=31.48, y=63.50, z=-0.51], FakePlayer['§e§l 守卫水晶§c§lNEW'/-2, l='MpServer', x=32.41, y=63.50, z=11.59], FakePlayer['§1§4§6§7§8§9'/-3, l='MpServer', x=32.70, y=63.50, z=3.70], FakePlayer['§e§l问题反馈'/-4, l='MpServer', x=52.50, y=68.00, z=-9.50], FakePlayer['§e§l花雨庭大喇叭'/-5, l='MpServer', x=31.48, y=63.50, z=-0.51], FakePlayer['§6§l✈道具派送员'/-6, l='MpServer', x=27.50, y=63.50, z=21.50]]
+	Chunk stats: MultiplayerChunkCache: 695, 695
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (344,166,-18), Chunk: (at 8,10,14 in 21,-2; contains blocks 336,0,-32 to 351,255,-17), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 187937 game time, 6000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: adventure (ID 2). Hardcore: false. Cheats: false
+	Forced entities: 33 total; [EntityPlayerSP['迅捷的烟火星飘着'/1514, l='MpServer', x=53.96, y=68.12, z=10.92], FakePlayer['§e§l选择游戏'/-1, l='MpServer', x=33.50, y=63.50, z=7.50], EntityOtherPlayerMP['§e§l选择游戏'/1486, l='MpServer', x=33.50, y=63.50, z=7.50], FakePlayer['§e§l 守卫水晶§c§lNEW'/-2, l='MpServer', x=32.41, y=63.50, z=11.59], FakePlayer['§1§4§6§7§8§9'/-3, l='MpServer', x=32.70, y=63.50, z=3.70], FakePlayer['§e§l选择游戏'/-1, l='MpServer', x=33.50, y=63.50, z=7.50], FakePlayer['§e§l问题反馈'/-4, l='MpServer', x=52.50, y=68.00, z=-9.50], EntityOtherPlayerMP['§e§l 守卫水晶§c§lNEW'/1490, l='MpServer', x=32.41, y=63.50, z=11.59], FakePlayer['§e§l花雨庭大喇叭'/-5, l='MpServer', x=31.48, y=63.50, z=-0.51], FakePlayer['§6§l✈道具派送员'/-6, l='MpServer', x=27.50, y=63.50, z=21.50], EntityOtherPlayerMP['§1§4§6§7§8§9'/1494, l='MpServer', x=32.70, y=63.50, z=3.70], EntityOtherPlayerMP['§e§l问题反馈'/1499, l='MpServer', x=52.50, y=68.00, z=-9.50], EntityOtherPlayerMP['§6§l✈道具派送员'/1504, l='MpServer', x=27.50, y=63.50, z=21.50], EntityOtherPlayerMP['§e§l选择游戏'/1486, l='MpServer', x=33.50, y=63.50, z=7.50], EntityOtherPlayerMP['§e§l花雨庭大喇叭'/1509, l='MpServer', x=31.48, y=63.50, z=-0.51], FakePlayer['§e§l 守卫水晶§c§lNEW'/-2, l='MpServer', x=32.41, y=63.50, z=11.59], EntityArmorStand['§f全服在线人数:§a§l232'/1489, l='MpServer', x=33.50, y=65.55, z=7.50], FakePlayer['§1§4§6§7§8§9'/-3, l='MpServer', x=32.70, y=63.50, z=3.70], EntityOtherPlayerMP['§e§l 守卫水晶§c§lNEW'/1490, l='MpServer', x=32.41, y=63.50, z=11.59], FakePlayer['§e§l问题反馈'/-4, l='MpServer', x=52.50, y=68.00, z=-9.50], FakePlayer['§e§l花雨庭大喇叭'/-5, l='MpServer', x=31.48, y=63.50, z=-0.51], FakePlayer['§6§l✈道具派送员'/-6, l='MpServer', x=27.50, y=63.50, z=21.50], EntityArmorStand['§f在线人数:§a§l0'/1493, l='MpServer', x=32.41, y=65.55, z=11.59], EntityOtherPlayerMP['§1§4§6§7§8§9'/1494, l='MpServer', x=32.70, y=63.50, z=3.70], EntityArmorStand['§f在线人数: §a§l5'/1497, l='MpServer', x=32.70, y=65.80, z=3.70], EntityArmorStand['§b§l花雨庭温泉服'/1498, l='MpServer', x=32.70, y=65.55, z=3.70], EntityOtherPlayerMP['§e§l问题反馈'/1499, l='MpServer', x=52.50, y=68.00, z=-9.50], EntityEnderCrystal['entity.EnderCrystal.name'/1502, l='MpServer', x=31.39, y=63.50, z=15.50], EntityArmorStand['§b§l时装抽奖'/1503, l='MpServer', x=31.39, y=65.55, z=15.50], EntityOtherPlayerMP['§6§l✈道具派送员'/1504, l='MpServer', x=27.50, y=63.50, z=21.50], EntityArmorStand['§l§k➷§r§b§l商城中购买的商品如没有自动发货'/1507, l='MpServer', x=27.50, y=65.80, z=21.50], EntityArmorStand['§l§k➷§r§b§l请点此进行领取'/1508, l='MpServer', x=27.50, y=65.55, z=21.50], EntityOtherPlayerMP['§e§l花雨庭大喇叭'/1509, l='MpServer', x=31.48, y=63.50, z=-0.51]]
+	Retry entities: 0 total; []
+	Server brand: Waterfall <- Paper
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:523)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2735)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:557)
+	at net.minecraft.client.main.Main.main(Main.java:117)
+	at Start.main(Start.java:13)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.12, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 182206920 bytes (173 MB) / 360710144 bytes (344 MB) up to 4284481536 bytes (4086 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: mcp
+	LWJGL: 3.3.3+5
+	OpenGL: NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2 GL version 4.6.0 NVIDIA 576.80, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	CPU: 8 x Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+	OptiFine Version: OptiFine_1.12.2_HD_U_G6_pre1
+	OptiFine Build: ~~NULL~~
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 576.80
+	OpenGlRenderer: NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 8
